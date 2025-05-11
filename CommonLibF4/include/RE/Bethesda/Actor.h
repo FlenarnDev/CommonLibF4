@@ -1130,7 +1130,7 @@ namespace RE
 		CFilter GetCollisionFilter()
 		{
 			using func_t = decltype(&Actor::GetCollisionFilter);
-			static REL::Relocation<func_t> func{ REL::ID(1474995) };
+			static REL::Relocation<func_t> func{ REL::ID(2277949) };
 			return func(this);
 		}
 

@@ -404,7 +404,7 @@ namespace RE
 		static void InitSDM()
 		{
 			using func_t = decltype(&BSThreadEvent::InitSDM);
-			static REL::Relocation<func_t> func{ REL::ID(1425097) };
+			static REL::Relocation<func_t> func{ REL::ID(2268180) };
 			return func();
 		}
 	};
@@ -643,7 +643,7 @@ namespace RE
 		[[nodiscard]] static BSTEventSource<LocksPicked::Event>* GetEventSource()
 		{
 			using func_t = decltype(&LocksPicked::GetEventSource);
-			static REL::Relocation<func_t> func{ REL::ID(594991) };
+			static REL::Relocation<func_t> func{ REL::ID(2249292) };
 			return func();
 		}
 	};
@@ -749,7 +749,7 @@ namespace RE
 	public:
 		[[nodiscard]] static EventSource_t* GetEventSource()
 		{
-			static REL::Relocation<EventSource_t**> singleton{ REL::ID(120809) };
+			static REL::Relocation<EventSource_t**> singleton{ REL::ID(2701547) };
 			if (!*singleton) {
 				*singleton = new EventSource_t(&BSTGlobalEvent::GetSingleton()->eventSourceSDMKiller);
 			}
@@ -843,7 +843,7 @@ namespace RE
 		[[nodiscard]] static BSTEventSource<TerminalHacked::Event>* GetEventSource()
 		{
 			using func_t = decltype(&TerminalHacked::GetEventSource);
-			static REL::Relocation<func_t> func{ REL::ID(425579) };
+			static REL::Relocation<func_t> func{ REL::ID(2233751) };
 			return func();
 		}
 	};
