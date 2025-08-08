@@ -980,7 +980,7 @@ namespace RE::ID
 
 	namespace ImageSpaceEffectTemporalAA
 	{
-		inline constexpr REL::ID MaskS{ 775377 };
+		inline constexpr REL::ID MaskS{ 2713052 };
 	}
 
 	namespace ImageSpaceManager
@@ -1079,7 +1079,7 @@ namespace RE::ID
 
 	namespace LockpickingMenu
 	{
-		inline constexpr REL::ID OpenLockpickingMenu{ 129892 };
+		inline constexpr REL::ID OpenLockpickingMenu{ 2249263 };
 	}
 
 	namespace LocksPicked
@@ -1426,11 +1426,11 @@ namespace RE::ID
 	namespace PowerArmor
 	{
 		inline constexpr REL::ID ActorInPowerArmor{ 2219437 };
-		inline constexpr REL::ID GetArmorKeyword{ 961172 };
-		inline constexpr REL::ID GetBatteryKeyword{ 1493537 };
+		inline constexpr REL::ID GetArmorKeyword{ 2194743 };
+		inline constexpr REL::ID GetBatteryKeyword{ 2194740 };
 		inline constexpr REL::ID GetDefaultBatteryObject{ 1279247 };
 		inline constexpr REL::ID IsPowerArmorBattery{ 1012910 };
-		inline constexpr REL::ID SyncFurnitureVisualsToInventory{ 1078979 };
+		inline constexpr REL::ID SyncFurnitureVisualsToInventory{ 2219453 };
 		inline constexpr REL::ID fNewBatteryCapacity{ 1134204 };
 	}
 
@@ -1486,7 +1486,7 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID PopHUDMode{ 2222444 };
 		inline constexpr REL::ID PushHUDMode{ 2222443 };
-		inline constexpr REL::ID SetPowerArmorMode{ 361745 };
+		inline constexpr REL::ID SetPowerArmorMode{ 2222459 };
 		inline constexpr REL::ID ShowHUDMessage{ 2222440 };
 	}
 
@@ -1542,7 +1542,7 @@ namespace RE::ID
 		inline constexpr REL::ID QueueShow1stPerson{ 994377 };
 		inline constexpr REL::ID QueueShowPipboy{ 1133684 };
 		inline constexpr REL::ID QueueUpdate3D{ 581890 };
-		inline constexpr REL::ID QueueWeaponFire{ 15449 };
+		inline constexpr REL::ID QueueWeaponFire{ 2229186 };
 	}
 
 	namespace TerminalHacked
@@ -1925,6 +1925,7 @@ namespace RE::ID
 	inline constexpr REL::ID NiFree{ 242362 };
 	inline constexpr REL::ID NiMalloc{ 974443 };
 	inline constexpr REL::ID RTDynamicCast{ 2725673 };
+	inline constexpr REL::ID IsPlayerInDialogue{ 2188686 };
 }
 
 namespace Scaleform::ID
