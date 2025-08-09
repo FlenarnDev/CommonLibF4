@@ -75,6 +75,13 @@ namespace RE
 		};
 		static_assert(sizeof(ArmorAddon) == 0x10);
 
+		bool Protects(const ActorValueInfo* a_condition, bool a_only)
+		{
+			using func_t = decltype(&TESObjectARMO::Protects);
+			static REL::Relocation<func_t> func{ ID::TESObjectARMO::Protects };
+			return func(this, a_condition, a_only);
+		}
+
 		// members
 		InstanceData         armorData;      // 250
 		BSTArray<ArmorAddon> modelArray;     // 2A8

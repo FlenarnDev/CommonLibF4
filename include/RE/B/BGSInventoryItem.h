@@ -219,6 +219,13 @@ namespace RE
 			return func(this);
 		}
 
+		bool IsEquipped(std::uint32_t a_stackID)
+		{
+			using func_t = decltype(&BGSInventoryItem::IsEquipped);
+			static REL::Relocation<func_t> func{ ID::BGSInventoryItem::IsEquipped };
+			return func(this, a_stackID);
+		}
+
 		// members
 		TESBoundObject*        object;     // 00
 		BSTSmartPointer<Stack> stackData;  // 08
