@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	class __declspec(novtable) alignas(0x08) HUDCompassMarkerBase : BSGFxShaderFXTarget
+	class __declspec(novtable) alignas(0x08) HUDCompassMarkerBase : public BSGFxShaderFXTarget
 	{
 	public:
 		// members
