@@ -66,13 +66,6 @@ namespace RE
 		class PerkEntryUpdatedEvent;
 	}
 
-	bool IsPlayerInDialogue()
-	{
-		using func_t = decltype(&IsPlayerInDialogue);
-		static REL::Relocation<func_t> func{ ID::IsPlayerInDialogue };
-		return func();
-	}
-
 	class __declspec(novtable) PlayerCharacter :
 		public Actor,                                                 // 000
 		public BSTEventSource<BGSActorCellEvent>,                     // 4C8
