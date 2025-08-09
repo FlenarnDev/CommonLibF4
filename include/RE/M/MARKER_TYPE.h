@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum MARKER_TYPE : std::uint32_t
+	enum class MARKER_TYPE : std::uint32_t
 	{
 		kCave = 0x0,
 		kCity = 0x1,
