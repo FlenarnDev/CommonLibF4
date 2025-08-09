@@ -185,6 +185,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetInventoryValue{ 2194099 };
 		inline constexpr REL::ID GetExtraDataAt{ 2194092 };
 		inline constexpr REL::ID MergeStacks{ 2194109 };
+		inline constexpr REL::ID IsEquipped{ 2194086 };
 	}
 
 	namespace BGSInventoryList
@@ -726,9 +727,11 @@ namespace RE::ID
 	namespace CombatFormulas
 	{
 		inline constexpr REL::ID GetWeaponDisplayAccuracy{ 2209049 };
-		inline constexpr REL::ID GetWeaponDisplayDamage{ 1431014 };
-		inline constexpr REL::ID GetWeaponDisplayRange{ 1324037 };
-		inline constexpr REL::ID GetWeaponDisplayRateOfFire{ 1403591 };
+		inline constexpr REL::ID GetWeaponDisplayDamage{ 2209046 };
+		inline constexpr REL::ID GetWeaponDisplayRange{ 2209047 };
+		inline constexpr REL::ID GetWeaponDisplayRateOfFire{ 2209048 };
+		inline constexpr REL::ID CalcTargetedLimbDamage{ 2209033 };
+		inline constexpr REL::ID CalcWeaponDamage{ 2209001 };
 	}
 
 	namespace CombatUtilities
@@ -1718,6 +1721,11 @@ namespace RE::ID
 		inline constexpr REL::ID GetSex{ 2207107 };
 		inline constexpr REL::ID GetFacialBoneMorphIntensity{ 2207416 };
 		inline constexpr REL::ID SetHairColor{ 2207426 };
+	}
+
+	namespace TESObjectARMO
+	{
+		inline constexpr REL::ID Protects{ 2198535 };
 	}
 
 	namespace TESObjectCELL

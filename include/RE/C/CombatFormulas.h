@@ -34,5 +34,12 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::CombatFormulas::GetWeaponDisplayRateOfFire };
 			return func(a_weapon, a_data);
 		}
+
+		[[nodiscard]] inline float CalcTargetedLimbDamage(Actor* a_target, const BGSBodyPart* a_bodyPart, float a_physicalDamage, BSTArray<BSTTuple<TESForm*, BGSTypedFormValuePair::SharedVal>, BSTArrayHeapAllocator>* a_damageTypes)
+		{
+			using func_t = decltype(&CombatFormulas::CalcTargetedLimbDamage);
+			static REL::Relocation<func_t> func{ ID::CombatFormulas::CalcWeaponDamage };
+			return func(a_target, a_bodyPart, a_physicalDamage, a_damageTypes);
+		}
 	}
 }
