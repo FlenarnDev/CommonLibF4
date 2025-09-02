@@ -21,7 +21,7 @@ namespace F4SE
 
 	struct InitInfo
 	{
-		bool        log{ true };
+		bool log{ true };
 #ifndef NDEBUG
 		REX::LOG_LEVEL logLevel{ REX::LOG_LEVEL::DEBUG };
 #else
