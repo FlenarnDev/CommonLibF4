@@ -1,5 +1,7 @@
 #pragma once
 
+#include "REX/REX/LOG.h"
+
 namespace F4SE
 {
 	using PluginHandle = std::uint32_t;
@@ -20,6 +22,11 @@ namespace F4SE
 	struct InitInfo
 	{
 		bool        log{ true };
+#ifndef NDEBUG
+		REX::LOG_LEVEL logLevel{ REX::LOG_LEVEL::DEBUG };
+#else
+		REX::LOG_LEVEL logLevel{ REX::LOG_LEVEL::INFO };
+#endif
 		const char* logName{ nullptr };
 		const char* logPattern{ nullptr };
 		bool        trampoline{ false };
