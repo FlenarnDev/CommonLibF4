@@ -1,5 +1,6 @@
 #pragma once
 
+#include "RE/S/SCENE_ACTION_TYPE.h"
 #include "RE/T/TESCondition.h"
 
 namespace RE
@@ -17,27 +18,6 @@ namespace RE
 			std::uint16_t sceneStartPhase;
 			TESQuest*     parentQuest;
 			TESCondition  sceneConditions;
-		};
-
-		enum SCENE_ACTION_PLAYER_RESPONSE_TYPE : std::uint32_t
-		{
-			kPositive = 0x0,
-			kNegative = 0x1,
-			kNeutral = 0x2,
-			kQuestion = 0x3,
-			kTotal = 0x4,
-			kNone = 0x5
-		};
-
-		enum SCENE_ACTION_TYPE : std::uint32_t
-		{
-			kDialogue = 0x0,
-			kPackage = 0x1,
-			kTimer = 0x2,
-			kPlayerDialogue = 0x3,
-			kStartScene = 0x4,
-			kNPCResponse = 0x5,
-			kRadio = 0x6,
 		};
 
 		enum class Flag

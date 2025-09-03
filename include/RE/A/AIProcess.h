@@ -24,6 +24,17 @@ namespace RE
 	class AIProcess
 	{
 	public:
+		enum class FADE_STATE
+		{
+			kNormal = 0x0,
+			kIn = 0x1,
+			kOut = 0x2,
+			kTeleportIn = 0x3,
+			kTeleportOut = 0x4,
+			kOutDisable = 0x5,
+			kOutDelete = 0x6
+		};
+
 		[[nodiscard]] TESAmmo* GetCurrentAmmo(BGSEquipIndex a_equipIndex) const
 		{
 			using func_t = decltype(&AIProcess::GetCurrentAmmo);

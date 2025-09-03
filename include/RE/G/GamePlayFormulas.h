@@ -47,5 +47,12 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::CalculateItemHealthDamageBonus };
 			return func(a_itemHealth);
 		}
+
+		inline float CalcSprintingActionPoints(float a_equippedWeight, float a_elapsedTime, float a_endurance)
+		{
+			using func_t = decltype(&GamePlayFormulas::CalcSprintingActionPoints);
+			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::CalcSpringingActionPoints };
+			return func(a_equippedWeight, a_elapsedTime, a_endurance);
+		}
 	}
 }

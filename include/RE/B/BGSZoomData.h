@@ -13,6 +13,28 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::BGSZoomData };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kZOOM };
 
+		enum class Overlay : std::uint32_t
+		{
+			kDefault = 0x0,
+			kFine = 0x1,
+			kDuplex = 02,
+			kGerman = 0x3,
+			kDot = 0x4,
+			kMilDot = 0x5,
+			kCircle = 0x6,
+			kOldRangefind = 0x7,
+			kModernRangefind = 0x8,
+			kSvd = 0x9,
+			kHandPainted = 0xA,
+			kBinoculars = 0xB,
+			kCross = 0xC,
+			kDoubleZero = 0xD,
+			kRangefinder1 = 0xE,
+			kRangefinder2 = 0xF,
+			kRectangle = 0x10,
+			kCount = 0x11
+		};
+
 		class Data
 		{
 		public:

@@ -8,6 +8,19 @@ namespace RE
 {
 	namespace PipboyInventoryUtils
 	{
+		enum class PAPER_DOLL_ARMOR_SLOTS
+		{
+			kUnderwear = 0x0,
+			kLeftLeg = 0x1,
+			kRightLeg = 0x2,
+			kLeftArm = 0x3,
+			kRightArm = 0x4,
+			kTorso = 0x5,
+			kHelmet = 0x6,
+			kGoggles = 0x7,
+			kGasMask = 0x8
+		};
+
 		inline bool DoSlotsOverlap(const TESObjectARMO* a_armor1, const TESObjectARMO* a_armor2)
 		{
 			using func_t = decltype(&DoSlotsOverlap);

@@ -54,13 +54,6 @@ namespace RE
 			return *singleton;
 		}
 
-		bool CanPerformAction(DEFAULT_OBJECT a_action)
-		{
-			using func_t = decltype(&PlayerControls::CanPerformAction);
-			static REL::Relocation<func_t> func{ ID::PlayerControls::CanPerformAction };
-			return func(this, a_action);
-		}
-
 		bool DoAction(DEFAULT_OBJECT a_action, ActionInput::ACTIONPRIORITY a_priority)
 		{
 			using func_t = decltype(&PlayerControls::DoAction);

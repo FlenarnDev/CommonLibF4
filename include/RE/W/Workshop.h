@@ -39,6 +39,14 @@ namespace RE
 			kReasonCount = 0xE
 		};
 
+		enum class StartWorkshopStatus
+		{
+			kOk = 0x0,
+			kNoNearbyWorkshop = 0x1,
+			kAlreadyInWorkshopMode = 0x2,
+			kActivationBlocked = 0x3
+		};
+
 		class BuildableAreaEvent
 		{
 		public:

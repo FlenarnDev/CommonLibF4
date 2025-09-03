@@ -17,7 +17,12 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::BGSImpactData };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kIPCT };
 
-		enum class ORIENTATION;
+		enum class ORIENTATION
+		{
+			kSurfaceNormal = 0x0,
+			kProjVector = 0x1,
+			kProjReflect = 0x2
+		};
 
 		class IMPACT_DATA_DATA
 		{

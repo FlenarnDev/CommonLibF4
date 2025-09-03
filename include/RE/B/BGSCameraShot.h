@@ -37,6 +37,13 @@ namespace RE
 			kTotal = 0x4
 		};
 
+		enum class CAM_USER
+		{
+			kNone = 0x0,
+			kVATS = 0x1,
+			kDialogue = 0x2
+		};
+
 		class CAMERA_SHOT_DATA
 		{
 		public:

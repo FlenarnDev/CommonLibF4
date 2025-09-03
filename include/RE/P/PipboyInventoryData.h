@@ -76,22 +76,86 @@ namespace RE
 
 		virtual ~PipboyInventoryData();
 
-		enum ENTRY_TYPE
+		enum class ENTRY_TYPE
 		{
-			ENTRY_INT = 0x0,
-			ENTRY_FIXED_STRING = 0x1,
-			ENTRY_FLOAT = 0x1
+			kInt = 0x0,
+			kFixedString = 0x1,
+			kFloat = 0x1
 		};
 
-		enum SORT_ON_FIELD
+		enum class ITEM_ICON_ID
 		{
-			SOF_ALPHABETICALLY = 0x0,
-			SOF_DAMAGE = 0x1,
-			SOF_ROF = 0x2,
-			SOF_RANGE = 0x3,
-			SOF_ACCURARY = 0x4,
-			SOF_VALUE = 0x5,
-			SOF_WEIGHT = 0x6
+			kNone = 0x1,
+			kBasicPistol = 0x2,
+			kLaserPistol = 0x3,
+			kPlasmaPistol = 0x4,
+			kShotgun = 0x5,
+			kBasicRifle = 0x6,
+			kAssaultRifle = 0x7,
+			kGaussRifle = 0x8,
+			kLaserMusket = 0x9,
+			kLaserRifle = 0xA,
+			kPlasmaRifle = 0xB,
+			k1hMelee = 0xC,
+			k2hMelee = 0xD,
+			kH2hWeap = 0xE,
+			kMissileLauncher = 0xF,
+			kFatman = 0x10,
+			kMinigun = 0x11,
+			kGatlingLaser = 0x12,
+			kCryolator = 0x13,
+			kFlamer = 0x14,
+			kFlareGun = 0x15,
+			kGammaGun = 0x16,
+			kJunkJet = 0x17,
+			kRailwayRifle = 0x18,
+			kSyringer = 0x19,
+			kBroadsider = 0x1A,
+			kAlienBlaster = 0x1B,
+			kRipper = 0x1C,
+			kShishkebab = 0x1D,
+			kThrownWeap = 0x1E,
+			kExplosiveMine = 0x1F,
+			kBottlecapMine = 0x20,
+			kCryoMine = 0x21,
+			kCryoGrenade = 0x22,
+			kPlasmaMine = 0x23,
+			kPlasmaGrenade = 0x24,
+			kPulseMine = 0x25,
+			kPulseGrenade = 0x26,
+			kMolotov = 0x27,
+			kNukaGrenade = 0x28,
+			kRepairKit = 0x29,
+			kSurgeryKit = 0x2A,
+			kArmor = 0x2B,
+			kGloves = 0x2C,
+			kHelmet = 0x2D,
+			kBook = 0x2E,
+			kClothes = 0x2F,
+			kAmmo = 0x30,
+			kAdrenaline = 0x31,
+			kDisease = 0x32,
+			kSleep = 0x33,
+			kHunger = 0x34,
+			kThirst = 0x35,
+			kChems = 0x36,
+			kStimpak = 0x37,
+			kFood = 0x38,
+			kAlcohol = 0x39,
+			kStealthBoy = 0x3A,
+			kUnknown = 0x3B,
+			kMax = 0x3B
+		};
+
+		enum class SORT_ON_FIELD
+		{
+			kAlphabetically = 0x0,
+			kDamage = 0x1,
+			kRof = 0x2,
+			kRange = 0x3,
+			kAccuracy = 0x4,
+			kValue = 0x5,
+			kWeight = 0x6
 		};
 
 		class StackEntry

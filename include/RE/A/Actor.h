@@ -17,6 +17,7 @@
 #include "RE/M/Modifiers.h"
 #include "RE/N/NiPoint.h"
 #include "RE/N/NiTFlags.h"
+#include "RE/O/ObjectEquipParams.h"
 #include "RE/S/SEX.h"
 #include "RE/T/TESObjectREFR.h"
 
@@ -556,6 +557,13 @@ namespace RE
 			using func_t = decltype(&Actor::ForceDetect);
 			static REL::Relocation<func_t> func{ ID::Actor::ForceDetect };
 			return func(this, a_target, a_forceLOS, a_time);
+		}
+
+		void UnequipObject(TESBoundObject* a_object, ObjectEquipParams a_params)
+		{
+			using func_t = decltype(&Actor::UnequipObject);
+			static REL::Relocation<func_t> func{ ID::Actor::UnequipObject };
+			return func(this, a_object, a_params);
 		}
 
 		// members

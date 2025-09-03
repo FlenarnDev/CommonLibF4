@@ -30,6 +30,12 @@ namespace RE
 	public:
 		F4_HEAP_REDEFINE_NEW(ExtraDataList);
 
+		enum class CLEAR_FOR
+		{
+			kContainer = 0x0,
+			kReference = 0x1
+		};
+
 		void AddExtra(BSExtraData* a_extra)
 		{
 			const BSAutoWriteLock l{ extraRWLock };

@@ -37,6 +37,25 @@ namespace RE
 
 		using TACCallbackFunc_t = void(TESObjectCELL*, void*, void*);
 
+		enum class PICKWORLD_NODE
+		{
+			kActors = 0x1,
+			kMarkers = 0x2,
+			kLand = 0x4,
+			kStatic = 0x8,
+			kActive = 0x10,
+			kAll = 0x1F,
+		};
+
+		enum class TACMode
+		{
+			kAll = 0x0,
+			kMainWorldOnly = 0x1,
+			kOtherWorldsOnly = 0x2,
+			kInteriorsOnly = 0x3,
+			kSpecifiedWorldOnly = 0x4
+		};
+
 		class ParticleObjectCache
 		{
 		public:

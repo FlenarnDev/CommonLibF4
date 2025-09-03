@@ -19,6 +19,15 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TESCombatStyle };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kCSTY };
 
+		enum class FLAG : std::uint32_t
+		{
+			kDuelingStyle = 0x1,
+			kFlankingStyle = 0x2,
+			kAllowDualWeilding = 0x4,
+			kChargingStyle = 0x8,
+			kAllowMeleeRetarget = 0x10
+		};
+
 		// members
 		CombatStyleGeneralData    generalData;     // 20
 		CombatStyleMeleeData      meleeData;       // 50
@@ -27,7 +36,7 @@ namespace RE
 		CombatStyleLongRangeData  longRangeData;   // A8
 		CombatStyleCoverData      coverData;       // BC
 		CombatStyleFlightData     flightData;      // C0
-		std::uint32_t             flags;           // E0
+		FLAG                      flags;           // E0
 	};
 	static_assert(sizeof(TESCombatStyle) == 0xE8);
 }

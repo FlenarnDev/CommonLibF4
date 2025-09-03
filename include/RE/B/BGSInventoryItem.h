@@ -226,6 +226,27 @@ namespace RE
 			return func(this, a_stackID);
 		}
 
+		int64_t GetStackCount()
+		{
+			using func_t = decltype(&BGSInventoryItem::GetStackCount);
+			static REL::Relocation<func_t> func{ ID::BGSInventoryItem::GetStackCount };
+			return func(this);
+		}
+
+		bool IsQuestObject(std::uint32_t a_stackID)
+		{
+			using func_t = decltype(&BGSInventoryItem::IsQuestObject);
+			static REL::Relocation<func_t> func{ ID::BGSInventoryItem::IsQuestObject };
+			return func(this, a_stackID);
+		}
+
+		float GetTotalWeight()
+		{
+			using func_t = decltype(&BGSInventoryItem::GetTotalWeight);
+			static REL::Relocation<func_t> func{ ID::BGSInventoryItem::GetTotalWeight };
+			return func(this);
+		}
+
 		// members
 		TESBoundObject*        object;     // 00
 		BSTSmartPointer<Stack> stackData;  // 08

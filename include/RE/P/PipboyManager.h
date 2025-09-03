@@ -37,6 +37,15 @@ namespace RE
 			kInspect = 0x3
 		};
 
+		enum class PipboyScreenEffectTriggerType
+		{
+			kPipboyOpen = 0x0,
+			kTabChange = 0x1,
+			kCategoryChange = 0x2,
+			kSmallTransition = 0x3,
+			kMapChange = 0x4
+		};
+
 		virtual ~PipboyManager();  // 00
 
 		// override

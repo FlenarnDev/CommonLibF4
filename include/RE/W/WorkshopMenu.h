@@ -36,6 +36,13 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::WorkshopMenu };
 		static constexpr auto MENU_NAME{ "WorkshopMenu"sv };
 
+		enum class TAG_FOR_SEARCH_RESULT
+		{
+			kNone = 0x0,
+			kTaggedComponents = 0x1,
+			kUntaggedComponents = 0x2
+		};
+
 		class FXWorkshopMenu :
 			public BSGFxShaderFXTarget  // 000
 		{
