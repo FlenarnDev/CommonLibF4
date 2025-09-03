@@ -41,5 +41,19 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::CombatFormulas::CalcWeaponDamage };
 			return func(a_target, a_bodyPart, a_physicalDamage, a_damageTypes);
 		}
+
+		[[nodiscard]] inline std::int64_t GetNumCrippledAttackConditions(Actor* a_actor)
+		{
+			using func_t = decltype(&CombatFormulas::GetNumCrippledAttackConditions);
+			static REL::Relocation<func_t> func{ ID::CombatFormulas::GetNumCrippledAttackConditions };
+			return func(a_actor);
+		}
+
+		[[nodiscard]] inline float CalcScopeSteadyActionPointDrain(Actor* a_actor, float a_deltaSec)
+		{
+			using func_t = decltype(&CombatFormulas::CalcScopeSteadyActionPointDrain);
+			static REL::Relocation<func_t> func{ ID::CombatFormulas::CalcScopeSteadyActionPointDrain };
+			return func(a_actor, a_deltaSec);
+		}
 	}
 }

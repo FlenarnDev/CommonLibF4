@@ -49,6 +49,21 @@ namespace RE
 			kSaveAndQuitToDesktop = 0x10000,
 		};
 
+		enum class SAVEFILE_TYPE : std::int32_t
+		{
+			kScreenshot = 0x0,
+			kLoad = 0x1,
+			kSave = 0x2
+		};
+
+		enum class SAVEFILE_CATEGORY : std::int32_t
+		{
+			kUser = 0x0,
+			kAuto = 0x1,
+			kQuick = 0x2,
+			kExit = 0x3
+		};
+
 		virtual ~BGSSaveLoadManager();  // 00
 
 		// override (BSTEventSink)
@@ -65,6 +80,20 @@ namespace RE
 			using func_t = decltype(&BGSSaveLoadManager::QueueSaveLoadTask);
 			static REL::Relocation<func_t> func{ ID::BGSSaveLoadManager::QueueSaveLoadTask };
 			return func(this, a_task);
+		}
+
+		void BuildSaveGameList(std::uint64_t a_playerID)
+		{
+			using func_t = decltype(&BGSSaveLoadManager::BuildSaveGameList);
+			static REL::Relocation<func_t> func{ ID::BGSSaveLoadManager::BuildSaveGameList };
+			return func(this, a_playerID);
+		}
+
+		void GetSaveDirectoryPath(char* a_directoryPath)
+		{
+			using func_t = decltype(&BGSSaveLoadManager::GetSaveDirectoryPath);
+			static REL::Relocation<func_t> func{ ID::BGSSaveLoadManager::GetSaveDirectoryPath };
+			return func(this, a_directoryPath);
 		}
 
 		// members

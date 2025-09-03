@@ -15,6 +15,7 @@
 #include "RE/B/BSTSmartPointer.h"
 #include "RE/B/BSTTuple.h"
 #include "RE/C/CrimeGoldStruct.h"
+#include "RE/D/DifficultyLevel.h"
 #include "RE/F/FriendshipFactionsStruct.h"
 #include "RE/I/IMovementPlayerControlsFilter.h"
 #include "RE/N/NiPoint.h"
@@ -24,17 +25,17 @@
 #include "RE/P/PlayerAutoAimActorEvent.h"
 #include "RE/P/PlayerCommandTypeEvent.h"
 #include "RE/P/PlayerCoverData.h"
+#include "RE/S/SCENE_ACTION_PLAYER_RESPONSE_TYPE.h"
 #include "RE/S/SayOnceTimeStampStruct.h"
 #include "RE/S/StolenItemValueStruct.h"
 #include "RE/S/SubgraphHandle.h"
+#include "RE/T/TeleportPath.h"
 #include "RE/X/XPChangeData.h"
 
 namespace RE
 {
 	enum class DEFAULT_OBJECT;
-	enum class DifficultyLevel;
 	enum class PLAYER_ACTION;
-	enum class SCENE_ACTION_PLAYER_RESPONSE_TYPE;
 	class BGSActorCellEvent;
 	class BGSActorDeathEvent;
 	class BGSInstancedQuestObjective;
@@ -56,7 +57,6 @@ namespace RE
 	class PlayerActionObject;
 	class PositionPlayerEvent;
 	class QuestTargetArray;
-	class TeleportPath;
 	class TESHitEvent;
 	class TESQuestStageItem;
 	class UserEventEnabledEvent;
@@ -92,11 +92,25 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::PlayerCharacter };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kACHR };
 
+		enum class CHAR_GEN_DISABLE_FLAGS
+		{
+			kDisableSave = 0x1,
+			kDisableWait = 0x2,
+			kShowControlsDisabledMessage = 0x4
+		};
+
 		enum class GrabbingType
 		{
 			kNone = 0x0,
 			kNormal = 0x1,
 			kTelekinesis = 0x2
+		};
+
+		enum class PROGRESS_EVENT
+		{
+			kLevelUp = 0x0,
+			kDeath = 0x1,
+			kChargen = 0x2
 		};
 
 		class PlayerActionObject
@@ -283,6 +297,13 @@ namespace RE
 			using func_t = decltype(&PlayerCharacter::SetPerkCount);
 			static REL::Relocation<func_t> func{ ID::PlayerCharacter::SetPerkCount };
 			return func(this, a_count);
+		}
+
+		bool HasLOSToTarget(Actor* a_targetRef, bool* pickPerformed)
+		{
+			using func_t = decltype(&PlayerCharacter::HasLOSToTarget);
+			static REL::Relocation<func_t> func{ ID::PlayerCharacter::HasLOSToTarget };
+			return func(this, a_targetRef, pickPerformed);
 		}
 
 		// members

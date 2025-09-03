@@ -122,6 +122,13 @@ namespace RE::BGSMod
 			std::uint32_t         propertyModCount;  // 14
 		};
 		static_assert(sizeof(Data) == 0x18);
+
+		Data* GetData(Data* a_data) const
+		{
+			using func_t = decltype(&Container::GetData);
+			static REL::Relocation<func_t> func{ ID::BGSMod::Container::GetData };
+			return func(this, a_data);
+		}
 	};
 	static_assert(sizeof(Container) == 0x10);
 

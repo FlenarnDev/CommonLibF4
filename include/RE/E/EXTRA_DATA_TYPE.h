@@ -95,7 +95,7 @@ namespace RE
 		kModelSwap,                     //
 		kRadius,                        //
 		kRadiation,                     //
-		kFactionChanges,                //
+		kFactionChanges,                // ExtraFactionChanges
 		kDismemberedLimbs,              //
 		kActorCause,                    //
 		kMultibound,                    //
@@ -104,7 +104,7 @@ namespace RE
 		kReflectedRefs,                 //
 		kReflectorRefs,                 //
 		kEmittanceSource,               //
-		kRadioData,                     //
+		kRadioData,                     // ExtraRadioData
 		kCombatStyle,                   //
 		kLinkColorPair,                 //
 		kPrimitive,                     //
@@ -134,7 +134,7 @@ namespace RE
 		kCellTransCount,                //
 		kWaterLightRefs,                //
 		kLitWaterRefs,                  //
-		kRadioRepeater,                 //
+		kRadioRepeater,                 // ExtraRadioRepeater
 		kActivateLoopSound,             //
 		kPatrolRefInUseData,            //
 		kAshpileRef,                    //
@@ -196,7 +196,7 @@ namespace RE
 		kInputEnableLayer,              //
 		kProjectedDecalRef,             //
 		kWorkshop,                      // Workshop::ExtraData
-		kRadioReceiver,                 //
+		kRadioReceiver,                 // ExtraRadioReceiver
 		kCulledBone,                    //
 		kActorValueStorage,             //
 		kDirectAtTarget,                //

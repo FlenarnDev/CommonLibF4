@@ -15,6 +15,7 @@
 #include "RE/I/IAnimationGraphManagerHolder.h"
 #include "RE/I/IKeywordFormBase.h"
 #include "RE/I/ITEM_REMOVE_REASON.h"
+#include "RE/M/MapMarkerData.h"
 #include "RE/N/NiPoint.h"
 #include "RE/O/OBJ_REFR.h"
 #include "RE/T/TESForm.h"
@@ -418,13 +419,6 @@ namespace RE
 			return func(this);
 		}
 
-		[[nodiscard]] bool IsInWater()
-		{
-			using func_t = decltype(&TESObjectREFR::IsInWater);
-			static REL::Relocation<func_t> func{ ID::TESObjectREFR::IsInWater };
-			return func(this);
-		}
-
 		[[nodiscard]] bool IsLeveledCreature()
 		{
 			using func_t = decltype(&TESObjectREFR::IsLeveledCreature);
@@ -527,6 +521,20 @@ namespace RE
 		{
 			using func_t = decltype(&TESObjectREFR::IsDecalRef);
 			static REL::Relocation<func_t> func{ ID::TESObjectREFR::IsDecalRef };
+			return func(this);
+		}
+
+		void UpdateDynamicNavmesh(bool a_active)
+		{
+			using func_t = decltype(&TESObjectREFR::UpdateDynamicNavmesh);
+			static REL::Relocation<func_t> func{ ID::TESObjectREFR::UpdateDynamicNavmesh };
+			return func(this, a_active);
+		}
+
+		MapMarkerData* GetMapMarkerData()
+		{
+			using func_t = decltype(&TESObjectREFR::GetMapMarkerData);
+			static REL::Relocation<func_t> func{ ID::TESObjectREFR::GetMapMarkerData };
 			return func(this);
 		}
 

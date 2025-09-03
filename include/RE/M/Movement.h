@@ -6,6 +6,20 @@ namespace RE
 {
 	namespace Movement
 	{
+		enum class SPEED_DIRECTION
+		{
+			kTranslation = 0x0,
+			kLeft = 0x0,
+			kRight = 0x1,
+			kForward = 0x2,
+			kBack = 0x3,
+			kRotations = 0x4,
+			kPitch = 0x4,
+			kRoll = 0x5,
+			kYaw = 0x6,
+			kCount = 0x7
+		};
+
 		class MaxSpeeds
 		{
 		public:

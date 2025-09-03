@@ -38,6 +38,22 @@ namespace RE
 		static constexpr auto RTTI{ RTTI::FavoritesManager };
 		static constexpr auto VTABLE{ VTABLE::FavoritesManager };
 
+		enum class FAVORITE_SLOT
+		{
+			kLeft3 = 0x0,
+			kLeft2 = 0x1,
+			kLeft1 = 0x2,
+			kRight1 = 0x3,
+			kRight2 = 0x4,
+			kRight3 = 0x5,
+			kUp3 = 0x6,
+			kUp2 = 0x7,
+			kUp1 = 0x8,
+			kDown1 = 0x9,
+			kDown2 = 0xA,
+			kDown3 = 0xB
+		};
+
 		[[nodiscard]] static FavoritesManager* GetSingleton()
 		{
 			static REL::Relocation<FavoritesManager**> singleton{ ID::FavoritesManager::Singleton };

@@ -38,7 +38,7 @@ namespace RE
 		{
 			kActive = 0x1,
 			kPhaseActionDone = 0x2,
-			KPauseScene = 0x4,
+			kPauseScene = 0x4,
 			kSceneScriptFinished = 0x8,
 			kNeedsToEnd = 0x10,
 			kRandom = 0x20,
