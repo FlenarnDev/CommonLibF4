@@ -73,7 +73,7 @@ namespace RE
 		}
 
 		enum class WeatherDataFlags
-		{	
+		{
 			kPleasant = 0x1,
 			kCloudy = 0x2,
 			kRainy = 0x4,
