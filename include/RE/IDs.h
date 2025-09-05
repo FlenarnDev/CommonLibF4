@@ -1932,6 +1932,7 @@ namespace RE::ID
 	namespace TESWorldSpace
 	{
 		inline constexpr REL::ID DefaultWater{ 2691845 };
+		inline constexpr REL::ID GetSkyCell{ 2202924 };
 	}
 
 	namespace UI
