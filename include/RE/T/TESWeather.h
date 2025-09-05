@@ -23,7 +23,7 @@ namespace RE
 		enum class Colortime
 		{
 			kSunrise = 0x0,
-			kDay = 0x01,
+			kDay = 0x1,
 			kSunset = 0x2,
 			kNight = 0x3,
 			kEarlySunrise = 0x4,
@@ -31,7 +31,7 @@ namespace RE
 			kEarlySunset = 0x6,
 			kLateSunset = 0x7,
 			kCount = 0x8
-		}
+		};
 
 		enum class SpellContext
 		{
@@ -70,7 +70,7 @@ namespace RE
 			kWindDirRange = 0x12,
 			kWindTurbulence = 0x13,
 			kCount = 0x14
-		}
+		};
 
 		enum class WeatherDataFlags
 		{
@@ -82,7 +82,7 @@ namespace RE
 			kAuroraFollowsSun = 0x20,
 			kRainOcclusion = 0x40,
 			kHudRain = 0x80
-		}
+		};
 
 		class SpellData
 		{

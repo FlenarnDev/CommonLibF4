@@ -1876,6 +1876,7 @@ namespace RE::ID
 		inline constexpr REL::ID IsDecalRef{ 2200794 };
 		inline constexpr REL::ID UpdateDynamicNavmesh{ 2201206 };
 		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
+		inline constexpr REL::ID GetRelevantWaterHeight{ 2201189 };
 	}
 
 	namespace TESObjectWEAP

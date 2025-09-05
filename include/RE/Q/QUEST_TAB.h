@@ -4,7 +4,8 @@ namespace RE
 {
 	enum class QUEST_TAB
 	{
-		kQuestData = 0x1 kQuestStages = 0x1,
+		kQuestData = 0x0,
+		kQuestStages = 0x1,
 		kQuestObjectives = 0x2,
 		kQuestAliases = 0x3,
 		kTopic = 0x4,
@@ -17,5 +18,5 @@ namespace RE
 		kService = 0xB,
 		kMisc = 0xC,
 		kQuestScripts = 0xD
-	}
+	};
 }

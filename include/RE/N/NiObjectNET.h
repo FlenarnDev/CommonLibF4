@@ -22,7 +22,7 @@ namespace RE
 			kNone = 0x0,
 			kExact = 0x1,
 			kUnique = 0x2
-		}
+		};
 
 		NiObjectNET();
 		virtual ~NiObjectNET();  // NOLINT(modernize-use-override) 00
