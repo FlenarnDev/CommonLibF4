@@ -1135,6 +1135,7 @@ namespace RE::ID
 	namespace LoadingMenu
 	{
 		inline constexpr REL::ID StartTestingLoadMenu{ 2249224 };
+		inline constexpr REL::ID PopulateLoadScreens{ 2249232 };
 	}
 
 	namespace LockpickingMenu
