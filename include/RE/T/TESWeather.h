@@ -20,7 +20,7 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TESWeather };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kWTHR };
 
-		enum class Colortime
+		enum class ColorTime
 		{
 			kSunrise = 0x0,
 			kDay = 0x1,
