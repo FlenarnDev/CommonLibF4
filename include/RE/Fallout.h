@@ -582,6 +582,7 @@
 #include "RE/E/ExtraCellWaterType.h"
 #include "RE/E/ExtraCharge.h"
 #include "RE/E/ExtraDataList.h"
+#include "RE/E/ExtraEditorID.h"
 #include "RE/E/ExtraFactionChanges.h"
 #include "RE/E/ExtraFavorite.h"
 #include "RE/E/ExtraHealth.h"

@@ -54,5 +54,12 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::CalcSpringingActionPoints };
 			return func(a_equippedWeight, a_elapsedTime, a_endurance);
 		}
+
+		inline float GetHackingWordCount(float a_playerIntelligence)
+		{
+			using func_t = decltype(&GamePlayFormulas::GetHackingWordCount);
+			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::GetHackingWordCount };
+			return func(a_playerIntelligence);
+		}
 	}
 }
