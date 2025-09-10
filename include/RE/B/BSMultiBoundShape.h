@@ -36,6 +36,18 @@ namespace RE
 			kCapsule = 0x4
 		};
 
+		// add
+		virtual BSMBShapeType       QType();                                                   // 28
+		virtual float               QMultiBoundRadius();                                       // 29
+		virtual BSMBIntersectResult CheckBound(const BSMultiBound* a_targetBound);             // 2A
+		virtual BSMBIntersectResult CheckBound(const NiBound* a_targetBound);                  // 2B
+		virtual bool                WithinFrustum(const NiFrustumPlanes* a_planes);            // 2C
+		virtual bool                CompletelyWithinFrustum(const NiFrustumPlanes* a_planes);  // 2D
+		virtual bool                GetNiBound(NiBound* a_bound);                              // 2E
+		virtual bool                GetPointWithin(const NiPoint3* a_point);                   // 2F
+		virtual bool                SetCenter(const NiPoint3* a_center);                       // 30
+		virtual bool                MoveToWorld(const NiTransform* a_world);                   // 31
+
 		// members
 		BSMBCullResult cullResult;  // 18
 	};

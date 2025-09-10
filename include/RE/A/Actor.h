@@ -566,6 +566,13 @@ namespace RE
 			return func(this, a_object, a_params);
 		}
 
+		void UpdateSprinting()
+		{
+			using func_t = decltype(&Actor::UpdateSprinting);
+			static REL::Relocation<func_t> func{ ID::Actor::UpdateSprinting };
+			return func(this);
+		}
+
 		// members
 		NiTFlags<std::uint32_t, Actor>                   niFlags;                      // 2D0
 		float                                            updateTargetTimer;            // 2D4

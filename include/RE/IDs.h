@@ -59,6 +59,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetFactionRank{ 2230100 };
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
 		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
+		inline constexpr REL::ID UpdateSprinting{ 2230498 };
 	}
 
 	namespace ActorEquipManager
@@ -1484,6 +1485,7 @@ namespace RE::ID
 		inline constexpr REL::ID ReloadWeapon{ 2232907 };
 		inline constexpr REL::ID SetPerkCount{ 2233187 };
 		inline constexpr REL::ID HasLOSToTarget{ 2233004 };
+		inline constexpr REL::ID TryUnlockObject{ 2233040 };
 	}
 
 	namespace PlayerControls
@@ -1924,6 +1926,11 @@ namespace RE::ID
 	namespace TESValueForm
 	{
 		inline constexpr REL::ID GetFormValue{ 2193435 };
+	}
+
+	namespace TESWaterDisplacement
+	{
+		inline constexpr REL::ID SetStencilBit{ 2213923 };
 	}
 
 	namespace TESWeightForm
