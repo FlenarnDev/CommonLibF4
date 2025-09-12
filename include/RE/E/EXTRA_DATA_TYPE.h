@@ -10,7 +10,7 @@ namespace RE
 		kWaterType,                     // ExtraCellWaterType
 		kRegionList,                    //
 		kSeenData,                      //
-		kEditorID,                      //
+		kEditorID,                      // ExtraEditorID
 		kCellMusicType,                 //
 		kSkyRegion,                     //
 		kCellMidLowProcess,             //

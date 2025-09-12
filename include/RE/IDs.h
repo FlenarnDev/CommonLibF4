@@ -58,6 +58,8 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateSoundCallBack{ 2229974 };
 		inline constexpr REL::ID GetFactionRank{ 2230100 };
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
+		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
+		inline constexpr REL::ID UpdateSprinting{ 2230498 };
 	}
 
 	namespace ActorEquipManager
@@ -937,6 +939,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetSweetSpotAngle{ 2209082 };
 		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
+		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
 	}
 
 	namespace GameScript
@@ -1135,6 +1138,7 @@ namespace RE::ID
 	namespace LoadingMenu
 	{
 		inline constexpr REL::ID StartTestingLoadMenu{ 2249224 };
+		inline constexpr REL::ID PopulateLoadScreens{ 2249232 };
 	}
 
 	namespace LockpickingMenu
@@ -1481,6 +1485,7 @@ namespace RE::ID
 		inline constexpr REL::ID ReloadWeapon{ 2232907 };
 		inline constexpr REL::ID SetPerkCount{ 2233187 };
 		inline constexpr REL::ID HasLOSToTarget{ 2233004 };
+		inline constexpr REL::ID TryUnlockObject{ 2233040 };
 	}
 
 	namespace PlayerControls
@@ -1876,6 +1881,7 @@ namespace RE::ID
 		inline constexpr REL::ID IsDecalRef{ 2200794 };
 		inline constexpr REL::ID UpdateDynamicNavmesh{ 2201206 };
 		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
+		inline constexpr REL::ID GetRelevantWaterHeight{ 2201189 };
 	}
 
 	namespace TESObjectWEAP
@@ -1922,6 +1928,11 @@ namespace RE::ID
 		inline constexpr REL::ID GetFormValue{ 2193435 };
 	}
 
+	namespace TESWaterDisplacement
+	{
+		inline constexpr REL::ID SetStencilBit{ 2213923 };
+	}
+
 	namespace TESWeightForm
 	{
 		inline constexpr REL::ID GetFormWeight{ 2193446 };
@@ -1930,6 +1941,7 @@ namespace RE::ID
 	namespace TESWorldSpace
 	{
 		inline constexpr REL::ID DefaultWater{ 2691845 };
+		inline constexpr REL::ID GetSkyCell{ 2202924 };
 	}
 
 	namespace UI
