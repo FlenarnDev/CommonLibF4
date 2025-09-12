@@ -86,6 +86,11 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 2189587 };
 	}
 
+	namespace AIFormulas
+	{
+		inline constexpr REL::ID GetBarterValue{ 2208969 };
+	}
+
 	namespace AIProcess
 	{
 		inline constexpr REL::ID GetCurrentAmmo{ 2232300 };
@@ -369,6 +374,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetHackDifficultyLockLevel{ 2197777 };
 		inline constexpr REL::ID IsTerminalRefInUse{ 2197779 };
 		inline constexpr REL::ID Show{ 2197776 };
+		inline constexpr REL::ID Activate{ 2197778 };
 	}
 
 	namespace bhkNPCollisionObject
@@ -930,7 +936,7 @@ namespace RE::ID
 
 	namespace GamePlayFormulas
 	{
-		inline constexpr REL::ID CanHackGateCheck{ 269668 };
+		inline constexpr REL::ID CanHackGateCheck{ 2209069 };
 		inline constexpr REL::ID CanPickLockGateCheck{ 2209066 };
 		inline constexpr REL::ID GetExperienceReward{ 2209076 };
 		inline constexpr REL::ID GetLockXPReward{ 2209070 };
@@ -940,6 +946,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
 		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
+		inline constexpr REL::ID CalculateItemValue{ 2209074 };
 	}
 
 	namespace GameScript
