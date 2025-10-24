@@ -1,16 +1,16 @@
-name: Main CI
+name: build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
-      - ".github/workflows/main_ci.yml"
+      - ".github/workflows/build.yml"
       - "include/**"
       - "src/**"
       - "xmake.lua"
-      - "xmake-extra.lua"
+      - "xmake-rules.lua"
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
