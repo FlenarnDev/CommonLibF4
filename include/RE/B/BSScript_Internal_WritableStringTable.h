@@ -10,7 +10,7 @@ namespace RE
 	{
 		namespace Internal
 		{
-			enum class StringIndexSize;
+			enum class StringIndexSize : std::uint32_t;
 
 			class WritableStringTable
 			{

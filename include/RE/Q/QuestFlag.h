@@ -2,7 +2,7 @@
 
 namespace RE
 {
-	enum class QUEST_TYPE : std::int32_t
+	enum class QuestFlag : std::int32_t
 	{
 		kEnabled = 0x1,
 		kCompleted = 0x2,

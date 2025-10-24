@@ -10,11 +10,7 @@ namespace RE
 	{
 		namespace Internal
 		{
-			enum class StringIndexSize
-			{
-				kSmall,
-				kLarge
-			};
+			enum class StringIndexSize : std::uint32_t;
 
 			class ReadableStringTable
 			{
