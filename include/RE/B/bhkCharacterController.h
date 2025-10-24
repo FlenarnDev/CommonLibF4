@@ -73,6 +73,13 @@ namespace RE
 		virtual void            ApplyMoveImmediately() = 0;                                                                                   // 4B
 		virtual void            ClearCollectorDataImpl() = 0;                                                                                 // 4C
 
+		void Jump(float a_height)
+		{
+			using func_t = decltype(&bhkCharacterController::Jump);
+			static REL::Relocation<func_t> func{ ID::bhkCharacterController::Jump };
+			return func(this, a_height);
+		}
+
 		// members
 		hkVector4f                                                             forwardVec;                 // 140
 		hkStepInfo                                                             stepInfo;                   // 150

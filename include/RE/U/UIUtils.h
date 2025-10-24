@@ -38,5 +38,19 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::UIUtils::UpdateGamepadDependentButtonCodes };
 			return func(a_usingGamepad);
 		}
+
+		inline void ShowCraftingMenu(TESObjectREFR* a_furniture)
+		{
+			using func_t = decltype(&ShowCraftingMenu);
+			static REL::Relocation<func_t> func{ ID::UIUtils::ShowCraftingMenu };
+			return func(a_furniture);
+		}
+
+		inline bool HasRequiredInventoryForCraftingMenu(TESObjectREFR* a_furniture)
+		{
+			using func_t = decltype(&HasRequiredInventoryForCraftingMenu);
+			static REL::Relocation<func_t> func{ ID::UIUtils::HasRequiredInventoryForCraftingMenu };
+			return func(a_furniture);
+		}
 	}
 }

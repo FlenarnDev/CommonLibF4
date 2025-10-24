@@ -60,6 +60,9 @@ namespace RE::ID
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
 		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
 		inline constexpr REL::ID UpdateSprinting{ 2230498 };
+		inline constexpr REL::ID Jump{ 2229650 };
+		inline constexpr REL::ID GetMobilityCrippled{ 2230996 };
+		inline constexpr REL::ID SPECIALModifiedCallback{ 2231020 };
 	}
 
 	namespace ActorEquipManager
@@ -84,6 +87,11 @@ namespace RE::ID
 	namespace ActorValue
 	{
 		inline constexpr REL::ID Singleton{ 2189587 };
+	}
+
+	namespace AIFormulas
+	{
+		inline constexpr REL::ID GetBarterValue{ 2208969 };
 	}
 
 	namespace AIProcess
@@ -369,6 +377,12 @@ namespace RE::ID
 		inline constexpr REL::ID GetHackDifficultyLockLevel{ 2197777 };
 		inline constexpr REL::ID IsTerminalRefInUse{ 2197779 };
 		inline constexpr REL::ID Show{ 2197776 };
+		inline constexpr REL::ID Activate{ 2197778 };
+	}
+
+	namespace bhkCharacterController
+	{
+		inline constexpr REL::ID Jump{ 2278191 };
 	}
 
 	namespace bhkNPCollisionObject
@@ -930,7 +944,7 @@ namespace RE::ID
 
 	namespace GamePlayFormulas
 	{
-		inline constexpr REL::ID CanHackGateCheck{ 269668 };
+		inline constexpr REL::ID CanHackGateCheck{ 2209069 };
 		inline constexpr REL::ID CanPickLockGateCheck{ 2209066 };
 		inline constexpr REL::ID GetExperienceReward{ 2209076 };
 		inline constexpr REL::ID GetLockXPReward{ 2209070 };
@@ -940,6 +954,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPartialPickAngle{ 2209083 };
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
 		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
+		inline constexpr REL::ID CalculateItemValue{ 2209074 };
 	}
 
 	namespace GameScript
@@ -1237,6 +1252,7 @@ namespace RE::ID
 	namespace NiCamera
 	{
 		inline constexpr REL::ID WorldPtToScreenPt3{ 2270344 };
+		inline constexpr REL::ID ViewPointToRay{ 2270338 };
 	}
 
 	namespace NiControllerManager
@@ -1971,6 +1987,8 @@ namespace RE::ID
 		inline constexpr REL::ID PlayPipboySound{ 2249706 };
 		inline constexpr REL::ID PlayMenuSound{ 2249707 };
 		inline constexpr REL::ID UpdateGamepadDependentButtonCodes{ 2249714 };
+		inline constexpr REL::ID ShowCraftingMenu{ 2249718 };
+		inline constexpr REL::ID HasRequiredInventoryForCraftingMenu{ 2249717 };
 	}
 
 	namespace VATS
