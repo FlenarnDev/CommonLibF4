@@ -60,6 +60,9 @@ namespace RE::ID
 		inline constexpr REL::ID IsAngryWithPlayer{ 2229998 };
 		inline constexpr REL::ID RedressIfNeeded{ 2230394 };
 		inline constexpr REL::ID UpdateSprinting{ 2230498 };
+		inline constexpr REL::ID Jump{ 2229650 };
+		inline constexpr REL::ID GetMobilityCrippled{ 2230996 };
+		inline constexpr REL::ID SPECIALModifiedCallback{ 2231020 };
 	}
 
 	namespace ActorEquipManager
@@ -375,6 +378,11 @@ namespace RE::ID
 		inline constexpr REL::ID IsTerminalRefInUse{ 2197779 };
 		inline constexpr REL::ID Show{ 2197776 };
 		inline constexpr REL::ID Activate{ 2197778 };
+	}
+
+	namespace bhkCharacterController
+	{
+		inline constexpr REL::ID Jump{ 2278191 };
 	}
 
 	namespace bhkNPCollisionObject
@@ -1244,6 +1252,7 @@ namespace RE::ID
 	namespace NiCamera
 	{
 		inline constexpr REL::ID WorldPtToScreenPt3{ 2270344 };
+		inline constexpr REL::ID ViewPointToRay{ 2270338 };
 	}
 
 	namespace NiControllerManager
@@ -1978,6 +1987,8 @@ namespace RE::ID
 		inline constexpr REL::ID PlayPipboySound{ 2249706 };
 		inline constexpr REL::ID PlayMenuSound{ 2249707 };
 		inline constexpr REL::ID UpdateGamepadDependentButtonCodes{ 2249714 };
+		inline constexpr REL::ID ShowCraftingMenu{ 2249718 };
+		inline constexpr REL::ID HasRequiredInventoryForCraftingMenu{ 2249717 };
 	}
 
 	namespace VATS

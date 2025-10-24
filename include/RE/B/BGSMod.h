@@ -49,6 +49,12 @@ namespace RE::BGSMod
 			kPair
 		};
 
+		enum class BLOCKIDS : std::uint32_t
+		{
+			kOMOD = 0x0,
+			kPMOD = 0x1
+		};
+
 		class Mod  // id == 1
 		{
 		public:

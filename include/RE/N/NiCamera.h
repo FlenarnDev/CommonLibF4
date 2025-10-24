@@ -39,6 +39,13 @@ namespace RE
 			return func(a_matrix, a_port, a_point, a_x, a_y, a_z, a_zeroTolerance);
 		}
 
+		void ViewPointToRay(float a_vx, float a_vy, NiPoint3* a_origin, NiPoint3* a_dir)
+		{
+			using func_t = decltype(&NiCamera::ViewPointToRay);
+			static REL::Relocation<func_t> func{ ID::NiCamera::ViewPointToRay };
+			return func(this, a_vx, a_vy, a_origin, a_dir);
+		}
+
 		// members
 		float         worldToCam[4][4];  // 120
 		NiFrustum     viewFrustum;       // 160

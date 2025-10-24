@@ -13,6 +13,13 @@ namespace RE
 		inline static constexpr auto VTABLE{ VTABLE::bhkNPCollisionObjectBase };
 		inline static constexpr auto Ni_RTTI{ Ni_RTTI::bhkNPCollisionObjectBase };
 
+		enum class TRANSCHANGEFLAGS : std::uint32_t
+		{
+			kNone = 0x0,
+			kPos = 0x1,
+			kRot = 0x2
+		};
+
 		// add
 		virtual void LockMotionImpl() = 0;  // 2C
 
