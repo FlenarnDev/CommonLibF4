@@ -238,6 +238,11 @@ namespace RE::ID
 		inline constexpr REL::ID ContainsItem{ 688500 };
 	}
 
+	namespace BGSLoadGameBuffer
+	{
+		inline constexpr REL::ID LoadDataEndian{ 1451631 };
+	}
+
 	namespace BGSLocalizedStringDL
 	{
 		inline constexpr REL::ID GetDescription{ 523613 };
@@ -332,6 +337,11 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID DeleteGame{ 2227855 };
 		inline constexpr REL::ID LoadData{ 2227871 };
+	}
+
+	namespace BGSSaveGameBuffer
+	{
+		inline constexpr REL::ID SaveDataEndian{ 594281 };
 	}
 
 	namespace BGSSaveLoadManager

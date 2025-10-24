@@ -22,7 +22,7 @@ namespace RE
 		void SaveDataEndian(const void* a_data, std::uint32_t a_size)
 		{
 			using func_t = decltype(&BGSSaveGameBuffer::SaveDataEndian);
-			static REL::Relocation<func_t> func{ REL::ID(594281) };
+			static REL::Relocation<func_t> func{ ID::BGSSaveGameBuffer::SaveDataEndian };
 			return func(this, a_data, a_size);
 		}
 
