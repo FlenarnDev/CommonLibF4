@@ -1,19 +1,31 @@
 # CommonLibF4
 
-## General Requirements
+### Requirements
+* [XMake](https://xmake.io) [2.8.2+]
+* C++23 Compiler (MSVC or Clang-CL)
 
-### Build Dependencies
-* [Visual Studio Community 2022 Preview](https://visualstudio.microsoft.com/vs/preview/)
-	* Desktop development with C++
-* [binary-io](https://github.com/Ryan-rsm-McKenzie/binary_io)
-* [mmio](https://github.com/Ryan-rsm-McKenzie/mmio)
-* [spdlog](https://github.com/gabime/spdlog)
+## Getting Started
+```bat
+git clone --recurse-submodules https://github.com/libxse/commonlibf4
+cd commonlibf4
+```
 
-### Development
-* [xmake](https://xmake.io/)
+### Build
+To build the project, run the following command:
+```bat
+xmake build
+```
 
-## F4SE Plugin Requirements
+> ***Note:*** *This will generate a `build/windows/` directory in the **project's root directory** with the build output.*
 
-### End User Dependencies
-* [Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327)
-* [F4SE](https://f4se.silverlock.org/)
+### Project Generation (Optional)
+If you want to generate a Visual Studio project, run the following command:
+```bat
+xmake project -k vsxmake
+```
+
+> ***Note:*** *This will generate a `vsxmakeXXXX/` directory in the **project's root directory** using the latest version of Visual Studio installed on the system.*
+
+## Notes
+
+CommonLibF4 is intended to replace F4SE as a static dependency. However, the runtime component of F4SE is still required.
