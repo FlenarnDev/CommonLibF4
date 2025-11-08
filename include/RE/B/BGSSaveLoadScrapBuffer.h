@@ -2,6 +2,8 @@
 
 namespace RE
 {
+	class ScrapHeap;
+
 	class BGSSaveLoadScrapBuffer
 	{
 	public:

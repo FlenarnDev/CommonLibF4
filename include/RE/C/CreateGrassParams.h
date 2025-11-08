@@ -1,17 +1,18 @@
 #pragma once
-
-#include "RE/G/GrassParam.h"
 #include "RE/T/TESGrass.h"
 
 namespace RE
 {
+	class GrassParam;
+	class NiPoint3;
+	class TESObjectLAND;
+
 	struct CreateGrassParams
 	{
 	public:
-		std::int32_t cellX;  // 00
-		std::int32_t cellY;  // 04
-		std::int32_t block;  // 08
-
+		std::int32_t                cellX;            // 00
+		std::int32_t                cellY;            // 04
+		std::int32_t                block;            // 08
 		const TESObjectLAND*        land;             // 10
 		const NiPoint3*             coord;            // 18
 		const GrassParam*           grassParam;       // 20
