@@ -1,5 +1,7 @@
 #pragma once
 
+#include "RE/B/BGSSaveLoadBuffer.h"
+
 namespace RE
 {
 	class Actor;
@@ -27,9 +29,9 @@ namespace RE
 		}
 
 		// members
-		void*         buffer;          // 008
-		std::uint32_t size;            // 010
-		std::uint32_t bufferPosition;  // 014
+		BGSSaveLoadBuffer buffer;          // 008
+		std::uint32_t     size;            // 010
+		std::uint32_t     bufferPosition;  // 014
 	};
 	static_assert(sizeof(BGSSaveGameBuffer) == 0x18);
 }

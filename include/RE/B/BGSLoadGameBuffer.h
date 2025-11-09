@@ -1,5 +1,7 @@
 #pragma once
 
+#include "RE/B/BGSSaveLoadScrapBuffer.h"
+
 namespace RE
 {
 	class __declspec(novtable) BGSLoadGameBuffer
@@ -21,12 +23,9 @@ namespace RE
 		}
 
 		// members
-		void*         buffer;          // 008
-		std::uint64_t unk10;           // 010
-		std::uint32_t unk18;           // 018
-		std::uint32_t unk1C;           // 01C
-		std::uint32_t unk20;           // 020
-		std::uint32_t bufferPosition;  // 024
+		BGSSaveLoadScrapBuffer buffer;          // 008
+		std::uint32_t          bufferSize;      // 020
+		std::uint32_t          bufferPosition;  // 024
 	};
 	static_assert(sizeof(BGSLoadGameBuffer) == 0x28);
 }
