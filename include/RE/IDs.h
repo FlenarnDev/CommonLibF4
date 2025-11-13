@@ -153,9 +153,9 @@ namespace RE::ID
 
 	namespace BGSCreatedObjectManager
 	{
-		inline constexpr REL::ID Singleton{ 0 };     // 1000678
-		inline constexpr REL::ID DecrementRef{ 0 };  // 230928
-		inline constexpr REL::ID IncrementRef{ 0 };  // 1042515
+		inline constexpr REL::ID Singleton{ 2697789 };
+		inline constexpr REL::ID DecrementRef{ 2228455 };
+		inline constexpr REL::ID IncrementRef{ 2228454 };
 	}
 
 	namespace BGSDefaultObject
@@ -166,14 +166,14 @@ namespace RE::ID
 
 	namespace BGSDefaultObjectManager
 	{
-		inline constexpr REL::ID Singleton{ 0 };  // 484974
+		inline constexpr REL::ID Singleton{ 2192850 };
 	}
 
 	namespace BGSDynamicPersistenceManager
 	{
-		inline constexpr REL::ID Singleton{ 0 };         // 109630
-		inline constexpr REL::ID PromoteReference{ 0 };  // 1300345
-		inline constexpr REL::ID DemoteReference{ 0 };   // 222813
+		inline constexpr REL::ID Singleton{ 2689026 };
+		inline constexpr REL::ID PromoteReference{ 2193819 };
+		inline constexpr REL::ID DemoteReference{ 2193820 };
 	}
 
 	namespace BGSEntryPoint
@@ -229,7 +229,7 @@ namespace RE::ID
 	namespace BGSKeywordForm
 	{
 		inline constexpr REL::ID AddKeyword{ 2192766 };
-		inline constexpr REL::ID RemoveKeyword{ 0 };  // 921694
+		inline constexpr REL::ID RemoveKeyword{ 2192767 };
 	}
 
 	namespace BGSListForm
@@ -252,7 +252,7 @@ namespace RE::ID
 	namespace BGSMessage
 	{
 		inline constexpr REL::ID AddButton{ 0 };
-		inline constexpr REL::ID GetConvertedDescription{ 0 };  // 8331
+		inline constexpr REL::ID GetConvertedDescription{ 2203353 };
 	}
 
 	namespace BGSMod
@@ -261,13 +261,13 @@ namespace RE::ID
 		{
 			namespace Mod
 			{
-				inline constexpr REL::ID FindModsForLooseMod{ 0 };  // 410363
-				inline constexpr REL::ID GetData{ 0 };              // 33658
+				inline constexpr REL::ID FindModsForLooseMod{ 2197524 };
+				inline constexpr REL::ID GetData{ 0 };  // 33658
 				inline constexpr REL::ID GetLooseMod{ 2197514 };
-				inline constexpr REL::ID SetLooseMod{ 0 };  // 123132
+				inline constexpr REL::ID SetLooseMod{ 2197558 };
 			}
 
-			inline constexpr REL::ID GetAllLooseMods{ 0 };  // 1108112
+			inline constexpr REL::ID GetAllLooseMods{ 2661620 };
 		}
 
 		namespace Container
@@ -291,13 +291,13 @@ namespace RE::ID
 
 	namespace BGSObjectInstanceExtra
 	{
+		inline constexpr REL::ID ctor{ 2189015 };
 		inline constexpr REL::ID AttachModToReference{ 2189033 };
 		inline constexpr REL::ID HasMod{ 2189026 };
 		inline constexpr REL::ID AddMod{ 2189025 };
 		inline constexpr REL::ID RemoveInvalidMods{ 2189028 };
 		inline constexpr REL::ID RemoveMod{ 2189027 };
 		inline constexpr REL::ID GetNumMods{ 2189019 };
-		inline constexpr REL::ID ctor{ 2189015 };
 	}
 
 	namespace BGSOpenCloseForm
@@ -441,7 +441,7 @@ namespace RE::ID
 
 	namespace BIPOBJECT
 	{
-		inline constexpr REL::ID dtor{ 0 };  // 765242
+		inline constexpr REL::ID dtor{ 2194330 };
 	}
 
 	namespace BSAudioManager
@@ -452,7 +452,7 @@ namespace RE::ID
 
 	namespace BSAwardsSystemUtility
 	{
-		inline constexpr REL::ID Singleton{ 0 };  // 1569384
+		inline constexpr REL::ID Singleton{ 2255115 };
 	}
 
 	namespace BSGFxDisplayObject
@@ -468,10 +468,10 @@ namespace RE::ID
 
 	namespace BSGFxShaderFXTarget
 	{
-		inline constexpr REL::ID ProcessEvent{ 0 };  // 848563
+		inline constexpr REL::ID ProcessEvent{ 2287033 };
 		inline constexpr REL::ID AppendShaderFXInfos{ 2287021 };
 		inline constexpr REL::ID CreateAndSetFiltersToColor1{ 2287028 };
-		inline constexpr REL::ID CreateAndSetFiltersToColor2{ 0 };  // 783104
+		inline constexpr REL::ID CreateAndSetFiltersToColor2{ 2287029 };
 		inline constexpr REL::ID CreateAndSetFiltersToHUD{ 2287027 };
 		inline constexpr REL::ID EnableShadedBackground{ 2287022 };
 	}
@@ -480,8 +480,8 @@ namespace RE::ID
 	{
 		namespace Renderer
 		{
-			inline constexpr REL::ID IncRef{ 0 };  // 1337764
-			inline constexpr REL::ID DecRef{ 0 };  // 194808
+			inline constexpr REL::ID IncRef{ 2276869 };
+			inline constexpr REL::ID DecRef{ 2276870 };
 			inline constexpr REL::ID Begin{ 2276833 };
 			inline constexpr REL::ID End{ 2276834 };
 			inline constexpr REL::ID Lock{ 2276828 };
@@ -513,7 +513,7 @@ namespace RE::ID
 
 	namespace BSInputDeviceManager
 	{
-		inline constexpr REL::ID Singleton{ 0 };  // 1284221
+		inline constexpr REL::ID Singleton{ 2694300 };
 	}
 
 	namespace BSInputEnableLayer
@@ -627,7 +627,7 @@ namespace RE::ID
 
 	namespace BSScript_Array
 	{
-		inline constexpr REL::ID ctor{ 0 };  // 870924
+		inline constexpr REL::ID ctor{ 2314915 };
 	}
 
 	namespace BSScript_ArrayWrapper
@@ -642,7 +642,7 @@ namespace RE::ID
 
 	namespace BSScript_Internal_Stack
 	{
-		inline constexpr REL::ID GetPageForFrame{ 0 };  // 1429302
+		inline constexpr REL::ID GetPageForFrame{ 2314680 };
 		inline constexpr REL::ID GetStackFrameVariable{ 2314681 };
 	}
 
@@ -859,7 +859,7 @@ namespace RE::ID
 
 	namespace DEFAULT_OBJECT_DATA
 	{
-		inline constexpr REL::ID GetDefaultObjectData{ 0 };  // 838886
+		inline constexpr REL::ID GetDefaultObjectData{ 838886 };
 	}
 
 	namespace DialogueCameraState
@@ -938,7 +938,7 @@ namespace RE::ID
 
 	namespace FlatScreenModel
 	{
-		inline constexpr REL::ID Singleton{ 0 };  // 847741
+		inline constexpr REL::ID Singleton{ 2694427 };
 	}
 
 	namespace GameMenuBase
@@ -1130,8 +1130,8 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Begin3D{ 2249084 };
 		inline constexpr REL::ID ClearModel{ 2249113 };
-		inline constexpr REL::ID DisableRendering{ 0 };  // 255893
-		inline constexpr REL::ID EnableRendering{ 2249099 };
+		inline constexpr REL::ID DisableRendering{ 2249099 };
+		inline constexpr REL::ID EnableRendering{ 2249098 };
 		inline constexpr REL::ID End3D{ 2249086 };
 		inline constexpr REL::ID SetModelScale{ 2249097 };
 		inline constexpr REL::ID SetModelScreenPosition{ 2249096 };
@@ -1216,17 +1216,17 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Singleton{ 2696546 };
 		inline constexpr REL::ID CenterCursor{ 2287473 };
-		inline constexpr REL::ID RegisterCursor{ 0 };  // 1318193
+		inline constexpr REL::ID RegisterCursor{ 2287475 };
 		inline constexpr REL::ID SetCursorConstraintsRaw{ 2287480 };
-		inline constexpr REL::ID UnregisterCursor{ 0 };        // 1225249
-		inline constexpr REL::ID PipboyConstraintTLX{ 0 };     // 280077
-		inline constexpr REL::ID PipboyConstraintTLY{ 0 };     // 938173
-		inline constexpr REL::ID PipboyConstraintWidth{ 0 };   // 13663
-		inline constexpr REL::ID PipboyConstraintHeight{ 0 };  // 672503
+		inline constexpr REL::ID UnregisterCursor{ 2287486 };
+		inline constexpr REL::ID PipboyConstraintTLX{ 280077 };
+		inline constexpr REL::ID PipboyConstraintTLY{ 938173 };
+		inline constexpr REL::ID PipboyConstraintWidth{ 13663 };
+		inline constexpr REL::ID PipboyConstraintHeight{ 672503 };
 		inline constexpr REL::ID PipboyConstraintTLX_PowerArmor{ 1330184 };
-		inline constexpr REL::ID PipboyConstraintTLY_PowerArmor{ 0 };  // 406096
+		inline constexpr REL::ID PipboyConstraintTLY_PowerArmor{ 406096 };
 		inline constexpr REL::ID PipboyConstraintWidth_PowerArmor{ 1064265 };
-		inline constexpr REL::ID PipboyConstraintHeight_PowerArmor{ 0 };  // 140195
+		inline constexpr REL::ID PipboyConstraintHeight_PowerArmor{ 140195 };
 	}
 
 	namespace MenuTopicManager
@@ -1301,7 +1301,7 @@ namespace RE::ID
 	{
 		namespace NiPoint3
 		{
-			inline constexpr REL::ID GetZAngleFromVector{ 0 };  // 1450064
+			inline constexpr REL::ID GetZAngleFromVector{ 2269788 };
 		}
 	}
 
@@ -1526,7 +1526,7 @@ namespace RE::ID
 		inline constexpr REL::ID ActorInPowerArmor{ 2219437 };
 		inline constexpr REL::ID GetArmorKeyword{ 2194743 };
 		inline constexpr REL::ID GetBatteryKeyword{ 2194740 };
-		inline constexpr REL::ID GetDefaultBatteryObject{ 0 };  // 1279247
+		inline constexpr REL::ID GetDefaultBatteryObject{ 2194761 };
 		inline constexpr REL::ID IsPowerArmorBattery{ 2219422 };
 		inline constexpr REL::ID SyncFurnitureVisualsToInventory{ 2219453 };
 		inline constexpr REL::ID fNewBatteryCapacity{ 1353498 };
@@ -1577,8 +1577,8 @@ namespace RE::ID
 
 	namespace SCRIPT_FUNCTION
 	{
-		inline constexpr REL::ID ConsoleFunctions{ 0 };  // 901511
-		inline constexpr REL::ID ScriptFunctions{ 0 };   // 75173
+		inline constexpr REL::ID ConsoleFunctions{ 901511 };
+		inline constexpr REL::ID ScriptFunctions{ 75173 };
 		inline constexpr REL::ID CompileFunction{ 2204343 };
 	}
 
@@ -1644,12 +1644,12 @@ namespace RE::ID
 
 	namespace TaskQueueInterface
 	{
-		inline constexpr REL::ID Singleton{ 0 };                   // 7491
-		inline constexpr REL::ID QueueClosePipboy{ 0 };            // 69886
-		inline constexpr REL::ID QueueRebuildBendableSpline{ 0 };  // 198419
-		inline constexpr REL::ID QueueShow1stPerson{ 0 };          // 994377
-		inline constexpr REL::ID QueueShowPipboy{ 0 };             // 1133684
-		inline constexpr REL::ID QueueUpdate3D{ 0 };               // 581890
+		inline constexpr REL::ID Singleton{ 2698331 };
+		inline constexpr REL::ID QueueClosePipboy{ 2229289 };
+		inline constexpr REL::ID QueueRebuildBendableSpline{ 2229302 };
+		inline constexpr REL::ID QueueShow1stPerson{ 2229268 };
+		inline constexpr REL::ID QueueShowPipboy{ 2229288 };
+		inline constexpr REL::ID QueueUpdate3D{ 2229234 };
 		inline constexpr REL::ID QueueWeaponFire{ 2229186 };
 	}
 
@@ -1882,7 +1882,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetOwner{ 2202616 };
 		inline constexpr REL::ID GetGoldAmount{ 2200923 };
 		inline constexpr REL::ID GetHandle{ 2201196 };
-		inline constexpr REL::ID GetHasOwner{ 0 };  // 1016277
+		inline constexpr REL::ID GetHasOwner{ 2202622 };
 		inline constexpr REL::ID GetInventoryObjectCount{ 2200939 };
 		inline constexpr REL::ID GetLinkedRef{ 2202683 };
 		inline constexpr REL::ID GetLock{ 2202648 };
