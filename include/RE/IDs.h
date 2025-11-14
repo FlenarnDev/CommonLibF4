@@ -2029,7 +2029,7 @@ namespace RE::ID
 		inline constexpr REL::ID FindNearestValidWorkshop{ 2194970 };
 		inline constexpr REL::ID FreeBuild{ 2194924 };
 		inline constexpr REL::ID GetSelectedWorkshopMenuNode{ 2195024 };
-		inline constexpr REL::ID InitializePlacementReference{ 0 };   // 1577199 - inlined
+		inline constexpr REL::ID InitializePlacementReference{ 0 };  // 1577199 - inlined
 		inline constexpr REL::ID IsLocationWithinBuildableArea{ 2194956 };
 		inline constexpr REL::ID PlaceCurrentReference{ 2195155 };
 		inline constexpr REL::ID RegisterForItemDestroyed{ 2194930 };
