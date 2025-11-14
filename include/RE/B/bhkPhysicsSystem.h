@@ -24,7 +24,7 @@ namespace RE
 		bhkPhysicsSystem(hknpPhysicsSystemData* a_data)
 		{
 			using func_t = void (*)(bhkPhysicsSystem*, hknpPhysicsSystemData*);
-			static REL::Relocation<func_t> func{ REL::ID(2278008) };
+			static REL::Relocation<func_t> func{ ID::bhkPhysicsSystem::ctor };
 			func(this, a_data);
 		}
 

@@ -407,6 +407,7 @@ namespace RE::ID
 
 	namespace bhkPhysicsSystem
 	{
+		inline constexpr REL::ID ctor{ 2278008 };
 		inline constexpr REL::ID AddToWorld{ 2278019 };
 		inline constexpr REL::ID CopyMembers{ 2278007 };
 	}
