@@ -21,11 +21,9 @@ namespace RE
 			return func(this, a_form);
 		}
 
-		[[nodiscard]] bool ContainsItem(const TESForm* a_form)
+		[[nodiscard]] bool ContainsItem(const TESForm* a_form) const noexcept
 		{
-			using func_t = decltype(&BGSListForm::ContainsItem);
-			static REL::Relocation<func_t> func{ ID::BGSListForm::ContainsItem };
-			return func(this, a_form);
+			return GetItemIndex(*a_form).has_value();
 		}
 
 		void ForEachForm(std::function<BSContainer::ForEachResult(TESForm*)> a_callback) const

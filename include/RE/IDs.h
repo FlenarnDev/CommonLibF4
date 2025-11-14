@@ -4,7 +4,7 @@ namespace RE::ID
 {
 	namespace ActiveEffect
 	{
-		inline constexpr REL::ID CheckDisplacementSpellOnTarget{ 0 };  // 1415178
+		inline constexpr REL::ID CheckDisplacementSpellOnTarget{ 0 };  // 1415178 - inlined
 	}
 
 	namespace Actor
@@ -137,8 +137,8 @@ namespace RE::ID
 	namespace BGSAnimationSystemUtils
 	{
 		inline constexpr REL::ID GetActiveSyncInfo{ 2214289 };
-		inline constexpr REL::ID InitializeActorInstant{ 0 };     // 672857
-		inline constexpr REL::ID IsActiveGraphInTransition{ 0 };  // 839650
+		inline constexpr REL::ID InitializeActorInstant{ 2236393 };
+		inline constexpr REL::ID IsActiveGraphInTransition{ 2214305 };
 	}
 
 	namespace BGSAttachParentArray
@@ -235,18 +235,16 @@ namespace RE::ID
 	namespace BGSListForm
 	{
 		inline constexpr REL::ID AddScriptAddedForm{ 2203262 };
-		inline constexpr REL::ID ContainsItem{ 0 };  // 688500
 	}
 
 	namespace BGSLoadGameBuffer
 	{
-		inline constexpr REL::ID LoadDataEndian{ 0 };  // 1451631
+		inline constexpr REL::ID LoadDataEndian{ 2228270 };
 	}
 
 	namespace BGSLocalizedStringDL
 	{
-		inline constexpr REL::ID GetDescription{ 0 };  // 523613
-		inline constexpr REL::ID GetText{ 0 };         // 472297
+		inline constexpr REL::ID GetText{ 2194238 };
 	}
 
 	namespace BGSMessage
@@ -262,7 +260,7 @@ namespace RE::ID
 			namespace Mod
 			{
 				inline constexpr REL::ID FindModsForLooseMod{ 2197524 };
-				inline constexpr REL::ID GetData{ 0 };  // 33658
+				inline constexpr REL::ID GetData{ 0 };  // 33658 - inlined?
 				inline constexpr REL::ID GetLooseMod{ 2197514 };
 				inline constexpr REL::ID SetLooseMod{ 2197558 };
 			}
@@ -279,7 +277,7 @@ namespace RE::ID
 		{
 			namespace Items
 			{
-				inline constexpr REL::ID CreateInstanceDataForObjectAndExtra{ 0 };  // 147297
+				inline constexpr REL::ID CreateInstanceDataForObjectAndExtra{ 2189244 };
 			}
 		}
 	}
@@ -341,7 +339,7 @@ namespace RE::ID
 
 	namespace BGSSaveGameBuffer
 	{
-		inline constexpr REL::ID SaveDataEndian{ 0 };  // 594281
+		inline constexpr REL::ID SaveDataEndian{ 2228319 };
 	}
 
 	namespace BGSSaveLoadManager
@@ -401,9 +399,9 @@ namespace RE::ID
 		inline constexpr REL::ID GetBody{ 2277926 };
 		inline constexpr REL::ID GetBodyId{ 2277928 };
 		inline constexpr REL::ID GetShape{ 2277929 };
-		inline constexpr REL::ID GetTransform{ 0 };  // 1508189
+		inline constexpr REL::ID GetTransform{ 2277944 };
 		inline constexpr REL::ID SetMotionType{ 2277913 };
-		inline constexpr REL::ID SetTransform{ 0 };  // 178085
+		inline constexpr REL::ID SetTransform{ 2277945 };
 		inline constexpr REL::ID Getbhk{ 2277919 };
 	}
 
@@ -415,16 +413,16 @@ namespace RE::ID
 
 	namespace bhkPickData
 	{
-		inline constexpr REL::ID ctor{ 0 };                       // 526783
-		inline constexpr REL::ID SetStartEnd{ 0 };                // 747470
-		inline constexpr REL::ID Reset{ 0 };                      // 438299
-		inline constexpr REL::ID HasHit{ 0 };                     // 1181584
-		inline constexpr REL::ID GetHitFraction{ 0 };             // 476687
-		inline constexpr REL::ID GetAllCollectorRayHitSize{ 0 };  // 1288513
-		inline constexpr REL::ID GetAllCollectorRayHitAt{ 0 };    // 583997
-		inline constexpr REL::ID SortAllCollectorHits{ 0 };       // 1274842
-		inline constexpr REL::ID GetNiAVObject{ 0 };              // 863406
-		inline constexpr REL::ID GetBody{ 0 };                    // 1223055
+		inline constexpr REL::ID ctor{ 2230668 };
+		inline constexpr REL::ID SetStartEnd{ 2236622 };
+		inline constexpr REL::ID Reset{ 2277761 };
+		inline constexpr REL::ID HasHit{ 2277770 };
+		inline constexpr REL::ID GetHitFraction{ 2277772 };
+		inline constexpr REL::ID GetAllCollectorRayHitSize{ 2277765 };
+		inline constexpr REL::ID GetAllCollectorRayHitAt{ 2277766 };
+		inline constexpr REL::ID SortAllCollectorHits{ 2277767 };
+		inline constexpr REL::ID GetNiAVObject{ 2277764 };
+		inline constexpr REL::ID GetBody{ 2277762 };
 	}
 
 	namespace bhkUtilFunctions
@@ -447,7 +445,7 @@ namespace RE::ID
 	namespace BSAudioManager
 	{
 		inline constexpr REL::ID Singleton{ 2703058 };
-		inline constexpr REL::ID GetSoundHandleByName{ 0 };  // 196484
+		inline constexpr REL::ID GetSoundHandleByName{ 2267104 };
 	}
 
 	namespace BSAwardsSystemUtility
@@ -554,24 +552,24 @@ namespace RE::ID
 
 	namespace BSResource_Archive2_AsyncReaderStream
 	{
-		inline constexpr REL::ID DoOpen{ 0 };                            // 1401160
-		inline constexpr REL::ID DoClose{ 0 };                           // 883012
-		inline constexpr REL::ID DoClone{ 0 };                           // 803750
-		inline constexpr REL::ID DoStartRead{ 0 };                       // 1215072
-		inline constexpr REL::ID DoStartPacketAlignedBufferedRead{ 0 };  // 603387
+		inline constexpr REL::ID DoOpen{ 2269387 };
+		inline constexpr REL::ID DoClose{ 2269380 };
+		inline constexpr REL::ID DoClone{ 2269379 };
+		inline constexpr REL::ID DoStartRead{ 2269395 };
+		inline constexpr REL::ID DoStartPacketAlignedBufferedRead{ 2269394 };
 		inline constexpr REL::ID DoWait{ 2269399 };
 	}
 
 	namespace BSResource_Archive2_ReaderStream
 	{
-		inline constexpr REL::ID DoOpen{ 0 };         // 762048
-		inline constexpr REL::ID DoClose{ 0 };        // 109149
-		inline constexpr REL::ID DoGetKey{ 0 };       // 772817
-		inline constexpr REL::ID DoClone{ 0 };        // 855081
-		inline constexpr REL::ID DoRead{ 0 };         // 1359347
-		inline constexpr REL::ID DoSeek{ 0 };         // 1000164
-		inline constexpr REL::ID DoPrefetchAll{ 0 };  // 1518821
-		inline constexpr REL::ID DoCreateAsync{ 0 };  // 893405
+		inline constexpr REL::ID DoOpen{ 2269280 };
+		inline constexpr REL::ID DoClose{ 2269285 };
+		inline constexpr REL::ID DoGetKey{ 2269288 };
+		inline constexpr REL::ID DoClone{ 2269279 };
+		inline constexpr REL::ID DoRead{ 2269281 };
+		inline constexpr REL::ID DoSeek{ 2269282 };
+		inline constexpr REL::ID DoPrefetchAll{ 2269390 };
+		inline constexpr REL::ID DoCreateAsync{ 2269287 };
 	}
 
 	namespace BSResource_EntryDBBaseUtil
@@ -632,7 +630,7 @@ namespace RE::ID
 
 	namespace BSScript_ArrayWrapper
 	{
-		inline constexpr REL::ID ReplaceArray{ 0 };  // 445184
+		inline constexpr REL::ID ReplaceArray{ 2250435 };
 	}
 
 	namespace BSScript_Internal_NativeFunctionBase
@@ -655,18 +653,18 @@ namespace RE::ID
 
 	namespace BSScript_ObjectTypeInfo
 	{
-		inline constexpr REL::ID dtor{ 0 };  // 1047917
+		inline constexpr REL::ID dtor{ 2314513 };
 	}
 
 	namespace BSScript_ObjectBindPolicy
 	{
-		inline constexpr REL::ID BindObject{ 0 };    // 709728
-		inline constexpr REL::ID UnbindObject{ 0 };  // 522763
+		inline constexpr REL::ID BindObject{ 2314370 };
+		inline constexpr REL::ID UnbindObject{ 2314372 };
 	}
 
 	namespace BSScriptUtil
 	{
-		inline constexpr REL::ID BaseObjectName{ 0 };  // 648543
+		inline constexpr REL::ID BaseObjectName{ 2702269 };
 	}
 
 	namespace BSShaderProperty
@@ -769,7 +767,7 @@ namespace RE::ID
 
 	namespace CanDisplayNextHUDMessage
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 344866
+		inline constexpr REL::ID GetEventSource{ 2695041 };
 	}
 
 	namespace CellAttachDetachEvent
@@ -779,7 +777,7 @@ namespace RE::ID
 
 	namespace ColorUpdateEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 1226590
+		inline constexpr REL::ID GetEventSource{ 2695540 };
 	}
 
 	namespace CombatBehaviorFindObject
@@ -801,9 +799,9 @@ namespace RE::ID
 
 	namespace CombatUtilities
 	{
-		inline constexpr REL::ID CalculateProjectileLOS1{ 0 };        // 798616
-		inline constexpr REL::ID CalculateProjectileLOS2{ 0 };        // 55339
-		inline constexpr REL::ID CalculateProjectileTrajectory{ 0 };  // 1575156
+		inline constexpr REL::ID CalculateProjectileLOS1{ 2240617 };
+		inline constexpr REL::ID CalculateProjectileLOS2{ 2240616 };
+		inline constexpr REL::ID CalculateProjectileTrajectory{ 2240611 };
 		inline constexpr REL::ID WorldGravity{ 2700340 };
 	}
 
@@ -838,7 +836,7 @@ namespace RE::ID
 	{
 		namespace ItemSorter
 		{
-			inline constexpr REL::ID IncrementSort{ 0 };  // 1307263
+			inline constexpr REL::ID IncrementSort{ 2222848 };
 		}
 	}
 
@@ -876,7 +874,7 @@ namespace RE::ID
 
 	namespace DoBeforeNewOrLoadCompletedEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 787908
+		inline constexpr REL::ID GetEventSource{ 2695542 };
 	}
 
 	namespace EffectItem
@@ -990,7 +988,7 @@ namespace RE::ID
 		}
 
 		inline constexpr REL::ID LogFormError{ 2251028 };
-		inline constexpr REL::ID BindCObject{ 0 };  // 81787
+		inline constexpr REL::ID BindCObject{ 2249771 };
 	}
 
 	namespace GameUIModel
@@ -1024,7 +1022,7 @@ namespace RE::ID
 
 	namespace HUDModeEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 683142
+		inline constexpr REL::ID GetEventSource{ 2694697 };
 	}
 
 	namespace IAnimationGraphManagerHolder
@@ -1307,7 +1305,7 @@ namespace RE::ID
 
 	namespace NiRefObject
 	{
-		inline constexpr REL::ID Objects{ 0 };  // 1161724
+		inline constexpr REL::ID Objects{ 2703471 };
 	}
 
 	namespace NiTexture
@@ -1457,7 +1455,7 @@ namespace RE::ID
 
 	namespace PipboySubMenu
 	{
-		inline constexpr REL::ID ProcessEvent{ 0 };  // 893703
+		inline constexpr REL::ID ProcessEvent{ 2224270 };
 	}
 
 	namespace PipboyValue
@@ -1665,7 +1663,7 @@ namespace RE::ID
 
 	namespace TESActivateEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 166230
+		inline constexpr REL::ID GetEventSource{ 2201819 };
 	}
 
 	namespace TESActorBaseData
@@ -1705,7 +1703,7 @@ namespace RE::ID
 	namespace TESCondition
 	{
 		inline constexpr REL::ID IsTrue{ 2211989 };
-		inline constexpr REL::ID IsTrueForAllButFunction{ 0 };  // 1182457
+		inline constexpr REL::ID IsTrueForAllButFunction{ 0 };  // 1182457 - inlined
 		inline constexpr REL::ID ClearAllConditionItems{ 2211988 };
 	}
 
@@ -1718,7 +1716,7 @@ namespace RE::ID
 
 	namespace TESContainerChangedEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 242538
+		inline constexpr REL::ID GetEventSource{ 2201832 };
 	}
 
 	namespace TESDataHandler
@@ -1758,7 +1756,7 @@ namespace RE::ID
 
 	namespace TESForm
 	{
-		inline constexpr REL::ID FormSortFunc{ 0 };  // 705530
+		inline constexpr REL::ID FormSortFunc{ 0 };  // 705530 - inlined?
 		inline constexpr REL::ID AddCompileIndex{ 2193152 };
 		inline constexpr REL::ID AllForms{ 2689178 };
 		inline constexpr REL::ID AllFormsMapLock{ 2689189 };
@@ -1827,7 +1825,7 @@ namespace RE::ID
 
 	namespace TESMagicEffectApplyEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 1327824
+		inline constexpr REL::ID GetEventSource{ 2201851 };
 	}
 
 	namespace TESNPC
@@ -1931,7 +1929,7 @@ namespace RE::ID
 
 	namespace TESSpellList
 	{
-		inline constexpr REL::ID AddSpell{ 0 };  // 1312083
+		inline constexpr REL::ID AddSpell{ 2193395 };
 	}
 
 	namespace TESSwitchRaceCompleteEvent
@@ -1982,7 +1980,7 @@ namespace RE::ID
 
 	namespace UIAdvanceMenusFunctionCompleteEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 0 };  // 1067039
+		inline constexpr REL::ID GetEventSource{ 2694428 };
 	}
 
 	namespace UIMessageQueue
@@ -1993,7 +1991,7 @@ namespace RE::ID
 
 	namespace UIUtils
 	{
-		inline constexpr REL::ID GetComparisonItems{ 0 };  // 593818
+		inline constexpr REL::ID GetComparisonItems{ 0 };  // 593818 - inlined?
 		inline constexpr REL::ID PlayPipboySound{ 2249706 };
 		inline constexpr REL::ID PlayMenuSound{ 2249707 };
 		inline constexpr REL::ID UpdateGamepadDependentButtonCodes{ 2249714 };
@@ -2058,8 +2056,8 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateButtonText{ 2224992 };
 	}
 
-	inline constexpr REL::ID NiFree{ 0 };    // 242362
-	inline constexpr REL::ID NiMalloc{ 0 };  // 974443
+	inline constexpr REL::ID NiFree{ 2268539 };
+	inline constexpr REL::ID NiMalloc{ 2268535 };
 	inline constexpr REL::ID RTDynamicCast{ 2725673 };
 	inline constexpr REL::ID IsPlayerInDialogue{ 2188686 };
 }

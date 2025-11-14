@@ -28,13 +28,6 @@ namespace RE
 	class BGSLocalizedStringDL
 	{
 	public:
-		void GetDescription(BSString& a_out, const TESForm* a_form) const
-		{
-			using func_t = decltype(&BGSLocalizedStringDL::GetDescription);
-			static REL::Relocation<func_t> func{ ID::BGSLocalizedStringDL::GetDescription };
-			return func(this, a_out, a_form);
-		}
-
 		[[nodiscard]] BGSLocalizedStrings::ScrapStringBuffer GetText(TESFile& a_file) const
 		{
 			using func_t = decltype(&BGSLocalizedStringDL::GetText);
