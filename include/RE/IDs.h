@@ -2018,44 +2018,44 @@ namespace RE::ID
 	{
 		namespace PlacementItemData
 		{
-			inline constexpr REL::ID Set{ 0 };  // 1460935
+			inline constexpr REL::ID Set{ 2195643 };
 		}
 
 		namespace WorkshopMenuNode
 		{
-			inline constexpr REL::ID FindAndSetSelectedNode{ 0 };  // 1309368
+			inline constexpr REL::ID FindAndSetSelectedNode{ 2195022 };
 		}
 
 		inline constexpr REL::ID FindNearestValidWorkshop{ 2194970 };
 		inline constexpr REL::ID FreeBuild{ 2194924 };
 		inline constexpr REL::ID GetSelectedWorkshopMenuNode{ 2195024 };
-		inline constexpr REL::ID InitializePlacementReference{ 0 };   // 1577199
-		inline constexpr REL::ID IsLocationWithinBuildableArea{ 0 };  // 990965
-		inline constexpr REL::ID PlaceCurrentReference{ 0 };          // 1058211
-		inline constexpr REL::ID RegisterForItemDestroyed{ 0 };       // 1367004
-		inline constexpr REL::ID RegisterForItemMoved{ 0 };           // 835323
-		inline constexpr REL::ID RegisterForItemPlaced{ 0 };          // 849008
-		inline constexpr REL::ID RegisterForWorkshopModeEvent{ 0 };   // 275798
-		inline constexpr REL::ID RequestExitWorkshop{ 0 };            // 209891
-		inline constexpr REL::ID ScrapReference{ 0 };                 // 636327
-		inline constexpr REL::ID SetSelectedEditItem{ 0 };            // 2562
+		inline constexpr REL::ID InitializePlacementReference{ 0 };   // 1577199 - inlined
+		inline constexpr REL::ID IsLocationWithinBuildableArea{ 2194956 };
+		inline constexpr REL::ID PlaceCurrentReference{ 2195155 };
+		inline constexpr REL::ID RegisterForItemDestroyed{ 2194930 };
+		inline constexpr REL::ID RegisterForItemMoved{ 2194932 };
+		inline constexpr REL::ID RegisterForItemPlaced{ 2194926 };
+		inline constexpr REL::ID RegisterForWorkshopModeEvent{ 2194946 };
+		inline constexpr REL::ID RequestExitWorkshop{ 2195135 };
+		inline constexpr REL::ID ScrapReference{ 2195125 };
+		inline constexpr REL::ID SetSelectedEditItem{ 2195119 };
 		inline constexpr REL::ID StartWorkshop{ 2195134 };
-		inline constexpr REL::ID ToggleEditMode{ 0 };                  // 1243386
-		inline constexpr REL::ID UnregisterForItemDestroyed{ 0 };      // 1101379
-		inline constexpr REL::ID UnregisterForItemMoved{ 0 };          // 569432
-		inline constexpr REL::ID UnregisterForItemPlaced{ 0 };         // 583255
-		inline constexpr REL::ID UnregisterForWorkshopModeEvent{ 0 };  // 9236
-		inline constexpr REL::ID UpdateActiveEdit{ 0 };                // 69261
-		inline constexpr REL::ID WorkshopCanShowRecipe{ 0 };           // 239190
-		inline constexpr REL::ID CurrentPlacementItemData{ 0 };        // 1279207
-		inline constexpr REL::ID CurrentRow{ 0 };                      // 833923
-		inline constexpr REL::ID PlacementItem{ 0 };                   // 526727
+		inline constexpr REL::ID ToggleEditMode{ 2195130 };
+		inline constexpr REL::ID UnregisterForItemDestroyed{ 2194931 };
+		inline constexpr REL::ID UnregisterForItemMoved{ 2194933 };
+		inline constexpr REL::ID UnregisterForItemPlaced{ 2194927 };
+		inline constexpr REL::ID UnregisterForWorkshopModeEvent{ 2194947 };
+		inline constexpr REL::ID UpdateActiveEdit{ 2195210 };
+		inline constexpr REL::ID WorkshopCanShowRecipe{ 2195115 };
+		inline constexpr REL::ID CurrentPlacementItemData{ 2689973 };
+		inline constexpr REL::ID CurrentRow{ 2689868 };
+		inline constexpr REL::ID PlacementItem{ 2689906 };
 	}
 
 	namespace WorkshopMenu
 	{
-		inline constexpr REL::ID CheckAndSetItemForPlacement{ 0 };  // 1541862
-		inline constexpr REL::ID UpdateButtonText{ 0 };             // 1089189
+		inline constexpr REL::ID CheckAndSetItemForPlacement{ 2224991 };
+		inline constexpr REL::ID UpdateButtonText{ 2224992 };
 	}
 
 	inline constexpr REL::ID NiFree{ 0 };    // 242362
