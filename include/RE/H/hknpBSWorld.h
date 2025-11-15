@@ -20,7 +20,7 @@ namespace RE
 		// members
 		void*                     userData;                     // 6D0
 		BSReadWriteLock           worldLock;                    // 6D8
-		BSTSet<hknpBodyId>        activateBodyPostCollideSet;   // 6E0
+		std::byte                 activateBodyPostCollideSet[48];   // 6E0 - BSTSet<hknpBodyId>
 		BSSpinLock                activateBodyPostCollideLock;  // 710
 		hkMultiMap<std::uint32_t> constrainedBodyFromBody;      // 718
 	};
