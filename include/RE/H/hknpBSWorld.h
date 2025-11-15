@@ -3,6 +3,7 @@
 #include "RE/B/BSSpinLock.h"
 #include "RE/B/BSTHashMap.h"
 #include "RE/H/hkMap.h"
+#include "RE/H/hknpBodyId.h"
 #include "RE/H/hknpWorld.h"
 
 namespace RE
