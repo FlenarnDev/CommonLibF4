@@ -495,8 +495,8 @@ namespace F4SE
 
 		constexpr void UsesSigScanning(const bool a_value) noexcept { SetOrClearBit(addressIndependence, 1 << 0, a_value); }
 
-		// 1 << 1 is for address library for 1.10.980 and later
-		constexpr void UsesAddressLibrary(const bool a_value) noexcept { SetOrClearBit(addressIndependence, 1 << 1, a_value); }
+		// 1 << 2 is for address library for 1.11.137 and later
+		constexpr void UsesAddressLibrary(const bool a_value) noexcept { SetOrClearBit(addressIndependence, 1 << 2, a_value); }
 
 		constexpr void HasNoStructUse(const bool a_value) noexcept { SetOrClearBit(structureIndependence, 1 << 0, a_value); }
 
