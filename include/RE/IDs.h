@@ -227,7 +227,7 @@ namespace RE::ID
 
 	namespace BGSKeyword
 	{
-		inline constexpr REL::ID TypedKeywords{ 2692038 };
+		inline constexpr REL::ID TypedKeywords{ 4799330 };
 	}
 
 	namespace BGSKeywordForm
@@ -631,7 +631,7 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 4796889 };
 		inline constexpr REL::ID LoadMovie{ 2287422 };
 		inline constexpr REL::ID GetMovieFilename{ 2287428 };
-		inline constexpr REL::ID InitMovieViewport{ 2287430 };
+		inline constexpr REL::ID InitMovieViewport{ 4494254 };
 		inline constexpr REL::ID FileUncacheOnMenuOpen{ 2667999 };
 		inline constexpr REL::ID IsNameValid{ 2287425 };
 	}
@@ -790,7 +790,7 @@ namespace RE::ID
 
 	namespace CanDisplayNextHUDMessage
 	{
-		inline constexpr REL::ID GetEventSource{ 2695041 };
+		inline constexpr REL::ID GetEventSource{ 4802332 };
 	}
 
 	namespace CellAttachDetachEvent
@@ -800,7 +800,7 @@ namespace RE::ID
 
 	namespace ColorUpdateEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 2695540 };
+		inline constexpr REL::ID GetEventSource{ 4802831 };
 	}
 
 	namespace CombatBehaviorFindObject
@@ -870,12 +870,12 @@ namespace RE::ID
 		inline constexpr REL::ID PushInputContext{ 2268335 };
 		inline constexpr REL::ID RemapButton{ 2268330 };
 		inline constexpr REL::ID SaveRemappings{ 0 };
-		inline constexpr REL::ID SetTextEntryMode{ 2268339 };
+		inline constexpr REL::ID SetTextEntryMode{ 4491359 };
 	}
 
 	namespace CurrentRadiationSourceCount
 	{
-		inline constexpr REL::ID GetEventSource{ 2696196 };
+		inline constexpr REL::ID GetEventSource{ 4803487 };
 	}
 
 	namespace DEFAULT_OBJECT_DATA
@@ -897,7 +897,7 @@ namespace RE::ID
 
 	namespace DoBeforeNewOrLoadCompletedEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 2695542 };
+		inline constexpr REL::ID GetEventSource{ 4802833 };
 	}
 
 	namespace EffectItem
@@ -2020,7 +2020,7 @@ namespace RE::ID
 
 	namespace UIAdvanceMenusFunctionCompleteEvent
 	{
-		inline constexpr REL::ID GetEventSource{ 2694428 };
+		inline constexpr REL::ID GetEventSource{ 4801719 };
 	}
 
 	namespace UIMessageQueue
@@ -2144,7 +2144,7 @@ namespace Scaleform::ID
 
 	namespace SysAlloc
 	{
-		inline constexpr REL::ID InitHeapEngine{ 2284532 };
+		inline constexpr REL::ID InitHeapEngine{ 4493927 };
 		inline constexpr REL::ID ShutdownHeapEngine{ 2284536 };
 	}
 }
