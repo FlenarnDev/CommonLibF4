@@ -253,7 +253,7 @@ namespace RE::ID
 
 	namespace BGSMessage
 	{
-		inline constexpr REL::ID AddButton{ 0 }; // inlined
+		inline constexpr REL::ID AddButton{ 0 };  // inlined
 		inline constexpr REL::ID GetConvertedDescription{ 2203353 };
 	}
 
