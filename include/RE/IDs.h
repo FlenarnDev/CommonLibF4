@@ -253,7 +253,7 @@ namespace RE::ID
 
 	namespace BGSMessage
 	{
-		inline constexpr REL::ID AddButton{ 0 };
+		inline constexpr REL::ID AddButton{ 0 }; // inlined
 		inline constexpr REL::ID GetConvertedDescription{ 2203353 };
 	}
 
@@ -623,7 +623,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetBufferInfo{ 2269836 };
 		inline constexpr REL::ID Ctor{ 2269830 };
 		inline constexpr REL::ID Dtor{ 2269832 };
-		inline constexpr REL::ID BinaryStreamWithRescan{ 0 };
+		inline constexpr REL::ID BinaryStreamWithRescan{ 2205871 };
 	}
 
 	namespace BSScaleformManager
@@ -869,7 +869,7 @@ namespace RE::ID
 		inline constexpr REL::ID PopInputContext{ 2268336 };
 		inline constexpr REL::ID PushInputContext{ 2268335 };
 		inline constexpr REL::ID RemapButton{ 2268330 };
-		inline constexpr REL::ID SaveRemappings{ 0 };
+		inline constexpr REL::ID SaveRemappings{ 2268331 };
 		inline constexpr REL::ID SetTextEntryMode{ 4491359 };
 	}
 
@@ -1274,11 +1274,11 @@ namespace RE::ID
 
 	namespace NiAlphaProperty
 	{
-		inline constexpr REL::ID SetDestBlendMode{ 0 };
-		inline constexpr REL::ID SetSrcBlendMode{ 0 };
-		inline constexpr REL::ID SetTestMode{ 0 };
-		inline constexpr REL::ID SetAlphaBlending{ 0 };
-		inline constexpr REL::ID SetAlphaTesting{ 0 };
+		inline constexpr REL::ID SetDestBlendMode{ 0 };  // inlined
+		inline constexpr REL::ID SetSrcBlendMode{ 0 };   // inlined
+		inline constexpr REL::ID SetTestMode{ 0 };       // inlined
+		inline constexpr REL::ID SetAlphaBlending{ 0 };  // inlined
+		inline constexpr REL::ID SetAlphaTesting{ 0 };   // inlined
 	}
 
 	namespace NiCamera
