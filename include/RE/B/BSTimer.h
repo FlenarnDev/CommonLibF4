@@ -37,11 +37,12 @@ namespace RE
 		float         delta;                          // 10
 		float         realTimeDelta;                  // 14
 		std::uint64_t lastTime;                       // 18
-		std::uint64_t firstTime;                      // 20
-		std::uint64_t disabledLastTime;               // 28
-		std::uint64_t disabledFirstTime;              // 30
-		std::uint32_t disableCounter;                 // 38
-		bool          useGlobalTimeMultiplierTarget;  // 3C
+		std::byte     unk20[0x10];				      // 20
+		std::uint64_t firstTime;                      // 30
+		std::uint64_t disabledLastTime;               // 38
+		std::uint64_t disabledFirstTime;              // 40
+		std::uint32_t disableCounter;                 // 48
+		bool          useGlobalTimeMultiplierTarget;  // 4C
 	};
-	static_assert(sizeof(BSTimer) == 0x40);
+	static_assert(sizeof(BSTimer) == 0x50);
 }

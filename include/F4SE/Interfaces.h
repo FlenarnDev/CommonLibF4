@@ -500,8 +500,8 @@ namespace F4SE
 
 		constexpr void HasNoStructUse(const bool a_value) noexcept { SetOrClearBit(structureIndependence, 1 << 0, a_value); }
 
-		// 1 << 1 is for runtime 1.10.980 and later
-		constexpr void IsLayoutDependent(const bool a_value) noexcept { SetOrClearBit(structureIndependence, 1 << 1, a_value); }
+		// 1 << 2 is for runtime 1.11.137 and later
+		constexpr void IsLayoutDependent(const bool a_value) noexcept { SetOrClearBit(structureIndependence, 1 << 2, a_value); }
 
 		constexpr void CompatibleVersions(std::initializer_list<REL::Version> a_versions) noexcept
 		{

@@ -135,9 +135,9 @@ namespace RE
 		std::uint32_t                          largeCacheRenderModeCount;   // 1FC
 		std::uint32_t                          movementToDirectionalCount;  // 200
 		BSTimer                                uiTimer;                     // 208
-		bool                                   menuSystemVisible;           // 248
-		bool                                   closingAllMenus;             // 249
-		bool                                   freezeFrameScreenshotReady;  // 24A
+		bool                                   menuSystemVisible;           // 258
+		bool                                   closingAllMenus;             // 259
+		bool                                   freezeFrameScreenshotReady;  // 25A
 	};
-	static_assert(sizeof(UI) == 0x250);
+	static_assert(sizeof(UI) == 0x260);
 }
