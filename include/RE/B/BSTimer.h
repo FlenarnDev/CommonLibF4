@@ -37,7 +37,7 @@ namespace RE
 		float         delta;                          // 10
 		float         realTimeDelta;                  // 14
 		std::uint64_t lastTime;                       // 18
-		std::byte     unk20[0x10];				      // 20
+		std::byte     unk20[0x10];                    // 20
 		std::uint64_t firstTime;                      // 30
 		std::uint64_t disabledLastTime;               // 38
 		std::uint64_t disabledFirstTime;              // 40
