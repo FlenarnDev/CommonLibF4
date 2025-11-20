@@ -55,6 +55,7 @@ namespace F4SE
 	inline constexpr REL::Version RUNTIME_1_10_980{ 1, 10, 980, 0 };
 	inline constexpr REL::Version RUNTIME_1_10_984{ 1, 10, 984, 0 };
 	inline constexpr REL::Version RUNTIME_1_11_137{ 1, 11, 137, 0 };
+	inline constexpr REL::Version RUNTIME_1_11_159{ 1, 11, 159, 0 };
 
-	inline constexpr auto RUNTIME_LATEST = RUNTIME_1_11_137;
+	inline constexpr auto RUNTIME_LATEST = RUNTIME_1_11_159;
 }
