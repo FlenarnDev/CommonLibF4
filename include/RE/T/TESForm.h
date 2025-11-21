@@ -187,6 +187,17 @@ namespace RE
 			return form ? form->As<T>() : nullptr;
 		}
 
+		[[nodiscard]] static std::uint32_t GetFormCode(ENUM_FORM_ID a_formType)
+		{
+			auto formEnumString = GetFormEnumString();
+			return formEnumString[std::to_underlying(a_formType)].formCode;
+		}
+
+		[[nodiscard]] std::uint32_t GetFormCode() const
+		{
+			return GetFormCode(GetFormType());
+		}
+
 		[[nodiscard]] static std::span<FORM_ENUM_STRING, 159> GetFormEnumString()
 		{
 			static REL::Relocation<FORM_ENUM_STRING(*)[159]> functions{ ID::TESForm::GetFormEnumString };

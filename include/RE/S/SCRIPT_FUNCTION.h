@@ -50,6 +50,15 @@ namespace RE
 			return nullptr;
 		}
 
+		template <std::uint16_t SIZE>
+		inline void SetParameters(SCRIPT_PARAMETER (&a_params)[SIZE])
+		{
+			paramCount = SIZE;
+			parameters = a_params;
+		}
+
+		void SetParameters();
+
 		// members
 		const char*                               functionName{ "" };                        // 00
 		const char*                               shortName{ "" };                           // 08
