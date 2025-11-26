@@ -152,7 +152,7 @@ rule("commonlibf4.plugin")
             return
         end
 
-        local archive_path = path.join(config.buildir(), "packages", archive_name)
+        local archive_path = path.join(config.builddir(), "packages", archive_name)
         local old_dir = os.cd(root_dir)
         local archive_files = os.files("**")
         os.cd(old_dir)
