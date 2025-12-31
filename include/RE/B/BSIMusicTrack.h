@@ -8,7 +8,14 @@ namespace RE
 		static constexpr auto RTTI{ RTTI::BSIMusicTrack };
 		static constexpr auto VTABLE{ VTABLE::BSIMusicTrack };
 
-		enum class MUSIC_STATUS;
+		enum class MUSIC_STATUS
+		{
+			kInactive = 0x0,
+			kPlaying = 0x1,
+			kPaused = 0x2,
+			kFinishing = 0x3,
+			kFinished = 0x4
+		};
 
 		virtual ~BSIMusicTrack() = default;  // 00
 

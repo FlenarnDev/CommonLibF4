@@ -38,11 +38,25 @@ namespace RE
 			float           a_heading,
 			NiPoint3&       a_trajectoryPos)
 		{
-			using func_t = decltype(&CalculateProjectileTrajectory);
+			using func_t = decltype(&CombatUtilities::CalculateProjectileTrajectory);
 			static REL::Relocation<func_t> func{ ID::CombatUtilities::CalculateProjectileTrajectory };
 			return func(a_projectilePos, a_projectileVelocity, a_projectileGravity, a_targetPos, a_heading, a_trajectoryPos);
 		}
 
 		inline static REL::Relocation<float> fWorldGravity{ ID::CombatUtilities::WorldGravity };
+
+		inline bool IsActorUsingMelee(Actor* a_actor)
+		{
+			using func_t = decltype(CombatUtilities::IsActorUsingMelee);
+			static REL::Relocation<func_t> func{ ID::CombatUtilities::IsActorUsingMelee };
+			return func(a_actor);
+		}
+
+		inline bool IsActorUsingUnarmed(Actor* a_actor)
+		{
+			using func_t = decltype(CombatUtilities::IsActorUsingUnarmed);
+			static REL::Relocation<func_t> func{ ID::CombatUtilities::IsActorUsingUnarmed };
+			return func(a_actor);
+		}
 	}
 }

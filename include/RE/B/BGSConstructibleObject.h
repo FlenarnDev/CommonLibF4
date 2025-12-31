@@ -33,6 +33,13 @@ namespace RE
 		[[nodiscard]] TESForm*      GetCreatedItem() const noexcept { return createdItem; }
 		[[nodiscard]] std::uint16_t GetWorkshopPriority() const noexcept { return data.workshopPriority; }
 
+		bool PlayerPassesConditions()
+		{
+			using func_t = decltype(&BGSConstructibleObject::PlayerPassesConditions);
+			static REL::Relocation<func_t> func{ ID::BGSConstructibleObject::PlayerPassesConditions };
+			return func(this);
+		}
+
 		// members
 		BSTArray<BSTTuple<TESForm*, BGSTypedFormValuePair::SharedVal>>* requiredItems;   // 50
 		TESCondition                                                    conditions;      // 58

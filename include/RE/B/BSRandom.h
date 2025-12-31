@@ -24,5 +24,12 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::BSRandom::Float0To1 };
 			return func();
 		}
+
+		inline std::int32_t Int(std::int32_t a_min, std::int32_t a_max)
+		{
+			using func_t = decltype(&BSRandom::Int);
+			static REL::Relocation<func_t> func{ ID::BSRandom::Int };
+			return func(a_min, a_max);
+		}
 	}
 }

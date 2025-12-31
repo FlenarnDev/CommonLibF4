@@ -13,9 +13,21 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::BGSAssociationType };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kASTP };
 
+		enum class Member
+		{
+			kParent = 0x0,
+			kChild = 0x1,
+			kCount = 0x2
+		};
+
+		enum class Flags
+		{
+			kFamily = 0x1
+		};
+
 		// members
-		BSFixedStringCS associationLabel[2][2];  // 20
-		std::uint32_t   flags;                   // 40
+		BSFixedStringCS                    associationLabel[2][2];  // 20
+		REX::EnumSet<Flags, std::uint32_t> flags;                   // 40
 	};
 	static_assert(sizeof(BGSAssociationType) == 0x48);
 }

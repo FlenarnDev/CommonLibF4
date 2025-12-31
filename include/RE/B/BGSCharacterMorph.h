@@ -112,5 +112,18 @@ namespace RE
 			kLowerTorso = 0x3,
 			kLegs = 0x4
 		};
+
+		enum class Axis : std::uint32_t
+		{
+			kPosX = 0x0,
+			kPosY = 0x1,
+			kPosZ = 0x2,
+			kRotX = 0x3,
+			kRotY = 0x4,
+			kRotZ = 0x5,
+			kScaleX = 0x6,
+			kScaleY = 0x7,
+			kScaleZ = 0x8
+		};
 	}
 }

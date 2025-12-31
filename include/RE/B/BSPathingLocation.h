@@ -7,7 +7,6 @@
 namespace RE
 {
 	class BSNavmeshInfo;
-	class BSPatchingCell;
 
 	class BSPathingLocation
 	{
