@@ -18,7 +18,7 @@ namespace RE
 
 		[[nodiscard]] static auto GetConsoleFunctions()
 		{
-			static REL::Relocation<SCRIPT_FUNCTION(*)[526]> functions{ ID::SCRIPT_FUNCTION::ConsoleFunctions };
+			static REL::Relocation<SCRIPT_FUNCTION(*)[523]> functions{ ID::SCRIPT_FUNCTION::ConsoleFunctions };
 			return std::span{ *functions };
 		}
 
@@ -35,7 +35,7 @@ namespace RE
 
 		[[nodiscard]] static auto GetScriptFunctions()
 		{
-			static REL::Relocation<SCRIPT_FUNCTION(*)[819]> functions{ ID::SCRIPT_FUNCTION::ScriptFunctions };
+			static REL::Relocation<SCRIPT_FUNCTION(*)[818]> functions{ ID::SCRIPT_FUNCTION::ScriptFunctions };
 			return std::span{ *functions };
 		}
 
