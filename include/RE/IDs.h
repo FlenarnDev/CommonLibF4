@@ -973,6 +973,7 @@ namespace RE::ID
 		inline constexpr REL::ID UseQuickkeyItem{ 2248744 };
 		inline constexpr REL::ID HandleEvent{ 2248740 };
 		inline constexpr REL::ID Call{ 2248766 };
+		inline constexpr REL::ID ClearCurrentAmmoCount{ 2248745 };
 	}
 
 	namespace FlatScreenModel
@@ -1892,6 +1893,11 @@ namespace RE::ID
 	namespace TESLoadGameEvent
 	{
 		inline constexpr REL::ID GetEventSource{ 2201848 };
+	}
+
+	namespace TESLocationClearedEvent
+	{
+		inline constexpr REL::ID GetEventSource{ 2201849 };
 	}
 
 	namespace TESMagicEffectApplyEvent

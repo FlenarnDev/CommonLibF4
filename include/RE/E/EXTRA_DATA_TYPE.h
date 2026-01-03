@@ -110,7 +110,7 @@ namespace RE
 		kPrimitive,                     //
 		kOpenCloseActivateRef,          //
 		kAnimNoteReceiver,              //
-		kAmmo,                          //
+		kAmmo,                          // ExtraAmmo
 		kPatrolRefData,                 //
 		kPackageData,                   //
 		kOcclusionShape,                //

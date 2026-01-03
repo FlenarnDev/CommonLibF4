@@ -645,6 +645,7 @@
 #include "RE/E/Explosion.h"
 #include "RE/E/ExteriorCellSingleton.h"
 #include "RE/E/ExtraAliasInstanceArray.h"
+#include "RE/E/ExtraAmmo.h"
 #include "RE/E/ExtraBendableSplineParams.h"
 #include "RE/E/ExtraCellWaterType.h"
 #include "RE/E/ExtraCharge.h"
