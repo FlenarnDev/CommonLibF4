@@ -61,5 +61,12 @@ namespace RE
 			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::GetHackingWordCount };
 			return func(a_playerIntelligence);
 		}
+
+		inline float GetForceLockChance(float a_playerPerception, std::int32_t a_lockLevel)
+		{
+			using func_t = decltype(&GamePlayFormulas::GetForceLockChance);
+			static REL::Relocation<func_t> func{ ID::GamePlayFormulas::GetForceLockChance };
+			return func(a_playerPerception, a_lockLevel);
+		}
 	}
 }

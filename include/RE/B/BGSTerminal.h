@@ -30,6 +30,16 @@ namespace RE
 		class MenuItem
 		{
 		public:
+			enum class Flag
+			{
+				kBackToTop = 0x0,
+				kRedraw = 0x1,
+				kSubmenu = 0x2,
+				kText = 0x3,
+				kImage = 0x4,
+				kHolotape = 0x5
+			};
+
 			union USelectionResult
 			{
 				BGSTerminal*        subMenu;
@@ -40,12 +50,12 @@ namespace RE
 			static_assert(sizeof(USelectionResult) == 0x8);
 
 			// members
-			BGSLocalizedString itemText;         // 00
-			BGSLocalizedString responseText;     // 08
-			USelectionResult   selectionResult;  // 10
-			TESCondition       conditions;       // 18
-			std::uint16_t      id;               // 20
-			std::int8_t        flags;            // 22
+			BGSLocalizedString              itemText;         // 00
+			BGSLocalizedString              responseText;     // 08
+			USelectionResult                selectionResult;  // 10
+			TESCondition                    conditions;       // 18
+			std::uint16_t                   id;               // 20
+			REX::EnumSet<Flag, std::int8_t> flags;            // 22
 		};
 		static_assert(sizeof(MenuItem) == 0x28);
 

@@ -32,6 +32,15 @@ namespace RE
 		static constexpr auto VTABLE{ VTABLE::TESObjectACTI };
 		static constexpr auto FORM_ID{ ENUM_FORM_ID::kACTI };
 
+		enum class ActiFlags
+		{
+			kNoDisplacement = 0x1,
+			kNoSandbox = 0x2,
+			kIsProceduralWater = 0x4,
+			kIsLODWater = 0x8,
+			kIsRadio = 0x10
+		};
+
 		// members
 		BGSSoundDescriptorForm* soundLoop;      // 128
 		BGSSoundDescriptorForm* soundActivate;  // 130

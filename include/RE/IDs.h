@@ -150,6 +150,11 @@ namespace RE::ID
 		inline constexpr REL::ID SetParentGroupNumber{ 2189125 };
 	}
 
+	namespace BGSConstructibleObject
+	{
+		inline constexpr REL::ID PlayerPassesConditions{ 2197318 };
+	}
+
 	namespace BGSCraftItemEvent
 	{
 		inline constexpr REL::ID EventIndex{ 2663409 };
@@ -565,6 +570,7 @@ namespace RE::ID
 		inline constexpr REL::ID UnsignedInt{ 2267950 };
 		inline constexpr REL::ID Float{ 2267953 };
 		inline constexpr REL::ID Float0To1{ 2267954 };
+		inline constexpr REL::ID Int{ 2267952 };
 	}
 
 	namespace BSResource_Archive2_AsyncReaderStream
@@ -704,6 +710,10 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID FadeInPlay{ 2267075 };
 		inline constexpr REL::ID FadeOutAndRelease{ 2267076 };
+		inline constexpr REL::ID IsPlaying{ 2267046 };
+		inline constexpr REL::ID Play{ 2276042 };
+		inline constexpr REL::ID SetOutputModel{ 2267053 };
+		inline constexpr REL::ID Stop{ 2267045 };
 	}
 
 	namespace BSSpinLock
@@ -746,6 +756,11 @@ namespace RE::ID
 		inline constexpr REL::ID ctor{ 2212059 };
 	}
 
+	namespace BSTempEffectWeaponBlood
+	{
+		inline constexpr REL::ID ClearEffectForWeapon{ 2212158 };
+	}
+
 	namespace BSTEvent
 	{
 		namespace BSTGlobalEvent
@@ -780,6 +795,7 @@ namespace RE::ID
 		inline constexpr REL::ID ConvertFloatToHalf{ 2212098 };
 		inline constexpr REL::ID ConvertHalfToFloat{ 2195843 };
 		inline constexpr REL::ID GetObjectByName{ 2274841 };
+		inline constexpr REL::ID GetFlattenedBoneTree{ 2274858 };
 	}
 
 	namespace Calendar
@@ -826,6 +842,8 @@ namespace RE::ID
 		inline constexpr REL::ID CalculateProjectileLOS2{ 2240616 };
 		inline constexpr REL::ID CalculateProjectileTrajectory{ 2240611 };
 		inline constexpr REL::ID WorldGravity{ 2700340 };
+		inline constexpr REL::ID IsActorUsingMelee{ 2240626 };
+		inline constexpr REL::ID IsActorUsingUnarmed{ 2240625 };
 	}
 
 	namespace ComparisonQualifiers
@@ -955,6 +973,7 @@ namespace RE::ID
 		inline constexpr REL::ID UseQuickkeyItem{ 2248744 };
 		inline constexpr REL::ID HandleEvent{ 2248740 };
 		inline constexpr REL::ID Call{ 2248766 };
+		inline constexpr REL::ID ClearCurrentAmmoCount{ 2248745 };
 	}
 
 	namespace FlatScreenModel
@@ -986,6 +1005,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPickBreakSeconds{ 2209084 };
 		inline constexpr REL::ID GetHackingWordCount{ 2209067 };
 		inline constexpr REL::ID CalculateItemValue{ 2209074 };
+		inline constexpr REL::ID GetForceLockChance{ 2209065 };
 	}
 
 	namespace GameScript
@@ -1338,6 +1358,21 @@ namespace RE::ID
 		inline constexpr REL::ID SetAllowDegrade{ 2270148 };
 	}
 
+	namespace nsHUDNotifications
+	{
+		inline constexpr REL::ID IsQuestNotification{ 2222465 };
+		inline constexpr REL::ID IsObjectiveNotification{ 2222466 };
+		inline constexpr REL::ID IsLocationDiscoveredNotification{ 2222467 };
+	}
+
+	namespace nsHUDTypes
+	{
+		namespace NotificationInfo
+		{
+			inline constexpr REL::ID ctor{ 2223292 };
+		}
+	}
+
 	namespace nsStatsMenuUtils
 	{
 		inline constexpr REL::ID GetEffectDisplayInfo{ 2224586 };
@@ -1360,7 +1395,7 @@ namespace RE::ID
 
 	namespace PipboyInventoryData
 	{
-		inline constexpr REL::ID RepopulateItemCardsOnSection{ 2225279 };
+		inline constexpr REL::ID RepopulateItemCardOnSection{ 2225279 };
 		inline constexpr REL::ID PopulateItemCardInfo{ 2225266 };
 		inline constexpr REL::ID AddItemCardInfoEntry{ 2225267 };
 		inline constexpr REL::ID BaseAddItemCardInfoEntry{ 2225270 };
@@ -1860,6 +1895,11 @@ namespace RE::ID
 		inline constexpr REL::ID GetEventSource{ 2201848 };
 	}
 
+	namespace TESLocationClearedEvent
+	{
+		inline constexpr REL::ID GetEventSource{ 2201849 };
+	}
+
 	namespace TESMagicEffectApplyEvent
 	{
 		inline constexpr REL::ID GetEventSource{ 2201851 };
@@ -1974,6 +2014,11 @@ namespace RE::ID
 	namespace TESSwitchRaceCompleteEvent
 	{
 		inline constexpr REL::ID GetEventSource{ 2201874 };
+	}
+
+	namespace TESTopic
+	{
+		inline constexpr REL::ID InitDialogueItem{ 2208360 };
 	}
 
 	namespace TESTopicInfo

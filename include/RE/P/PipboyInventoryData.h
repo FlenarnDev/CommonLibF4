@@ -194,10 +194,10 @@ namespace RE
 		virtual void DoClearData();          // 0D
 		virtual void DoClearSink();          // 0E
 
-		void RepopulateItemCardsOnSection(ENUM_FORM_ID itemTypeID)
+		void RepopulateItemCardOnSection(ENUM_FORM_ID itemTypeID)
 		{
-			using func_t = decltype(&PipboyInventoryData::RepopulateItemCardsOnSection);
-			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::RepopulateItemCardsOnSection };
+			using func_t = decltype(&PipboyInventoryData::RepopulateItemCardOnSection);
+			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::RepopulateItemCardOnSection };
 			return func(this, itemTypeID);
 		}
 

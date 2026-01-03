@@ -74,6 +74,13 @@ namespace RE
 			return func(this, a_quickkeyIndex);
 		}
 
+		[[nodiscard]] void ClearCurrentAmmoCount()
+		{
+			using func_t = decltype(&FavoritesManager::ClearCurrentAmmoCount);
+			static REL::Relocation<func_t> func{ ID::FavoritesManager::ClearCurrentAmmoCount };
+			return func(this);
+		}
+
 		// members
 		TESBoundObject*                                  storedFavTypes[12];         // 090
 		NiPointer<QueuedFile>                            bufferedFavGeometries[12];  // 0F0
