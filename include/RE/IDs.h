@@ -1037,6 +1037,7 @@ namespace RE::ID
 	namespace GameUIModel
 	{
 		inline constexpr REL::ID Singleton{ 4802814 };
+		inline constexpr REL::ID SetGameColors{ 2220911 };
 		inline constexpr REL::ID UpdateDataModels{ 2220905 };
 	}
 

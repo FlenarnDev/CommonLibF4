@@ -29,6 +29,13 @@ namespace RE
 			return *singleton;
 		}
 
+		void SetGameColors()
+		{
+			using func_t = decltype(&GameUIModel::SetGameColors);
+			static REL::Relocation<func_t> func{ ID::GameUIModel::SetGameColors };
+			return func(this);
+		}
+
 		void UpdateDataModels()
 		{
 			using func_t = decltype(&GameUIModel::UpdateDataModels);
