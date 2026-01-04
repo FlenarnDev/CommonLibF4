@@ -27,6 +27,20 @@ namespace RE
 		virtual void DoClearData() = 0;          // 03
 		virtual void DoClearSink() = 0;          // 04
 
+		void LockDataGroup()
+		{
+			using func_t = decltype(&PipboyDataGroup::LockDataGroup);
+			static REL::Relocation<func_t> func{ ID::PipboyDataGroup::LockDataGroup };
+			return func(this);
+		}
+
+		void UnlockDataGroup()
+		{
+			using func_t = decltype(&PipboyDataGroup::UnlockDataGroup);
+			static REL::Relocation<func_t> func{ ID::PipboyDataGroup::UnlockDataGroup };
+			return func(this);
+		}
+
 		// members
 		REX::W32::CRITICAL_SECTION pipboyDataMutex;  // 60
 		PipboyThrottleManager*     throttleManager;  // 88

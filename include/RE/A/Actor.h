@@ -303,13 +303,6 @@ namespace RE
 			return currentProcess ? currentProcess->GetCurrentAmmo(a_equipIndex) : nullptr;
 		}
 
-		void SetCurrentAmmoCount(BGSEquipIndex a_equipIndex, std::uint32_t a_count)
-		{
-			using func_t = decltype(&Actor::SetCurrentAmmoCount);
-			static REL::Relocation<func_t> func{ ID::Actor::SetCurrentAmmoCount };
-			return func(this, a_equipIndex, a_count);
-		}
-
 		std::uint32_t GetCurrentCollisionGroup()
 		{
 			using func_t = decltype(&Actor::GetCurrentCollisionGroup);
@@ -328,6 +321,13 @@ namespace RE
 		{
 			using func_t = decltype(&Actor::GetDesiredSpeed);
 			static REL::Relocation<func_t> func{ ID::Actor::GetDesiredSpeed };
+			return func(this);
+		}
+
+		bool GetGhost()
+		{
+			using func_t = decltype(&Actor::GetGhost);
+			static REL::Relocation<func_t> func{ ID::Actor::GetGhost };
 			return func(this);
 		}
 
@@ -491,6 +491,13 @@ namespace RE
 			if (currentProcess) {
 				currentProcess->SetCurrentAmmo(a_equipIndex, a_ammo);
 			}
+		}
+
+		void SetCurrentAmmoCount(BGSEquipIndex a_equipIndex, std::uint32_t a_count)
+		{
+			using func_t = decltype(&Actor::SetCurrentAmmoCount);
+			static REL::Relocation<func_t> func{ ID::Actor::SetCurrentAmmoCount };
+			return func(this, a_equipIndex, a_count);
 		}
 
 		void SetGunState(GUN_STATE a_gunState, bool a_val = true)

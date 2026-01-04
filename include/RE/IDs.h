@@ -22,6 +22,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetCurrentCollisionGroup{ 2229993 };
 		inline constexpr REL::ID GetCurrentFireLocation{ 2231167 };
 		inline constexpr REL::ID GetDesiredSpeed{ 2230410 };
+		inline constexpr REL::ID GetGhost{ 2229668 };
 		inline constexpr REL::ID GetHostileToActor{ 2229968 };
 		inline constexpr REL::ID GetMountHandle{ 2231230 };
 		inline constexpr REL::ID GetLevel{ 2229734 };
@@ -114,6 +115,11 @@ namespace RE::ID
 		inline constexpr REL::ID SetRunOncePackage{ 2232344 };
 		inline constexpr REL::ID AddToProcedureIndexRunning{ 2718412 };
 		inline constexpr REL::ID ComputeLastTimeProcessed{ 2231541 };
+	}
+
+	namespace AITimer
+	{
+		inline constexpr REL::ID fTimer{ 2698609 };
 	}
 
 	namespace AnimationSystemUtils
@@ -1394,13 +1400,20 @@ namespace RE::ID
 		inline constexpr REL::ID Singleton{ 4796372 };
 	}
 
+	namespace PipboyDataGroup
+	{
+		inline constexpr REL::ID LockDataGroup{ 2225147 };
+		inline constexpr REL::ID UnlockDataGroup{ 2225148 };
+	}
+
 	namespace PipboyInventoryData
 	{
-		inline constexpr REL::ID RepopulateItemCardOnSection{ 2225279 };
-		inline constexpr REL::ID PopulateItemCardInfo{ 2225266 };
 		inline constexpr REL::ID AddItemCardInfoEntry{ 2225267 };
 		inline constexpr REL::ID BaseAddItemCardInfoEntry{ 2225270 };
 		inline constexpr REL::ID InitializeItem{ 2225264 };
+		inline constexpr REL::ID PopulateItemCardInfo{ 2225266 };
+		inline constexpr REL::ID QueueItemCardRepopulate{ 2225311 };
+		inline constexpr REL::ID RepopulateItemCardOnSection{ 2225279 };
 	}
 
 	namespace PipboyInventoryMenu
@@ -1473,6 +1486,11 @@ namespace RE::ID
 	namespace PipboyPerksMenu
 	{
 		inline constexpr REL::ID UpdateData{ 2224224 };
+	}
+
+	namespace PipboyPlayerInfoData
+	{
+		inline constexpr REL::ID UpdateCarryWeightData{ 2225788 };
 	}
 
 	namespace PipboyPlayerInfoMenu

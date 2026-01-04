@@ -194,20 +194,6 @@ namespace RE
 		virtual void DoClearData();          // 0D
 		virtual void DoClearSink();          // 0E
 
-		void RepopulateItemCardOnSection(ENUM_FORM_ID itemTypeID)
-		{
-			using func_t = decltype(&PipboyInventoryData::RepopulateItemCardOnSection);
-			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::RepopulateItemCardOnSection };
-			return func(this, itemTypeID);
-		}
-
-		void PopulateItemCardInfo(const BGSInventoryItem* a_inventoryItem, const BGSInventoryItem::Stack* a_stack, PipboyObject* a_data)
-		{
-			using func_t = decltype(&PipboyInventoryData::PopulateItemCardInfo);
-			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::PopulateItemCardInfo };
-			return func(this, a_inventoryItem, a_stack, a_data);
-		}
-
 		void AddItemCardInfoEntry(const BSFixedStringCS* a_string, float a_value, PipboyArray* a_itemCardSection)
 		{
 			using func_t = decltype(&PipboyInventoryData::AddItemCardInfoEntry);
@@ -220,6 +206,27 @@ namespace RE
 			using func_t = decltype(&PipboyInventoryData::BaseAddItemCardInfoEntry);
 			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::BaseAddItemCardInfoEntry };
 			return func(this, a_string, a_itemCardSection);
+		}
+
+		void PopulateItemCardInfo(const BGSInventoryItem* a_inventoryItem, const BGSInventoryItem::Stack* a_stack, PipboyObject* a_data)
+		{
+			using func_t = decltype(&PipboyInventoryData::PopulateItemCardInfo);
+			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::PopulateItemCardInfo };
+			return func(this, a_inventoryItem, a_stack, a_data);
+		}
+
+		void QueueItemCardRepopulate(ENUM_FORM_ID a_formType)
+		{
+			using func_t = decltype(&PipboyInventoryData::QueueItemCardRepopulate);
+			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::QueueItemCardRepopulate };
+			return func(this, a_formType);
+		}
+
+		void RepopulateItemCardOnSection(ENUM_FORM_ID a_itemTypeID)
+		{
+			using func_t = decltype(&PipboyInventoryData::RepopulateItemCardOnSection);
+			static REL::Relocation<func_t> func{ ID::PipboyInventoryData::RepopulateItemCardOnSection };
+			return func(this, a_itemTypeID);
 		}
 
 		// members

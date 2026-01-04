@@ -104,6 +104,13 @@ namespace RE
 		virtual void DoClearData() override;          // 0F
 		virtual void DoClearSink() override;          // 10
 
+		void UpdateCarryWeightData()
+		{
+			using func_t = decltype(&PipboyPlayerInfoData::UpdateCarryWeightData);
+			static REL::Relocation<func_t> func{ ID::PipboyPlayerInfoData::UpdateCarryWeightData };
+			return func(this);
+		}
+
 		// members
 		PipboyObject* playerInfoObject;
 	};
