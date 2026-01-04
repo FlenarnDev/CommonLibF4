@@ -885,6 +885,7 @@
 #include "RE/M/MagicItem.h"
 #include "RE/M/MagicTarget.h"
 #include "RE/M/Main.h"
+#include "RE/M/MainMenu.h"
 #include "RE/M/MapMarkerData.h"
 #include "RE/M/MarkerIconTypes.h"
 #include "RE/M/MeleeThrowHandler.h"

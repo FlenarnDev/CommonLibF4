@@ -3,6 +3,7 @@
 #include "RE/B/BSTOptional.h"
 #include "RE/D/DifficultyLevel.h"
 #include "RE/G/GameMenuBase.h"
+#include "RE/P/PlayerCharacter.h"
 
 namespace RE
 {
@@ -21,6 +22,13 @@ namespace RE
 		virtual bool GetIsMenuReady();                      // 16
 		virtual void SaveSettings_Derived();                // 17
 		virtual void SetMenuColor();                        // 18
+
+		DifficultyLevel GetMenuDifficultyLevel()
+		{
+			using func_t = decltype(&StartMenuBase::GetMenuDifficultyLevel);
+			static REL::Relocation<func_t> func{ ID::StartMenuBase::GetMenuDifficultyLevel };
+			return func(this);
+		}
 
 		// members
 		std::unique_ptr<BSGFxShaderFXTarget> mainPanel;                      // 0E0

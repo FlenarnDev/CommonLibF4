@@ -1719,6 +1719,11 @@ namespace RE::ID
 		inline constexpr REL::ID ConnectSpline{ 2195073 };
 	}
 
+	namespace StartMenuBase
+	{
+		inline constexpr REL::ID GetMenuDifficultyLevel{ REL::ID(2224540) };
+	}
+
 	namespace SubtitleManager
 	{
 		inline constexpr REL::ID Singleton{ 4796374 };
