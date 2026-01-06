@@ -1063,6 +1063,11 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateDisplayObject{ 2220382 };
 	}
 
+	namespace HUDMenu
+	{
+		inline constexpr REL::ID SetHUDColor{ 2248918 };
+	}
+
 	namespace HUDMenuUtils
 	{
 		inline constexpr REL::ID GetGameplayHUDColor{ 2248840 };

@@ -27,6 +27,13 @@ namespace RE
 			kReshowOnDestructor = 0x3
 		};
 
+		void SetHUDColor()
+		{
+			using func_t = decltype(&HUDMenu::SetHUDColor);
+			REL::Relocation<func_t> func{ ID::HUDMenu::SetHUDColor };
+			return func(this);
+		}
+
 		// members
 		BSTSmallArray<std::unique_ptr<HUDComponentBase>, 32> hudObjects;        // 0F0
 		BSTArray<HUDModeType>                                hudModes;          // 200
