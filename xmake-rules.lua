@@ -68,6 +68,8 @@ rule("commonlibf4.plugin")
         target:set("arch", "x64")
         target:set("kind", "shared")
 
+        target:add("deps", "commonlibf4")
+
         target:add("installfiles", target:targetfile(), { prefixdir = "F4SE/Plugins" })
         target:add("installfiles", target:symbolfile(), { prefixdir = "F4SE/Plugins" })
 
