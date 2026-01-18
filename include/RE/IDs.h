@@ -957,7 +957,7 @@ namespace RE::ID
 		inline constexpr REL::ID SetBendableSplineInfo{ 2190623 };
 		inline constexpr REL::ID SetDisplayNameFromInstanceData{ 2190179 };
 		inline constexpr REL::ID SetOverrideName{ 2190167 };
-		inline constexpr REL::ID SetStartingWorldOrCell{ 2191213 };
+		inline constexpr REL::ID SetStartingWorldOrCell{ 2190506 };
 		inline constexpr REL::ID GetHealthPerc{ 2190226 };
 		inline constexpr REL::ID SetHealthPerc{ 2190124 };
 		inline constexpr REL::ID ClearFavorite{ 2190191 };
