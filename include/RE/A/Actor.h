@@ -27,6 +27,7 @@ namespace RE
 	enum class ACTOR_LIFE_STATE;
 	enum class ACTOR_LOS_LOCATION;
 	enum class GUN_STATE;
+	enum class PACKAGE_OBJECT_TYPE;
 	enum class POWER_ATTACK_TYPE;
 
 	template <class>
@@ -380,6 +381,13 @@ namespace RE
 			using func_t = decltype(&Actor::HandleItemEquip);
 			static REL::Relocation<func_t> func{ ID::Actor::HandleItemEquip };
 			return func(this, bCullBone);
+		}
+
+		bool HasObjects(TESBoundObject* a_obj, PACKAGE_OBJECT_TYPE a_formID, std::int32_t a_number, std::uint32_t a_id, PACKAGE_OBJECT_TYPE& a_matchID)
+		{
+			using func_t = decltype(&Actor::HasObjects);
+			static REL::Relocation<func_t> func{ ID::Actor::HasObjects };
+			return func(this, a_obj, a_formID, a_number, a_id, a_matchID);
 		}
 
 		void InitiateDoNothingPackage()

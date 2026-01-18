@@ -30,6 +30,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetSex{ 2229674 };
 		inline constexpr REL::ID HandleDefaultAnimationSwitch{ 2229780 };
 		inline constexpr REL::ID HandleItemEquip{ 2229781 };
+		inline constexpr REL::ID HasObjects{ 2229961 };
 		inline constexpr REL::ID InitiateDoNothingPackage{ 2229807 };
 		inline constexpr REL::ID IsCrippled{ 2230998 };
 		inline constexpr REL::ID IsFollowing{ 2230013 };
