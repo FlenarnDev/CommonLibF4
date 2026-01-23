@@ -59,8 +59,8 @@ namespace F4SE
 namespace F4SE
 {
 	// DEPRECATED
-	void Init(const LoadInterface* a_intfc, bool a_log) noexcept;
+	[[deprecated("Use F4SE::Init(..., {}) instead")]] void Init(const LoadInterface* a_intfc, bool a_log) noexcept;
 
 	// DEPRECATED
-	void AllocTrampoline(std::size_t a_size) noexcept;
+	[[deprecated("Use F4SE::Init(..., {}) instead")]] void AllocTrampoline(std::size_t a_size) noexcept;
 }
