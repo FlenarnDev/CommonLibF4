@@ -7,7 +7,7 @@ namespace F4SE
 	using Trampoline = REL::Trampoline;
 
 	// DEPRECATED
-	[[nodiscard]] REL::Trampoline& GetTrampoline() noexcept
+	[[nodiscard, deprecated("Use REL::GetTrampoline instead")]] inline REL::Trampoline& GetTrampoline() noexcept
 	{
 		return REL::GetTrampoline();
 	}
