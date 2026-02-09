@@ -75,10 +75,10 @@ namespace RE
 
 		// members
 		REX::TEnumSet<INPUT_DEVICE, std::int32_t>     device{ INPUT_DEVICE::kNone };               // 08
-		std::int32_t                                 deviceID{ 0 };                               // 0C
+		std::int32_t                                  deviceID{ 0 };                               // 0C
 		REX::TEnumSet<INPUT_EVENT_TYPE, std::int32_t> eventType{ INPUT_EVENT_TYPE::kNone };        // 10
-		InputEvent*                                  next{ nullptr };                             // 18
-		std::uint32_t                                timeCode{ static_cast<std::uint32_t>(-1) };  // 20
+		InputEvent*                                   next{ nullptr };                             // 18
+		std::uint32_t                                 timeCode{ static_cast<std::uint32_t>(-1) };  // 20
 		REX::TEnumSet<HANDLED_RESULT, std::int32_t>   handled{ HANDLED_RESULT::kUnhandled };       // 24
 	};
 	static_assert(sizeof(InputEvent) == 0x28);

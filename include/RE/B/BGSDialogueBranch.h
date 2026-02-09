@@ -22,9 +22,9 @@ namespace RE
 		};
 
 		// members
-		std::uint32_t                             flags;          // 20
-		TESQuest*                                 quest;          // 28
-		TESTopic*                                 startingTopic;  // 30
+		std::uint32_t                              flags;          // 20
+		TESQuest*                                  quest;          // 28
+		TESTopic*                                  startingTopic;  // 30
 		REX::TEnumSet<DIALOGUE_TYPE, std::int32_t> type;           // 38
 	};
 	static_assert(sizeof(BGSDialogueBranch) == 0x40);

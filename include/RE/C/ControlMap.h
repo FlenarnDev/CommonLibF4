@@ -25,11 +25,11 @@ namespace RE
 		{
 		public:
 			// members
-			BSFixedString                                           eventID;             // 00
-			std::int32_t                                            inputKey;            // 08
-			std::int8_t                                             byIndexInContext;    // 0C
-			bool                                                    remappable;          // 0D
-			bool                                                    linked;              // 0E
+			BSFixedString                                            eventID;             // 00
+			std::int32_t                                             inputKey;            // 08
+			std::int8_t                                              byIndexInContext;    // 0C
+			bool                                                     remappable;          // 0D
+			bool                                                     linked;              // 0E
 			REX::TEnumSet<UserEvents::USER_EVENT_FLAG, std::int32_t> userEventGroupFlag;  // 10
 		};
 		static_assert(sizeof(UserEventMapping) == 0x18);
@@ -46,11 +46,11 @@ namespace RE
 		{
 		public:
 			// members
-			BSFixedString                                            linkedMappingName;     // 00
+			BSFixedString                                             linkedMappingName;     // 00
 			REX::TEnumSet<UserEvents::INPUT_CONTEXT_ID, std::int32_t> linkedMappingContext;  // 08
 			REX::TEnumSet<INPUT_DEVICE, std::int32_t>                 device;                // 0C
 			REX::TEnumSet<UserEvents::INPUT_CONTEXT_ID, std::int32_t> linkFromContext;       // 10
-			BSFixedString                                            linkFromName;          // 18
+			BSFixedString                                             linkFromName;          // 18
 		};
 		static_assert(sizeof(LinkedMapping) == 0x20);
 
@@ -116,12 +116,12 @@ namespace RE
 		void SetIgnoreKeyboardMouse(bool a_value) noexcept { ignoreKeyboardMouse = a_value; }
 
 		// members
-		InputContext*                                                      controlMaps[std::to_underlying(UserEvents::INPUT_CONTEXT_ID::kTotal)];  // 008
-		BSTArray<LinkedMapping>                                            linkedMappings;                                                         // 110
+		InputContext*                                                       controlMaps[std::to_underlying(UserEvents::INPUT_CONTEXT_ID::kTotal)];  // 008
+		BSTArray<LinkedMapping>                                             linkedMappings;                                                         // 110
 		BSTArray<REX::TEnumSet<UserEvents::INPUT_CONTEXT_ID, std::int32_t>> contextPriorityStack;                                                   // 128
-		std::int8_t                                                        byTextEntryCount;                                                       // 140
-		bool                                                               ignoreKeyboardMouse;                                                    // 141
-		bool                                                               ignoreActivateDisabledEvents;                                           // 142
+		std::int8_t                                                         byTextEntryCount;                                                       // 140
+		bool                                                                ignoreKeyboardMouse;                                                    // 141
+		bool                                                                ignoreActivateDisabledEvents;                                           // 142
 		REX::TEnumSet<PC_GAMEPAD_TYPE, std::int32_t>                        pcGamePadMapType;                                                       // 144
 	};
 	static_assert(sizeof(ControlMap) == 0x148);

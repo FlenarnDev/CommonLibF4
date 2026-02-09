@@ -57,14 +57,14 @@ namespace RE
 		// members
 		REX::TEnumSet<Flag, std::uint8_t>         flags;              // 070
 		REX::TEnumSet<HeadPartType, std::int32_t> type;               // 074
-		BSTArray<BGSHeadPart*>                   extraParts;         // 078
-		BGSTextureSet*                           textureSet;         // 090
-		TESModel                                 ChargenModel;       // 098
-		TESModelTri                              morphs[3];          // 0C8
-		BGSColorForm*                            colorForm;          // 158
-		BGSListForm*                             validRaces;         // 160
-		TESCondition                             chargenConditions;  // 168
-		BSFixedString                            formEditorID;       // 170
+		BSTArray<BGSHeadPart*>                    extraParts;         // 078
+		BGSTextureSet*                            textureSet;         // 090
+		TESModel                                  ChargenModel;       // 098
+		TESModelTri                               morphs[3];          // 0C8
+		BGSColorForm*                             colorForm;          // 158
+		BGSListForm*                              validRaces;         // 160
+		TESCondition                              chargenConditions;  // 168
+		BSFixedString                             formEditorID;       // 170
 	};
 	static_assert(sizeof(BGSHeadPart) == 0x178);
 }

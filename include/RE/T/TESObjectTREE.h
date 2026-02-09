@@ -31,8 +31,8 @@ namespace RE
 		};
 
 		// members
-		OBJ_TREE                               data;      // 0D8
-		BaseTreeData*                          baseData;  // 108
+		OBJ_TREE                                data;      // 0D8
+		BaseTreeData*                           baseData;  // 108
 		REX::TEnumSet<etTreeType, std::int32_t> type;      // 110
 	};
 	static_assert(sizeof(TESObjectTREE) == 0x118);

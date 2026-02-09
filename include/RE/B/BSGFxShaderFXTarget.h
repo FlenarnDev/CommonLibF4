@@ -94,8 +94,8 @@ namespace RE
 		}
 
 		// members
-		UIShaderColors                             shaderFX;             // 58
-		BSTArray<BSGFxShaderFXTarget*>             shaderFXObjects;      // 90
+		UIShaderColors                              shaderFX;             // 58
+		BSTArray<BSGFxShaderFXTarget*>              shaderFXObjects;      // 90
 		REX::TEnumSet<HUDColorTypes, std::uint32_t> HUDColorType;         // A8
 		REX::TEnumSet<HUDColorTypes, std::uint32_t> backgroundColorType;  // AC
 

@@ -35,8 +35,8 @@ namespace RE
 
 		// members
 		REX::TEnumSet<PRIMITIVE_TYPE, std::int32_t> type;   // 08
-		NiPoint3                                   radii;  // 0C
-		NiPointer<BSFadeNode>                      node;   // 18
+		NiPoint3                                    radii;  // 0C
+		NiPointer<BSFadeNode>                       node;   // 18
 	};
 	static_assert(sizeof(BGSPrimitive) == 0x20);
 }

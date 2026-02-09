@@ -34,7 +34,7 @@ namespace RE
 		virtual void Revert([[maybe_unused]] BGSLoadFormBuffer* a_loadGameBuffer) { return; }    // 10
 
 		// members
-		TESCamera*                               camera;  // 18
+		TESCamera*                                camera;  // 18
 		REX::TEnumSet<CameraState, std::uint32_t> id;      // 20
 	};
 	static_assert(sizeof(TESCameraState) == 0x28);

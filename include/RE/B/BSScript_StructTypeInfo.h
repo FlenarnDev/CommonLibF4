@@ -49,10 +49,10 @@ namespace RE
 			virtual TypeInfo::RawType GetRawType() const override;
 
 			// members
-			BSFixedString                              name;                   // 10
-			BSTSmartPointer<ObjectTypeInfo>            containingObjTypeInfo;  // 18
-			BSTArray<StructVar>                        variables;              // 20
-			BSTHashMap<BSFixedString, std::uint32_t>   varNameIndexMap;        // 38
+			BSFixedString                               name;                   // 10
+			BSTSmartPointer<ObjectTypeInfo>             containingObjTypeInfo;  // 18
+			BSTArray<StructVar>                         variables;              // 20
+			BSTHashMap<BSFixedString, std::uint32_t>    varNameIndexMap;        // 38
 			REX::TEnumSet<LinkValidState, std::int32_t> linkedValid;            // 68
 		};
 		static_assert(sizeof(StructTypeInfo) == 0x70);

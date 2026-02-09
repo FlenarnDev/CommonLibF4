@@ -32,7 +32,7 @@ namespace Scaleform::Render
 
 			// members
 			REX::TEnumSet<EntryType, std::uint16_t> type;   // 08
-			std::uint16_t                          flags;  // 0A
+			std::uint16_t                           flags;  // 0A
 		};
 		static_assert(sizeof(EntryData) == 0x10);
 	}

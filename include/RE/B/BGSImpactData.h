@@ -28,13 +28,13 @@ namespace RE
 		{
 		public:
 			// members
-			float                                   effectDuration;   // 00
+			float                                    effectDuration;   // 00
 			REX::TEnumSet<ORIENTATION, std::int32_t> orient;           // 04
-			float                                   angleThreshold;   // 08
-			float                                   placementRadius;  // 0C
+			float                                    angleThreshold;   // 08
+			float                                    placementRadius;  // 0C
 			REX::TEnumSet<SOUND_LEVEL, std::int32_t> soundLevel;       // 10
-			std::int8_t                             flags;            // 14
-			std::int8_t                             resultOverride;   // 15
+			std::int8_t                              flags;            // 14
+			std::int8_t                              resultOverride;   // 15
 		};
 		static_assert(sizeof(IMPACT_DATA_DATA) == 0x18);
 
