@@ -1,9 +1,9 @@
 #include "F4SE/API.h"
 
 #include "F4SE/Interfaces.h"
-#include "REL/Hook.h"
+#include "REL/FHookStore.h"
 #include "REL/Trampoline.h"
-#include "REX/REX/Singleton.h"
+#include "REX/TSingleton.h"
 #include "REX/W32/OLE32.h"
 #include "REX/W32/SHELL32.h"
 
@@ -17,12 +17,12 @@ namespace F4SE
 	namespace Impl
 	{
 		struct API :
-			public REX::Singleton<API>
+			public REX::TSingleton<API>
 		{
 			void Init(InitInfo, const F4SE::QueryInterface* a_intfc);
 			void InitLog();
 			void InitTrampoline();
-			void InitHook(REL::HOOK_STEP a_step);
+			void InitHook(REL::EHookStep a_step);
 
 			InitInfo info;
 
@@ -120,7 +120,7 @@ namespace F4SE
 				static std::once_flag once;
 				std::call_once(once, [&]() {
 					if (!info.trampolineSize) {
-						const auto hookStore = REL::HookStore::GetSingleton();
+						const auto hookStore = REL::FHookStore::GetSingleton();
 						info.trampolineSize += hookStore->GetSizeTrampoline();
 					}
 
@@ -135,10 +135,10 @@ namespace F4SE
 			}
 		}
 
-		void API::InitHook(REL::HOOK_STEP a_step)
+		void API::InitHook(REL::EHookStep a_step)
 		{
 			if (info.hook) {
-				const auto hookStore = REL::HookStore::GetSingleton();
+				const auto hookStore = REL::FHookStore::GetSingleton();
 				hookStore->Init();
 				hookStore->Enable(a_step);
 			}
@@ -156,7 +156,7 @@ namespace F4SE
 			api->trampolineInterface = a_intfc->QueryInterface<TrampolineInterface>(PreLoadInterface::kTrampoline);
 
 			api->InitTrampoline();
-			api->InitHook(REL::HOOK_STEP::PRELOAD);
+			api->InitHook(REL::EHookStep::PreLoad);
 		});
 	}
 
@@ -177,7 +177,7 @@ namespace F4SE
 			api->trampolineInterface = a_intfc->QueryInterface<TrampolineInterface>(LoadInterface::kTrampoline);
 
 			api->InitTrampoline();
-			api->InitHook(REL::HOOK_STEP::LOAD);
+			api->InitHook(REL::EHookStep::Load);
 		});
 	}
 
