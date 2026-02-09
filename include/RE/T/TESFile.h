@@ -115,7 +115,7 @@ namespace RE
 		}
 
 		// members
-		REX::EnumSet<TES_RETURN_CODE, std::int32_t> lastError;                        // 000
+		REX::TEnumSet<TES_RETURN_CODE, std::int32_t> lastError;                        // 000
 		TESFile*                                    threadSafeParent;                 // 008
 		BSTHashMap<std::uint32_t, TESFile*>         threadSafeFileMap;                // 010
 		BSTSmartPointer<BSFile::PageCache>          pageCache;                        // 040
@@ -133,7 +133,7 @@ namespace RE
 		TESObjectCELL*                              currCell;                         // 290
 		std::uint32_t                               currRefOffset;                    // 298
 		FORM                                        currentform;                      // 29C
-		REX::EnumSet<CHUNK_ID, std::int32_t>        currentchunkID;                   // 2B4
+		REX::TEnumSet<CHUNK_ID, std::int32_t>        currentchunkID;                   // 2B4
 		std::uint32_t                               actualChunkSize;                  // 2B8
 		std::uint32_t                               filesize;                         // 2BC
 		std::uint32_t                               fileoffset;                       // 2C0
@@ -146,7 +146,7 @@ namespace RE
 		bool                                        hasGroups;                        // 300
 		BSSystemFile::Info                          fileInfo;                         // 308
 		FILE_HEADER                                 fileHeaderInfo;                   // 328
-		REX::EnumSet<RecordFlag, std::uint32_t>     flags;                            // 334
+		REX::TEnumSet<RecordFlag, std::uint32_t>     flags;                            // 334
 		BSSimpleList<char*>                         masters;                          // 338
 		BSSimpleList<_ULARGE_INTEGER*>              mastersData;                      // 348
 		std::uint32_t                               masterCount;                      // 358

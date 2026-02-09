@@ -17,7 +17,7 @@ namespace RE
 		std::uint32_t                            outputSize;      // 40C
 		SCRIPT_OUTPUT                            expression;      // 410
 		std::uint32_t                            refObjectIndex;  // 414
-		REX::EnumSet<SCRIPT_ERROR, std::int32_t> scriptError;     // 418
+		REX::TEnumSet<SCRIPT_ERROR, std::int32_t> scriptError;     // 418
 	};
 	static_assert(sizeof(SCRIPT_LINE) == 0x41C);
 }

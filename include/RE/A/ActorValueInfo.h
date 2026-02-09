@@ -32,8 +32,8 @@ namespace RE
 		const char*                                    enumNames[10];             // 150
 		BGSLocalizedString                             abbreviation;              // 1A0
 		std::int32_t                                   oldActorValue;             // 1A8
-		REX::EnumSet<ActorValue::Flags, std::int32_t>  flags;                     // 1AC
-		REX::EnumSet<ActorValue::AVType, std::int32_t> avType;                    // 1B0
+		REX::TEnumSet<ActorValue::Flags, std::int32_t>  flags;                     // 1AC
+		REX::TEnumSet<ActorValue::AVType, std::int32_t> avType;                    // 1B0
 		std::uint32_t                                  numDependentActorValues;   // 1B4
 		std::uint32_t                                  enumCount;                 // 1B8
 		std::int32_t                                   fullCacheIndex;            // 1BC

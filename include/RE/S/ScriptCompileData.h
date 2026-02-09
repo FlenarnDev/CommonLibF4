@@ -18,7 +18,7 @@ namespace RE
 		// members
 		const char*                               input;             // 00
 		std::uint32_t                             inputOffset;       // 08
-		REX::EnumSet<COMPILER_NAME, std::int32_t> compilerIndex;     // 0C
+		REX::TEnumSet<COMPILER_NAME, std::int32_t> compilerIndex;     // 0C
 		BSString                                  scriptName;        // 10
 		SCRIPT_ERROR                              lastError;         // 20
 		bool                                      isPartialScript;   // 24

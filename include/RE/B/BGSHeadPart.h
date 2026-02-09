@@ -55,8 +55,8 @@ namespace RE
 		[[nodiscard]] bool IsExtraPart() const noexcept { return flags.all(Flag::kExtraPart); }
 
 		// members
-		REX::EnumSet<Flag, std::uint8_t>         flags;              // 070
-		REX::EnumSet<HeadPartType, std::int32_t> type;               // 074
+		REX::TEnumSet<Flag, std::uint8_t>         flags;              // 070
+		REX::TEnumSet<HeadPartType, std::int32_t> type;               // 074
 		BSTArray<BGSHeadPart*>                   extraParts;         // 078
 		BGSTextureSet*                           textureSet;         // 090
 		TESModel                                 ChargenModel;       // 098

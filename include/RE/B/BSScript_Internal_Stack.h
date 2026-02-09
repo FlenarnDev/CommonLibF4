@@ -76,11 +76,11 @@ namespace RE
 			BSTSmallArray<MemoryPageData, 3>        pages;          // 18
 			std::uint32_t                           frames;         // 58
 			StackFrame*                             top;            // 60
-			REX::EnumSet<State, std::int32_t>       state;          // 68
-			REX::EnumSet<FreezeState, std::int32_t> freezeState;    // 6C
+			REX::TEnumSet<State, std::int32_t>       state;          // 68
+			REX::TEnumSet<FreezeState, std::int32_t> freezeState;    // 6C
 			Variable                                returnValue;    // 70
 			std::uint32_t                           stackID;        // 80
-			REX::EnumSet<StackType, std::int32_t>   stackType;      // 84
+			REX::TEnumSet<StackType, std::int32_t>   stackType;      // 84
 			BSTSmartPointer<Internal::CodeTasklet>  owningTasklet;  // 88
 			BSTSmartPointer<IStackCallbackFunctor>  callback;       // 90
 			BSTSmartPointer<Object>                 objToUnbind;    // 98

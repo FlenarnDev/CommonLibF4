@@ -240,7 +240,7 @@ namespace RE
 		BSFixedString                            menuToOpen;              // 190
 		BSFixedString                            openAnimEvent;           // 198
 		BSFixedString                            closeAnimEvent;          // 1A0
-		REX::EnumSet<LOWER_REASON, std::int32_t> loweringReason;          // 1A8
+		REX::TEnumSet<LOWER_REASON, std::int32_t> loweringReason;          // 1A8
 		PipboyRadioController                    radioController;         // 1AC
 		TESBoundObject*                          itemAnimOnClose;         // 1B0
 		ObjectRefHandle                          fastTravelLocation;      // 1B8

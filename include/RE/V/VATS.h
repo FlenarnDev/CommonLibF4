@@ -50,7 +50,7 @@ namespace RE
 
 		// members
 		BSTArray<BSTSmartPointer<VATSCommand>>      commands;                 // 28
-		REX::EnumSet<VATS_MODE_ENUM, std::uint32_t> mode;                     // 40
+		REX::TEnumSet<VATS_MODE_ENUM, std::uint32_t> mode;                     // 40
 		VATSCameraContext*                          cameraContext;            // 48
 		float                                       castingAfterKillDelay;    // 50
 		NiPointer<Projectile>                       firstProjectile;          // 58

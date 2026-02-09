@@ -42,7 +42,7 @@ namespace RE
 		// members
 		BSExtraData*                                next{ nullptr };                 // 08
 		std::uint16_t                               flags{ 0 };                      // 10
-		REX::EnumSet<EXTRA_DATA_TYPE, std::uint8_t> type{ EXTRA_DATA_TYPE::kNone };  // 12
+		REX::TEnumSet<EXTRA_DATA_TYPE, std::uint8_t> type{ EXTRA_DATA_TYPE::kNone };  // 12
 	};
 	static_assert(sizeof(BSExtraData) == 0x18);
 }

@@ -22,9 +22,9 @@ namespace RE
 		BSString                                       headerText;      // 18
 		BSString                                       bodyText;        // 28
 		BSTArray<BSString>                             buttonText;      // 38
-		REX::EnumSet<WARNING_TYPES, std::uint32_t>     warningContext;  // 50
+		REX::TEnumSet<WARNING_TYPES, std::uint32_t>     warningContext;  // 50
 		BSTSmartPointer<IMessageBoxCallback>           callback;        // 58
-		REX::EnumSet<UI_DEPTH_PRIORITY, std::uint32_t> menuDepth;       // 60
+		REX::TEnumSet<UI_DEPTH_PRIORITY, std::uint32_t> menuDepth;       // 60
 		bool                                           modal;           // 64
 		bool                                           ensureUnique;    // 65
 	};

@@ -64,7 +64,7 @@ namespace RE
 			};
 
 			// members
-			REX::EnumSet<Flag, std::uint32_t>                         flags;                  // 000
+			REX::TEnumSet<Flag, std::uint32_t>                         flags;                  // 000
 			float                                                     baseCost;               // 004
 			TESForm*                                                  associatedForm;         // 008
 			ActorValueInfo*                                           associatedSkill;        // 010
@@ -80,12 +80,12 @@ namespace RE
 			float                                                     taperCurve;             // 054
 			float                                                     taperDuration;          // 058
 			float                                                     secondaryAVWeight;      // 05C
-			REX::EnumSet<EffectArchetypes::ArchetypeID, std::int32_t> archetype;              // 060
+			REX::TEnumSet<EffectArchetypes::ArchetypeID, std::int32_t> archetype;              // 060
 			ActorValueInfo*                                           primaryAV;              // 068
 			BGSProjectile*                                            projectileBase;         // 070
 			BGSExplosion*                                             explosion;              // 078
-			REX::EnumSet<MagicSystem::CastingType, std::int32_t>      castingType;            // 080
-			REX::EnumSet<MagicSystem::Delivery, std::int32_t>         delivery;               // 084
+			REX::TEnumSet<MagicSystem::CastingType, std::int32_t>      castingType;            // 080
+			REX::TEnumSet<MagicSystem::Delivery, std::int32_t>         delivery;               // 084
 			ActorValueInfo*                                           secondaryAV;            // 088
 			BGSArtObject*                                             castingArt;             // 090
 			BGSArtObject*                                             hitEffectArt;           // 098
@@ -99,7 +99,7 @@ namespace RE
 			SpellItem*                                                equipAbility;           // 0D8
 			TESImageSpaceModifier*                                    imageSpaceMod;          // 0E0
 			BGSPerk*                                                  perk;                   // 0E8
-			REX::EnumSet<SOUND_LEVEL, std::int32_t>                   castingSoundLevel;      // 0F0
+			REX::TEnumSet<SOUND_LEVEL, std::int32_t>                   castingSoundLevel;      // 0F0
 			float                                                     aiScore;                // 0F4
 			float                                                     aiDelayTime;            // 0F8
 		};
@@ -109,7 +109,7 @@ namespace RE
 		{
 		public:
 			// members
-			REX::EnumSet<MagicSystem::SoundID, std::int32_t> id;     // 00
+			REX::TEnumSet<MagicSystem::SoundID, std::int32_t> id;     // 00
 			BGSSoundDescriptorForm*                          sound;  // 08
 		};
 		static_assert(sizeof(SoundPair) == 0x10);

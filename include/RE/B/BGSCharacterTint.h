@@ -83,7 +83,7 @@ namespace RE
 				// members
 				BGSLocalizedString                                      name;               // 08
 				TESCondition                                            chargenConditions;  // 10
-				REX::EnumSet<BGSCharacterTint::EntrySlot, std::int32_t> slot;               // 18
+				REX::TEnumSet<BGSCharacterTint::EntrySlot, std::int32_t> slot;               // 18
 				const std::uint16_t                                     uniqueID{ 0 };      // 1C
 				std::int8_t                                             flags;              // 1E
 			};

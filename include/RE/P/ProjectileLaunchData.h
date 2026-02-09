@@ -32,13 +32,13 @@ namespace RE
 		TESObjectREFR*                                          homingTarget;             // 58
 		TESObjectCELL*                                          parentCell;               // 60
 		MagicItem*                                              spell;                    // 68
-		REX::EnumSet<MagicSystem::CastingSource, std::int32_t>  castingSource;            // 70
+		REX::TEnumSet<MagicSystem::CastingSource, std::int32_t>  castingSource;            // 70
 		AlchemyItem*                                            poison;                   // 78
 		std::int32_t                                            area;                     // 80
 		float                                                   power;                    // 84
 		float                                                   scale;                    // 88
 		float                                                   coneOfFireRadiusMult;     // 8C
-		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;               // 90
+		REX::TEnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;               // 90
 		bool                                                    alwaysHit;                // 94
 		bool                                                    noDamageOutsideCombat;    // 95
 		bool                                                    autoAim;                  // 96

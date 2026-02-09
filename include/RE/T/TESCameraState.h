@@ -35,7 +35,7 @@ namespace RE
 
 		// members
 		TESCamera*                               camera;  // 18
-		REX::EnumSet<CameraState, std::uint32_t> id;      // 20
+		REX::TEnumSet<CameraState, std::uint32_t> id;      // 20
 	};
 	static_assert(sizeof(TESCameraState) == 0x28);
 }

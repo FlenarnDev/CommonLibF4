@@ -27,7 +27,7 @@ namespace RE
 
 		// members
 		BSFixedStringCS                    associationLabel[2][2];  // 20
-		REX::EnumSet<Flags, std::uint32_t> flags;                   // 40
+		REX::TEnumSet<Flags, std::uint32_t> flags;                   // 40
 	};
 	static_assert(sizeof(BGSAssociationType) == 0x48);
 }

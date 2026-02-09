@@ -115,7 +115,7 @@ namespace RE
 		NiPointer<NiNode>                          item3DGeometry;            // 308
 		BSTArray<TESForm*>                         queuedCraftingComponents;  // 310
 		std::uint64_t                              soundTimer;                // 328
-		REX::EnumSet<HighlightMode, std::uint32_t> highlightMode;             // 330
+		REX::TEnumSet<HighlightMode, std::uint32_t> highlightMode;             // 330
 		Rumble::AutoRumblePause                    autoRumblePause;           // 334
 		bool                                       initialized;               // 335
 		bool                                       soundsQueued;              // 336

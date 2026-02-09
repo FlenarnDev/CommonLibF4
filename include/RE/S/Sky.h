@@ -161,14 +161,14 @@ namespace RE
 		float                              currentWeatherPct;                // 360
 		float                              lastWindDirection;                // 364
 		float                              lastWindDirectionRange;           // 368
-		REX::EnumSet<Mode, std::uint32_t>  mode;                             // 36C
+		REX::TEnumSet<Mode, std::uint32_t>  mode;                             // 36C
 		BSSimpleList<SkySound*>*           skySoundList;                     // 370
 		float                              flash;                            // 378
 		std::uint64_t                      flashTime;                        // 380
 		std::uint32_t                      lastMoonPhaseUpdate;              // 388
 		float                              windowReflectionTimer;            // 38C
 		float                              accelBeginPct;                    // 390
-		REX::EnumSet<Flags, std::uint32_t> flags;                            // 394
+		REX::TEnumSet<Flags, std::uint32_t> flags;                            // 394
 		ImageSpaceModifierInstanceForm*    currentWeatherImageSpaceMod;      // 398
 		ImageSpaceModifierInstanceForm*    currentWeatherImageSpaceMod2;     // 3A0
 		ImageSpaceModifierInstanceForm*    lastWeatherImageSpaceMod;         // 3A8

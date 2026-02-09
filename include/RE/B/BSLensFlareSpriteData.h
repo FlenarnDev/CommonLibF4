@@ -20,7 +20,7 @@ namespace RE
 		float                              position;     // 14
 		float                              angularFade;  // 18
 		float                              opacity;      // 1C;
-		REX::EnumSet<Flags, std::uint32_t> flags;        // 20
+		REX::TEnumSet<Flags, std::uint32_t> flags;        // 20
 	};
 	static_assert(sizeof(BSLensFlareSpriteData) == 0x24);
 }

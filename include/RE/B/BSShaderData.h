@@ -37,7 +37,7 @@ namespace RE
 		};
 
 		// members
-		REX::EnumSet<LightingShaderEnum, std::int32_t>             lightingShader;                                 // 004
+		REX::TEnumSet<LightingShaderEnum, std::int32_t>             lightingShader;                                 // 004
 		bool                                                       specularEnabled;                                // 008
 		NiColor                                                    specularColor;                                  // 00C
 		float                                                      specularMult;                                   // 018
@@ -61,10 +61,10 @@ namespace RE
 		bool                                                       emitEnabled;                                    // 06C
 		BSFixedString                                              materialPath;                                   // 070
 		bool                                                       alphaBlend;                                     // 078
-		REX::EnumSet<NiAlphaProperty::AlphaFunction, std::int32_t> alphaSrcBlendMode;                              // 07C
-		REX::EnumSet<NiAlphaProperty::AlphaFunction, std::int32_t> alphaDestBlendMode;                             // 080
+		REX::TEnumSet<NiAlphaProperty::AlphaFunction, std::int32_t> alphaSrcBlendMode;                              // 07C
+		REX::TEnumSet<NiAlphaProperty::AlphaFunction, std::int32_t> alphaDestBlendMode;                             // 080
 		bool                                                       alphaTest;                                      // 084
-		REX::EnumSet<NiAlphaProperty::TestFunction, std::int32_t>  alphaTestFunction;                              // 088
+		REX::TEnumSet<NiAlphaProperty::TestFunction, std::int32_t>  alphaTestFunction;                              // 088
 		std::int8_t                                                alphaTestRef;                                   // 08C
 		bool                                                       enableEditorAlphaRef;                           // 08D
 		bool                                                       vertexColors;                                   // 08E
@@ -149,7 +149,7 @@ namespace RE
 		bool                                                       grayscaleToPaletteAlpha;                        // 1BD
 		NiColor                                                    hairTintColor;                                  // 1C0
 		NiPointer<BSShaderTextureSet>                              textureSet;                                     // 1D0
-		REX::EnumSet<BSGraphics::TextureAddressMode, std::int32_t> clampMode;                                      // 1D8
+		REX::TEnumSet<BSGraphics::TextureAddressMode, std::int32_t> clampMode;                                      // 1D8
 	};
 	static_assert(sizeof(BSShaderData) == 0x1E0);
 }

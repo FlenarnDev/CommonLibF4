@@ -25,7 +25,7 @@ namespace RE
 
 		// members
 		EnchantmentItem*                                      formEnchanting;       // 08
-		REX::EnumSet<MagicSystem::CastingType, std::uint16_t> castingType;          // 10
+		REX::TEnumSet<MagicSystem::CastingType, std::uint16_t> castingType;          // 10
 		std::uint16_t                                         amountOfEnchantment;  // 12
 	};
 	static_assert(sizeof(TESEnchantableForm) == 0x18);

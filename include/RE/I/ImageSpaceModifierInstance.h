@@ -44,7 +44,7 @@ namespace RE
 		float                              strength;  // 10
 		NiPointer<NiAVObject>              target;    // 18
 		float                              age;       // 20
-		REX::EnumSet<FLAGS, std::uint32_t> flags;     // 24
+		REX::TEnumSet<FLAGS, std::uint32_t> flags;     // 24
 	};
 	static_assert(sizeof(ImageSpaceModifierInstance) == 0x28);
 }

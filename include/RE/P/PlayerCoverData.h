@@ -15,7 +15,7 @@ namespace RE
 		float                                  peekTimer;      // 18
 		float                                  updateTimer;    // 2C
 		float                                  blockedTimer;   // 20
-		REX::EnumSet<PEEK_STATE, std::int32_t> peekState;      // 24
+		REX::TEnumSet<PEEK_STATE, std::int32_t> peekState;      // 24
 		bool                                   gunBlocked;     // 28
 	};
 	static_assert(sizeof(PlayerCoverData) == 0x2C);

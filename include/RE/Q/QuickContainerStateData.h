@@ -20,7 +20,7 @@ namespace RE
 		BSFixedString                                  containerName;         // 98
 		BSFixedStringCS                                perkButtonText;        // A0
 		std::int32_t                                   selectedClipIndex;     // A8
-		REX::EnumSet<QuickContainerMode, std::int32_t> mode;                  // AC
+		REX::TEnumSet<QuickContainerMode, std::int32_t> mode;                  // AC
 		bool                                           perkButtonEnabled;     // B0
 		bool                                           isNewContainer;        // B1
 		bool                                           addedDroppedItems;     // B2

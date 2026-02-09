@@ -615,7 +615,7 @@ namespace RE
 		TESFaction*                                      vendorFaction;                // 330
 		ActorValueStorage                                avStorage;                    // 338
 		BGSDialogueBranch*                               exclusiveBranch;              // 370
-		REX::EnumSet<ACTOR_CRITICAL_STAGE, std::int32_t> criticalStage;                // 378
+		REX::TEnumSet<ACTOR_CRITICAL_STAGE, std::int32_t> criticalStage;                // 378
 		ObjectRefHandle                                  dialogueItemTarget;           // 37C
 		ActorHandle                                      currentCombatTarget;          // 380
 		ActorHandle                                      myKiller;                     // 384
@@ -639,7 +639,7 @@ namespace RE
 		BSTSmartPointer<BipedAnim>                       biped;                        // 428
 		BSNonReentrantSpinLock                           addingToOrRemovingFromScene;  // 430
 		BSReadWriteLock                                  perkArrayLock;                // 434
-		REX::EnumSet<BOOL_FLAGS, std::uint32_t>          boolFlags;                    // 43C
+		REX::TEnumSet<BOOL_FLAGS, std::uint32_t>          boolFlags;                    // 43C
 		std::uint32_t                                    moreFlags;                    // 440
 		Modifiers                                        healthModifiers;              // 444
 		Modifiers                                        actionPointsModifiers;        // 450

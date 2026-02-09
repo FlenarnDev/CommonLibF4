@@ -62,7 +62,7 @@ namespace RE
 		// members
 		const char*                               functionName{ "" };                        // 00
 		const char*                               shortName{ "" };                           // 08
-		REX::EnumSet<SCRIPT_OUTPUT, std::int32_t> output;                                    // 10
+		REX::TEnumSet<SCRIPT_OUTPUT, std::int32_t> output;                                    // 10
 		const char*                               helpString{ "" };                          // 18
 		bool                                      referenceFunction{ false };                // 20
 		std::uint16_t                             paramCount{ 0 };                           // 22

@@ -60,7 +60,7 @@ namespace RE
 			}
 
 			// members
-			REX::EnumSet<SORT_ON_FIELD, std::uint32_t> currentSort[14];  // 00
+			REX::TEnumSet<SORT_ON_FIELD, std::uint32_t> currentSort[14];  // 00
 			std::uint32_t                              currentTab;       // 38
 		};
 		static_assert(sizeof(ItemSorter) == 0x3C);
@@ -108,7 +108,7 @@ namespace RE
 		Inventory3DManager                             inv3DModelManager;              // 2A0
 		BSTArray<const TESBoundObject*>                partialPlayerUpdateList;        // 3E0
 		BSTArray<const TESBoundObject*>                partialContainerUpdateList;     // 3F8
-		REX::EnumSet<ContainerMenuMode, std::uint32_t> menuMode;                       // 410
+		REX::TEnumSet<ContainerMenuMode, std::uint32_t> menuMode;                       // 410
 		Rumble::AutoRumblePause                        autoRumblePause;                // 414
 		DisableHeavyItemsFunc                          disableHeavyFunc;               // 418
 		ObjectRefHandle                                containerRef;                   // 428

@@ -114,7 +114,7 @@ namespace RE
 			{
 			public:
 				// members
-				REX::EnumSet<LightType, std::int32_t> type;          // 00
+				REX::TEnumSet<LightType, std::int32_t> type;          // 00
 				float                                 spotFOV;       // 04
 				NiPoint3                              lookAtPos;     // 08
 				NiPointer<NiAVObject>                 lookAtObject;  // 18
@@ -413,13 +413,13 @@ namespace RE
 			bool                                               useLongRangeCamera;           // 058
 			bool                                               needsLightSetup;              // 059
 			bool                                               needsLightSetupOffscreen;     // 05A
-			REX::EnumSet<BackgroundMode, std::int32_t>         bgmode;                       // 05C
-			REX::EnumSet<PostEffect, std::int32_t>             postfx;                       // 060
-			REX::EnumSet<HighlightEffect, std::int32_t>        highlightfx;                  // 064
-			REX::EnumSet<OffscreenMenuSize, std::int32_t>      omsize;                       // 068
-			REX::EnumSet<ScreenMode, std::int32_t>             screenmode;                   // 06C
-			REX::EnumSet<OffscreenMenuBlendMode, std::int32_t> menuBlend;                    // 070
-			REX::EnumSet<UI_DEPTH_PRIORITY, std::int32_t>      depth;                        // 074
+			REX::TEnumSet<BackgroundMode, std::int32_t>         bgmode;                       // 05C
+			REX::TEnumSet<PostEffect, std::int32_t>             postfx;                       // 060
+			REX::TEnumSet<HighlightEffect, std::int32_t>        highlightfx;                  // 064
+			REX::TEnumSet<OffscreenMenuSize, std::int32_t>      omsize;                       // 068
+			REX::TEnumSet<ScreenMode, std::int32_t>             screenmode;                   // 06C
+			REX::TEnumSet<OffscreenMenuBlendMode, std::int32_t> menuBlend;                    // 070
+			REX::TEnumSet<UI_DEPTH_PRIORITY, std::int32_t>      depth;                        // 074
 			NiPointer<NiAVObject>                              worldAttachedElementRoot;     // 078
 			NiPointer<NiAVObject>                              screenAttachedElementRoot;    // 080
 			NiPointer<NiAVObject>                              offscreenElement;             // 088

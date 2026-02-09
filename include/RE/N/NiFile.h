@@ -27,7 +27,7 @@ namespace RE
 		std::size_t                          currentFilePos;   // 28
 		char*                                buffer;           // 30
 		BSSystemFile                         systemFile;       // 38
-		REX::EnumSet<OpenMode, std::int32_t> mode;             // 48
+		REX::TEnumSet<OpenMode, std::int32_t> mode;             // 48
 		bool                                 good;             // 4C
 	};
 	static_assert(sizeof(NiFile) == 0x50);

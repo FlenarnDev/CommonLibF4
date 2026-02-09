@@ -35,7 +35,7 @@ namespace RE
 			std::int8_t                                   minSlopeDegrees;         // 01
 			std::int8_t                                   maxSlopeDegrees;         // 02
 			std::uint16_t                                 distanceFromWaterLevel;  // 04
-			REX::EnumSet<GRASS_WATER_STATE, std::int32_t> underwater;              // 08
+			REX::TEnumSet<GRASS_WATER_STATE, std::int32_t> underwater;              // 08
 			float                                         positionRange;           // 0C
 			float                                         heightRange;             // 10
 			float                                         colorRange;              // 14

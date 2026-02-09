@@ -61,7 +61,7 @@ namespace RE
 		NiPoint3                                           furniturePathPoint;                             // 0DC
 		NiPoint3                                           lastSeenPosition;                               // 0E8
 		ActorHandle                                        bleedoutAttacker;                               // 0F4
-		REX::EnumSet<MagicSystem::WardState, std::int32_t> wardState;                                      // 0F8
+		REX::TEnumSet<MagicSystem::WardState, std::int32_t> wardState;                                      // 0F8
 		BSTSmartPointer<void*>                             animResponse;                                   // 100 - BSResponse<BSFixedString, Actor, BSFixedString, DoNothingUnhandledPolicy>
 		BSTArray<CommandedActorData>                       commandedActors;                                // 108
 		NiNode*                                            damageRootNode[26];                             // 120
@@ -133,7 +133,7 @@ namespace RE
 		std::uint64_t                                      nextExtraArrow3DUpdate;                         // 480
 		std::uint32_t                                      deferredKill;                                   // 488
 		std::uint32_t                                      flareFlags;                                     // 48C
-		REX::EnumSet<PACKAGE_OBJECT_TYPE, std::int32_t>    useItem;                                        // 490
+		REX::TEnumSet<PACKAGE_OBJECT_TYPE, std::int32_t>    useItem;                                        // 490
 		std::int16_t                                       animActionSuccess;                              // 494
 		std::uint16_t                                      update3DModel;                                  // 496
 		std::int8_t                                        weaponCullCounter;                              // 498

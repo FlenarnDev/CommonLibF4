@@ -20,7 +20,7 @@ namespace RE
 		// members
 		BSTHashMap<NiObject*, NiObject*>      cloneMap;    // 00
 		BSTHashMap<NiObject*, bool>           processMap;  // 30
-		REX::EnumSet<CopyType, std::uint32_t> copyType;    // 60
+		REX::TEnumSet<CopyType, std::uint32_t> copyType;    // 60
 		char                                  appendChar;  // 64
 		NiPoint3                              scale;       // 68
 	};

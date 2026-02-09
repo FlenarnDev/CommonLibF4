@@ -119,7 +119,7 @@ namespace RE
 			// members
 			float                                     timer;   // 0
 			ObjectRefHandle                           refObj;  // 4
-			REX::EnumSet<PLAYER_ACTION, std::int32_t> next;    // 8
+			REX::TEnumSet<PLAYER_ACTION, std::int32_t> next;    // 8
 		};
 		static_assert(sizeof(PlayerActionObject) == 0xC);
 
@@ -369,7 +369,7 @@ namespace RE
 		ObjectRefHandle                                               loopingActivateRef;                   // A5C
 		std::uint32_t                                                 dialogueCameraLastSceneID;            // A60
 		PlayerActionObject                                            playerActionObjects[15];              // A64
-		REX::EnumSet<PLAYER_ACTION, std::int32_t>                     mostRecentAction;                     // B18
+		REX::TEnumSet<PLAYER_ACTION, std::int32_t>                     mostRecentAction;                     // B18
 		ActorHandle                                                   actorDoingPlayerCommand;              // B1C
 		BSTValueEventSource<PlayerCommandTypeEvent>                   playerCurrentCommandType;             // B20
 		BSTArray<void*>                                               grabSprings;                          // B38 - hkRefPtr<hknpBSMouseSpringAction>
@@ -431,8 +431,8 @@ namespace RE
 		float                                                         commandTimer;                         // CD8
 		float                                                         dialogueCameraChangeRate;             // CDC
 		float                                                         fireWeaponEventTimer;                 // CE0
-		REX::EnumSet<DEFAULT_OBJECT, std::int32_t>                    animationObjectAction;                // CE4
-		REX::EnumSet<GrabbingType, std::int32_t>                      grabType;                             // CE8
+		REX::TEnumSet<DEFAULT_OBJECT, std::int32_t>                    animationObjectAction;                // CE4
+		REX::TEnumSet<GrabbingType, std::int32_t>                      grabType;                             // CE8
 		ActorHandle                                                   assumedIdentity;                      // CEC
 		std::int8_t                                                   murder;                               // CF0
 		std::int8_t                                                   perkCount;                            // CF1
@@ -445,8 +445,8 @@ namespace RE
 		ItemChange*                                                   currentTemperingInventoryItem;        // D20
 		TESObjectREFR*                                                commandTarget;                        // D28
 		TESObjectREFR*                                                walkThroughDoor;                      // D30
-		REX::EnumSet<COMMAND_TYPE, std::int32_t>                      currentCommand;                       // D38
-		REX::EnumSet<SCENE_ACTION_PLAYER_RESPONSE_TYPE, std::int32_t> playerDialogueInput;                  // D3C
+		REX::TEnumSet<COMMAND_TYPE, std::int32_t>                      currentCommand;                       // D38
+		REX::TEnumSet<SCENE_ACTION_PLAYER_RESPONSE_TYPE, std::int32_t> playerDialogueInput;                  // D3C
 		ActorValueInfo*                                               stimpakTarget;                        // D40
 		float                                                         vatsCriticalCharge;                   // D48
 		std::uint32_t                                                 vatsCriticalCount;                    // D4C

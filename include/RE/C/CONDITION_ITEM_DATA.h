@@ -25,7 +25,7 @@ namespace RE
 		std::uint8_t                                    packDataParams: 1;         // 28:3
 		std::uint8_t                                    swapsSubjectAndTarget: 1;  // 28:4
 		std::uint8_t                                    condition: 3;              // 28:5
-		REX::EnumSet<CONDITIONITEMOBJECT, std::uint8_t> object;                    // 29
+		REX::TEnumSet<CONDITIONITEMOBJECT, std::uint8_t> object;                    // 29
 	};
 	static_assert(sizeof(CONDITION_ITEM_DATA) == 0x30);
 }

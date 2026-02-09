@@ -20,7 +20,7 @@ namespace RE
 		{
 		public:
 			// members
-			REX::EnumSet<Type, std::uint16_t> changeType;   // 00
+			REX::TEnumSet<Type, std::uint16_t> changeType;   // 00
 			ObjectRefHandle                   owner;        // 04
 			TESBoundObject*                   objAffected;  // 08
 			std::uint32_t                     count;        // 10

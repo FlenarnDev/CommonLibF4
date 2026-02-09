@@ -67,10 +67,10 @@ namespace RE
 			ObjectRefHandle                                         collidee;                // 20
 			NiPointer<bhkNPCollisionObject>                         colObj;                  // 28
 			BGSMaterialType*                                        materialType;            // 30
-			REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> damageLimb;              // 38
-			REX::EnumSet<COL_LAYER, std::int32_t>                   collisionLayer;          // 3C
+			REX::TEnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> damageLimb;              // 38
+			REX::TEnumSet<COL_LAYER, std::int32_t>                   collisionLayer;          // 3C
 			NiPointer<NiNode>                                       closestBone;             // 40
-			REX::EnumSet<ImpactResult, std::int32_t>                resultOverride;          // 48
+			REX::TEnumSet<ImpactResult, std::int32_t>                resultOverride;          // 48
 			float                                                   decalSize;               // 4C
 			std::uint32_t                                           collisionShapeKey;       // 50
 			std::int16_t                                            targetWorldObjectCount;  // 54
@@ -135,13 +135,13 @@ namespace RE
 		BSSoundHandle                                           sndCountdown;         // 1B8
 		BGSExplosion*                                           explosion;            // 1C0
 		MagicItem*                                              spell;                // 1C8
-		REX::EnumSet<MagicSystem::CastingSource, std::int32_t>  castingSource;        // 1D0
+		REX::TEnumSet<MagicSystem::CastingSource, std::int32_t>  castingSource;        // 1D0
 		EffectSetting*                                          avEffect;             // 1D8
 		NiPointer<QueuedFile>                                   projectileDBFiles;    // 1E0
 		void*                                                   muzzleFlashDBHandle;  // 1E8 - TODO
 		NiPointer<NiNode>                                       muzzleFlashArt;       // 1F0
 		BSMagicShaderParticles*                                 particles;            // 1F8
-		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;           // 200
+		REX::TEnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> targetLimb;           // 200
 		NiPointer<NiAVObject>                                   targetLimbObj;        // 208
 		NiAVObject*                                             clonePoolKey;         // 210
 		float                                                   power;                // 218

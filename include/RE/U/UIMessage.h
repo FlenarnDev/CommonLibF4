@@ -23,7 +23,7 @@ namespace RE
 
 		// members
 		BSFixedString                               menu;                             // 08
-		REX::EnumSet<UI_MESSAGE_TYPE, std::int32_t> type{ UI_MESSAGE_TYPE::kTotal };  // 10
+		REX::TEnumSet<UI_MESSAGE_TYPE, std::int32_t> type{ UI_MESSAGE_TYPE::kTotal };  // 10
 	};
 	static_assert(sizeof(UIMessage) == 0x18);
 }

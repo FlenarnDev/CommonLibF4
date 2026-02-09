@@ -27,9 +27,9 @@ namespace RE
 		float                                         imageSpaceRadius;       // 54
 		float                                         verticalOffsetMult;     // 58
 		std::uint32_t                                 flags;                  // 5C
-		REX::EnumSet<SOUND_LEVEL, std::int32_t>       soundLevel;             // 60
+		REX::TEnumSet<SOUND_LEVEL, std::int32_t>       soundLevel;             // 60
 		float                                         placedObjectFadeDelay;  // 64
-		REX::EnumSet<STAGGER_MAGNITUDE, std::int32_t> staggerMagnitude;       // 68
+		REX::TEnumSet<STAGGER_MAGNITUDE, std::int32_t> staggerMagnitude;       // 68
 	};
 	static_assert(sizeof(BGSExplosionData) == 0x70);
 }

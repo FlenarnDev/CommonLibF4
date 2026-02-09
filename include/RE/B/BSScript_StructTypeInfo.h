@@ -53,7 +53,7 @@ namespace RE
 			BSTSmartPointer<ObjectTypeInfo>            containingObjTypeInfo;  // 18
 			BSTArray<StructVar>                        variables;              // 20
 			BSTHashMap<BSFixedString, std::uint32_t>   varNameIndexMap;        // 38
-			REX::EnumSet<LinkValidState, std::int32_t> linkedValid;            // 68
+			REX::TEnumSet<LinkValidState, std::int32_t> linkedValid;            // 68
 		};
 		static_assert(sizeof(StructTypeInfo) == 0x70);
 	}

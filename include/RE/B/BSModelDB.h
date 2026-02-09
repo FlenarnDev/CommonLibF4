@@ -20,7 +20,7 @@ namespace RE
 			{
 			public:
 				// members
-				REX::EnumSet<ENUM_LOD_MULT, std::int32_t> lodFadeMult;          // 00
+				REX::TEnumSet<ENUM_LOD_MULT, std::int32_t> lodFadeMult;          // 00
 				std::uint32_t                             loadLevel;            // 04
 				std::uint8_t                              prepareAfterLoad: 1;  // 08:00
 				std::uint8_t                              faceGenModel: 1;      // 08:01

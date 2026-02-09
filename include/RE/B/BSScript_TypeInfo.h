@@ -128,7 +128,7 @@ namespace RE
 
 				~D() noexcept { complexTypeInfo = nullptr; }
 
-				REX::EnumSet<RawType, std::uintptr_t> rawType;
+				REX::TEnumSet<RawType, std::uintptr_t> rawType;
 				IComplexType*                         complexTypeInfo;
 			} data;  // 0
 		};

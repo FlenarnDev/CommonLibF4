@@ -98,7 +98,7 @@ namespace RE
 		public:
 			// members
 			BGSSoundDescriptorForm*               soundForm;  // 00
-			REX::EnumSet<SoundType, std::int32_t> type;       // 08
+			REX::TEnumSet<SoundType, std::int32_t> type;       // 08
 		};
 		static_assert(sizeof(WeatherSound) == 0x10);
 
@@ -110,7 +110,7 @@ namespace RE
 		static_assert(sizeof(WeatherSoundList) == 0x10);
 
 		// members
-		REX::EnumSet<SpellContext, std::int32_t> context;                              // 020
+		REX::TEnumSet<SpellContext, std::int32_t> context;                              // 020
 		TESTexture1024                           cloudTexture[32];                     // 028
 		std::int8_t                              cloudLayerSpeedY[32];                 // 228
 		std::int8_t                              cloudLayerSpeedX[32];                 // 248

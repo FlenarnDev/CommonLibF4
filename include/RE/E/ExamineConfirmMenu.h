@@ -71,7 +71,7 @@ namespace RE
 			// members
 			BSFixedString                            confirmQuestion;                       // 08
 			BSFixedStringCS                          buttonLabel;                           // 10
-			REX::EnumSet<CONFIRM_TYPE, std::int32_t> confirmType{ CONFIRM_TYPE::kSimple };  // 18
+			REX::TEnumSet<CONFIRM_TYPE, std::int32_t> confirmType{ CONFIRM_TYPE::kSimple };  // 18
 			bool                                     hasCancelButton{ true };               // 1C
 		};
 		static_assert(sizeof(InitData) == 0x20);

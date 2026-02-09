@@ -19,7 +19,7 @@ namespace RE
 		// members
 		ActionPoints::Action                                    action;              // 004
 		ObjectRefHandle                                         target;              // 008
-		REX::EnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> limb;                // 00C
+		REX::TEnumSet<BGSBodyPartDefs::LIMB_ENUM, std::uint32_t> limb;                // 00C
 		NiPointer<NiAVObject>                                   aimAtObj;            // 010
 		HitData                                                 hitdata;             // 20
 		SpellItem*                                              meleeImpactEffect;   // 100

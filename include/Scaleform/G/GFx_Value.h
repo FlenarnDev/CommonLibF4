@@ -899,7 +899,7 @@ namespace Scaleform::GFx
 
 		// members
 		ObjectInterface*                      _objectInterface{ nullptr };     // 00
-		REX::EnumSet<ValueType, std::int32_t> _type{ ValueType::kUndefined };  // 08
+		REX::TEnumSet<ValueType, std::int32_t> _type{ ValueType::kUndefined };  // 08
 		ValueUnion                            _value{};                        // 10
 		std::size_t                           _dataAux{ 0 };                   // 18
 	};

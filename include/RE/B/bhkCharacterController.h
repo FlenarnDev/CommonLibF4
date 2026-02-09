@@ -112,7 +112,7 @@ namespace RE
 		hknpCharacterSurfaceInfo                                               surfaceInfo;                // 270
 		hknpCharacterContext                                                   context;                    // 2A0
 		std::uint32_t                                                          flags;                      // 300
-		REX::EnumSet<hknpCharacterState::hknpCharacterStateType, std::int32_t> wantState;                  // 304
+		REX::TEnumSet<hknpCharacterState::hknpCharacterStateType, std::int32_t> wantState;                  // 304
 		float                                                                  velocityTime;               // 308
 		float                                                                  rotMod;                     // 30C
 		float                                                                  rotModTime;                 // 310
@@ -132,14 +132,14 @@ namespace RE
 		float                                                                  actorHeight;                // 348
 		float                                                                  speedPct;                   // 34C
 		std::uint32_t                                                          pushCount;                  // 350
-		REX::EnumSet<SHAPE_TYPES, std::int32_t>                                shapeType;                  // 354
-		REX::EnumSet<SHAPE_TYPES, std::int32_t>                                sizedShapeType;             // 358
+		REX::TEnumSet<SHAPE_TYPES, std::int32_t>                                shapeType;                  // 354
+		REX::TEnumSet<SHAPE_TYPES, std::int32_t>                                sizedShapeType;             // 358
 		hkRefPtr<hknpShape>                                                    shapes[2];                  // 360
 		float                                                                  radius;                     // 370
 		float                                                                  height;                     // 374
 		float                                                                  destRadius;                 // 378
 		float                                                                  lodDistance;                // 37C
-		REX::EnumSet<CHARACTER_SIZE, std::int32_t>                             size;                       // 380
+		REX::TEnumSet<CHARACTER_SIZE, std::int32_t>                             size;                       // 380
 		std::uint32_t                                                          priority;                   // 384
 		std::int32_t                                                           supportCount;               // 388
 		NiPointer<bhkNPCollisionObject>                                        supportBody;                // 390
@@ -151,7 +151,7 @@ namespace RE
 		BSTHashMap<bhkNPCollisionObject*, DamageImpactData*>                   damageImpacts;              // 3E8
 		float                                                                  maxSlope;                   // 418
 		std::uint32_t                                                          supportMaterial;            // 41C
-		REX::EnumSet<COL_LAYER, std::int32_t>                                  supportLayer;               // 420
+		REX::TEnumSet<COL_LAYER, std::int32_t>                                  supportLayer;               // 420
 		float                                                                  stepHeight;                 // 424
 		float                                                                  stepHeightMod;              // 428
 		float                                                                  stepHeightModTimer;         // 42C

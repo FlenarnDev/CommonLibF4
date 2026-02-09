@@ -40,7 +40,7 @@ namespace Scaleform::Render
 		std::int32_t                      scissorTop;     // 1C
 		std::int32_t                      scissorWidth;   // 20
 		std::int32_t                      scissorHeight;  // 24
-		REX::EnumSet<Flag, std::uint32_t> flags;          // 28
+		REX::TEnumSet<Flag, std::uint32_t> flags;          // 28
 	};
 	static_assert(sizeof(Viewport) == 0x2C);
 }

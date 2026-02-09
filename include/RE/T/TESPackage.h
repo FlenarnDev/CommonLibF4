@@ -42,7 +42,7 @@ namespace RE
 		PackageEventAction                                 onBegin;         // 78
 		PackageEventAction                                 onEnd;           // 90
 		PackageEventAction                                 onChange;        // A8
-		REX::EnumSet<PACKAGE_PROCEDURE_TYPE, std::int32_t> procedureType;   // C0
+		REX::TEnumSet<PACKAGE_PROCEDURE_TYPE, std::int32_t> procedureType;   // C0
 		std::uint32_t                                      refCount;        // C4
 	};
 	static_assert(sizeof(TESPackage) == 0xC8);

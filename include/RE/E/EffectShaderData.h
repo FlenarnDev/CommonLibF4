@@ -10,9 +10,9 @@ namespace RE
 	{
 	public:
 		// members
-		REX::EnumSet<_D3DBLEND, std::int32_t>   textureBlendModeSource;      // 00
-		REX::EnumSet<_D3DBLENDOP, std::int32_t> textureBlendOperation;       // 04
-		REX::EnumSet<_D3DCMPFUNC, std::int32_t> textureZTestFunction;        // 08
+		REX::TEnumSet<_D3DBLEND, std::int32_t>   textureBlendModeSource;      // 00
+		REX::TEnumSet<_D3DBLENDOP, std::int32_t> textureBlendOperation;       // 04
+		REX::TEnumSet<_D3DCMPFUNC, std::int32_t> textureZTestFunction;        // 08
 		std::uint32_t                           fillColor1;                  // 0C
 		float                                   fillAlphaFadeInTime;         // 10
 		float                                   fillAlphaFullTime;           // 14
@@ -32,7 +32,7 @@ namespace RE
 		float                                   edgeAlphaPulseFrequency;     // 4C
 		float                                   fillAlphaFullPercent;        // 50
 		float                                   edgeAlphaFullPercent;        // 54
-		REX::EnumSet<_D3DBLEND, std::int32_t>   textureBlendModeDest;        // 58
+		REX::TEnumSet<_D3DBLEND, std::int32_t>   textureBlendModeDest;        // 58
 		float                                   alphaTestStartTime;          // 5C
 		float                                   alphaTestEndTime;            // 60
 		float                                   alphaTestStartValue;         // 64

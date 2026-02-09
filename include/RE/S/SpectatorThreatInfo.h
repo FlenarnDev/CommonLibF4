@@ -23,7 +23,7 @@ namespace RE
 		// members
 		ActorHandle                              source;              // 00
 		ActorHandle                              target;              // 04
-		REX::EnumSet<THREAT_LEVEL, std::int32_t> threatLevel;         // 08
+		REX::TEnumSet<THREAT_LEVEL, std::int32_t> threatLevel;         // 08
 		std::time_t                              lastPerceivedTime;   // 10
 		float                                    radius;              // 18
 		NiPoint3                                 lastKnownPosSource;  // 1C

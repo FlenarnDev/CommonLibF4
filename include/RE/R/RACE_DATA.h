@@ -16,13 +16,13 @@ namespace RE
 		std::int32_t                             flags;                        // 020
 		float                                    accelerate;                   // 024
 		float                                    decelerate;                   // 028
-		REX::EnumSet<RACE_SIZE, std::int32_t>    raceSize;                     // 02C
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> headObject;                   // 030
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> hairObject;                   // 034
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> beardObject;                  // 038
+		REX::TEnumSet<RACE_SIZE, std::int32_t>    raceSize;                     // 02C
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> headObject;                   // 030
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> hairObject;                   // 034
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> beardObject;                  // 038
 		float                                    injuredHealthPercent;         // 03C
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> shieldObject;                 // 040
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> bodyObject;                   // 044
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> shieldObject;                 // 040
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> bodyObject;                   // 044
 		float                                    aimAngleTolerance;            // 048
 		float                                    flightRadius;                 // 04C
 		float                                    angleAccelerate;              // 050
@@ -31,7 +31,7 @@ namespace RE
 		NiPoint3                                 mountOffset;                  // 05C
 		NiPoint3                                 dismountOffset;               // 068
 		NiPoint3                                 mountCameraOffset;            // 074
-		REX::EnumSet<BIPED_OBJECT, std::int32_t> pipboyObject;                 // 080
+		REX::TEnumSet<BIPED_OBJECT, std::int32_t> pipboyObject;                 // 080
 		std::int16_t                             xpValue;                      // 084
 		BGSExplosion*                            onCrippleExplosion;           // 088
 		BGSDebris*                               onCrippleGenericDebris;       // 090

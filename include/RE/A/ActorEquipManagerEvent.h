@@ -16,7 +16,7 @@ namespace RE
 		{
 		public:
 			// members
-			REX::EnumSet<Type, std::uint16_t> changeType;     // 00
+			REX::TEnumSet<Type, std::uint16_t> changeType;     // 00
 			const BGSObjectInstance*          itemAffected;   // 08
 			Actor*                            actorAffected;  // 10
 			std::uint32_t                     stackID;        // 18

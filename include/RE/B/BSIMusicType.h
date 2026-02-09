@@ -31,7 +31,7 @@ namespace RE
 		std::uint32_t                                           currentTrackIndex;  // 14
 		BSTArray<std::uint32_t>                                 trackHistory;       // 18
 		BSTArray<BSIMusicTrack*>                                tracks;             // 30
-		REX::EnumSet<BSIMusicTrack::MUSIC_STATUS, std::int32_t> typeStatus;         // 48
+		REX::TEnumSet<BSIMusicTrack::MUSIC_STATUS, std::int32_t> typeStatus;         // 48
 	};
 	static_assert(sizeof(BSIMusicType) == 0x50);
 }

@@ -219,9 +219,9 @@ namespace RE
 		// members
 		BSSpinLock                             grassCreateLock;  // 30
 		BSSpinLock                             grassTaskLock;    // 38
-		REX::EnumSet<Flag, std::uint16_t>      cellFlags;        // 40
+		REX::TEnumSet<Flag, std::uint16_t>      cellFlags;        // 40
 		std::uint16_t                          cellGameFlags;    // 42
-		REX::EnumSet<CELL_STATE, std::uint8_t> cellState;        // 44
+		REX::TEnumSet<CELL_STATE, std::uint8_t> cellState;        // 44
 		bool                                   autoWaterLoaded;  // 45
 		bool                                   cellDetached;     // 46
 		BSTSmartPointer<ExtraDataList>         extraList;        // 48

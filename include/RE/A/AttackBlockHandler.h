@@ -24,7 +24,7 @@ namespace RE
 		// members
 		std::uint64_t                                   dualAttackStartTime;         // 28
 		BSFixedString                                   debounceEvent;               // 30
-		REX::EnumSet<POWER_ATTACK_STATE, std::uint32_t> checkForPowerAttack;         // 38
+		REX::TEnumSet<POWER_ATTACK_STATE, std::uint32_t> checkForPowerAttack;         // 38
 		std::uint32_t                                   numPowerAttacks;             // 3C
 		SettingT<INISettingCollection>*                 initialDelay;                // 40
 		SettingT<INISettingCollection>*                 subsequentDelay;             // 48

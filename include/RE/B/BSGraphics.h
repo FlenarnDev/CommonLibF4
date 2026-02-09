@@ -599,7 +599,7 @@ namespace RE
 			std::uint32_t                                 currentFrameOffset;                // 00C
 			std::uint32_t                                 previousFrameOffset;               // 010
 			FogStateType                                  fogState;                          // 014
-			REX::EnumSet<MultiSampleLevel, std::uint32_t> multiSample;                       // 074
+			REX::TEnumSet<MultiSampleLevel, std::uint32_t> multiSample;                       // 074
 			std::uint32_t                                 backBufferWidth;                   // 078
 			std::uint32_t                                 backBufferHeight;                  // 07C
 			std::uint32_t                                 screenWidth;                       // 080
@@ -612,7 +612,7 @@ namespace RE
 			bool                                          allowDepthBufferAsTexture;         // 0A2
 			bool                                          shadows;                           // 0A3
 			bool                                          compiledShaderThisFrame;           // 0A4
-			REX::EnumSet<TAA_STATE, std::uint32_t>        taaState;                          // 0A8
+			REX::TEnumSet<TAA_STATE, std::uint32_t>        taaState;                          // 0A8
 			std::uint32_t                                 taaDisableCounter;                 // 0AC
 			std::uint32_t                                 trijuiceState;                     // 0B0
 			NiPointer<NiTexture>                          defaultTextureBlack;               // 0B8
