@@ -68,13 +68,17 @@ namespace RE
 		std::uint16_t                              paramCount{ 0 };                           // 22
 		SCRIPT_PARAMETER*                          parameters{ nullptr };                     // 28
 		ExecuteFunction_t*                         executeFunction{ nullptr };                // 30
-		CompileFunction_t*                         compileFunction{ CompileFunction.get() };  // 38
+		CompileFunction_t*                         compileFunction{ GetCompileFunction() };  // 38
 		ConditionFunction_t*                       conditionFunction{ nullptr };              // 40
 		bool                                       editorFilter{ false };                     // 48
 		bool                                       invalidatesCellList{ false };              // 49
 
 	private:
-		inline static REL::Relocation<CompileFunction_t*> CompileFunction{ ID::SCRIPT_FUNCTION::CompileFunction };
+		[[nodiscard]] inline static CompileFunction_t* GetCompileFunction()
+		{
+			static REL::Relocation<CompileFunction_t*> value{ ID::SCRIPT_FUNCTION::CompileFunction };
+			return value.get();
+		}
 	};
 	static_assert(sizeof(SCRIPT_FUNCTION) == 0x50);
 }
