@@ -84,7 +84,7 @@ namespace RE
 			{}
 
 			// override (StackDataCompareFunctor)
-			bool CompareData(const BGSInventoryItem::Stack&) override { return this->extra == extra; }
+			bool CompareData(const BGSInventoryItem::Stack&) override { return true; } // this->extra == extra; ??
 
 			// members
 			const ExtraDataList* extra;  // 08
@@ -212,7 +212,7 @@ namespace RE
 			return func(this, a_index);
 		}
 
-		[[nodiscard]] void MergeStacks()
+		void MergeStacks()
 		{
 			using func_t = decltype(&BGSInventoryItem::MergeStacks);
 			static REL::Relocation<func_t> func{ ID::BGSInventoryItem::MergeStacks };

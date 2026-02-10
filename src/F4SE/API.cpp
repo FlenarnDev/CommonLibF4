@@ -30,11 +30,11 @@ namespace F4SE
 			std::string  pluginAuthor{};
 			REL::Version pluginVersion{};
 
-			REL::Version                                     f4seVersion{};
-			PluginHandle                                     pluginHandle{ static_cast<PluginHandle>(-1) };
-			std::uint32_t                                    releaseIndex{ 0 };
-			std::function<const void*(F4SEAPI)(const char*)> pluginInfoAccessor;
-			std::string_view                                 saveFolderName{};
+			REL::Version                            f4seVersion{};
+			PluginHandle                            pluginHandle{ static_cast<PluginHandle>(-1) };
+			std::uint32_t                           releaseIndex{ 0 };
+			std::function<const void*(const char*)> pluginInfoAccessor;
+			std::string_view                        saveFolderName{};
 
 			MessagingInterface*     messagingInterface{ nullptr };
 			ScaleformInterface*     scaleformInterface{ nullptr };

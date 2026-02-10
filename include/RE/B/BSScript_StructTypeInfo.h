@@ -2,6 +2,7 @@
 
 #include "RE/B/BSFixedString.h"
 #include "RE/B/BSScript_IComplexType.h"
+#include "RE/B/BSScript_ObjectTypeInfo.h"
 #include "RE/B/BSScript_TypeInfo.h"
 #include "RE/B/BSScript_Variable.h"
 #include "RE/B/BSTArray.h"

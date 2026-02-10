@@ -155,7 +155,7 @@ namespace RE
 		float                                                                   stepHeight;                 // 424
 		float                                                                   stepHeightMod;              // 428
 		float                                                                   stepHeightModTimer;         // 42C
-		const float                                                             castDepthC;                 // 430
+		float                                                                   castDepthC;                 // 430
 		std::uint32_t                                                           numCollisions;              // 434
 		std::uint32_t                                                           stickyCollisionGroup;       // 438
 		bool                                                                    allSurfacesStopped;         // 43C
