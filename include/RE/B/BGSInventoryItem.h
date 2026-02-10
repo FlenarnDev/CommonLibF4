@@ -84,7 +84,7 @@ namespace RE
 			{}
 
 			// override (StackDataCompareFunctor)
-			bool CompareData(const BGSInventoryItem::Stack&) override { return true; } // this->extra == extra; ??
+			bool CompareData(const BGSInventoryItem::Stack&) override { return true; }  // this->extra == extra; ??
 
 			// members
 			const ExtraDataList* extra;  // 08

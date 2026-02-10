@@ -163,12 +163,12 @@ namespace RE
 		{
 		public:
 			// members
-			std::uint32_t                 id{ 0 };                  // 00
-			REX::W32::ID3D11DomainShader* shader{ nullptr };        // 08
-			std::uint32_t                 byteCodeSize{ 0 };        // 10
-			BSGraphics::ConstantGroup     constantBuffers[3]{};     // 18
-			std::uint64_t                 shaderDesc{ 0 };          // 60
-			std::int8_t                   constantTable[32]{ 0 };   // 68
+			std::uint32_t                 id{ 0 };                 // 00
+			REX::W32::ID3D11DomainShader* shader{ nullptr };       // 08
+			std::uint32_t                 byteCodeSize{ 0 };       // 10
+			BSGraphics::ConstantGroup     constantBuffers[3]{};    // 18
+			std::uint64_t                 shaderDesc{ 0 };         // 60
+			std::int8_t                   constantTable[32]{ 0 };  // 68
 		};
 		static_assert(sizeof(DomainShader) == 0x88);
 
