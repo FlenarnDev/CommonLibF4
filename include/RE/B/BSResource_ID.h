@@ -8,6 +8,11 @@ namespace RE::BSResource
 		public FileID  // 0
 	{
 	public:
+		ID(const char* a_path)
+		{
+			GenerateFromPath(a_path);
+		}
+
 		[[nodiscard]] bool operator==(const ID&) const noexcept = default;
 
 		void GenerateFromPath(const char* a_path)
@@ -18,7 +23,7 @@ namespace RE::BSResource
 		}
 
 		// members
-		std::uint32_t dir = 0;  // 8
+		std::uint32_t dir{ 0 };  // 8
 	};
 	static_assert(sizeof(ID) == 0xC);
 }
