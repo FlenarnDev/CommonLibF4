@@ -12,7 +12,6 @@ add_rules("mode.debug", "mode.releasedbg")
 
 -- include subprojects
 includes("lib/commonlib-shared")
-includes("xmake-rules.lua")
 
 -- define targets
 target("commonlibf4", function()
@@ -41,4 +40,29 @@ target("commonlibf4", function()
 
     -- set precompiled header
     set_pcxxheader("include/F4SE/Impl/PCH.h")
+end)
+
+rule("commonlibf4.plugin", function()
+    add_deps("commonlib.plugin")
+
+    on_load(function(target)
+        target:data_set("commonlib.plugin.config", target:extraconf("rules", "commonlibf4.plugin"))
+        target:data_set("commonlib.plugin.package", { prefixdir = "Data" })
+    end)
+
+    on_config(function(target)
+        target:add("deps", "commonlibf4")
+
+        target:add("configfiles", path.join(os.scriptdir(), "res/commonlibf4-plugin.cpp.in"))
+        target:add("files", path.join(target:configdir(), "commonlibf4-plugin.cpp"))
+
+        if os.getenv("XSE_FO4_MODS_PATH") then
+            target:set("installdir", path.join(os.getenv("XSE_FO4_MODS_PATH"), target:name()))
+        elseif os.getenv("XSE_FO4_GAME_PATH") then
+            target:set("installdir", path.join(os.getenv("XSE_FO4_GAME_PATH"), "Data"))
+        end
+
+        target:add("installfiles", target:targetfile(), { prefixdir = "F4SE/Plugins" })
+        target:add("installfiles", target:symbolfile(), { prefixdir = "F4SE/Plugins" })
+    end)
 end)
