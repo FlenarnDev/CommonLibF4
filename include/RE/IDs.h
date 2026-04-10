@@ -343,6 +343,11 @@ namespace RE::ID
 		inline constexpr REL::ID ctor{ 2214021 };
 	}
 
+	namespace BGSPrimitive
+	{
+		inline constexpr REL::ID CreateAbstract{ 2194290 };
+	}
+
 	namespace BGSProjectile
 	{
 		inline constexpr REL::ID CollidesWithSmallTransparentLayer{ 2197620 };
@@ -713,6 +718,11 @@ namespace RE::ID
 		inline constexpr REL::ID CreateObject{ 2316324 };
 	}
 
+	namespace BSShaderUtil
+	{
+		inline constexpr REL::ID SetMaterialAlpha{ 2317566 };
+	}
+
 	namespace BSSoundHandle
 	{
 		inline constexpr REL::ID FadeInPlay{ 2267075 };
@@ -866,6 +876,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetPickRef{ 2701395 };
 		inline constexpr REL::ID GetPickRefs{ 2701391 };
 		inline constexpr REL::ID SetCurrentPickREFR{ 2248551 };
+		inline constexpr REL::ID DisplayRef{ 2248550 };
 	}
 
 	namespace ConsoleLog
@@ -1223,6 +1234,7 @@ namespace RE::ID
 	namespace LockpickingMenu
 	{
 		inline constexpr REL::ID OpenLockpickingMenu{ 2249263 };
+		inline constexpr REL::ID SendLockInfoToMenu{ 2249267 };
 	}
 
 	namespace LocksPicked
@@ -1244,6 +1256,11 @@ namespace RE::ID
 		inline constexpr REL::ID QGameSystemsShouldUpdate{ 2698031 };
 		inline constexpr REL::ID QGameDataLoaded{ 2698032 };
 		inline constexpr REL::ID SetCameraFOV{ 2228973 };
+	}
+
+	namespace MapMarkerData
+	{
+		inline constexpr REL::ID GetLocationName{ 2191791 };
 	}
 
 	namespace MemoryManager
@@ -1638,6 +1655,12 @@ namespace RE::ID
 		inline constexpr REL::ID ShowBuildFailureMessage{ 2224322 };
 	}
 
+	namespace PowerUtils
+	{
+		inline constexpr REL::ID ItemIsPowerConnection{ 2195078 };
+		inline constexpr REL::ID ItemIsPowerReceiver{ 2195060 };
+	}
+
 	namespace ProcessLists
 	{
 		inline constexpr REL::ID Singleton{ 4796160 };
@@ -1648,9 +1671,12 @@ namespace RE::ID
 
 	namespace REFR_LOCK
 	{
+		inline constexpr REL::ID GetLevel{ 2191019 };
 		inline constexpr REL::ID GetLockLevel{ 2191018 };
 		inline constexpr REL::ID SetLocked{ 2191020 };
 		inline constexpr REL::ID IsBroken{ 2191021 };
+		inline constexpr REL::ID NumericValueToEnum{ 2191023 };
+		inline constexpr REL::ID IsInaccessible{ 2191022 };
 	}
 
 	namespace SavefileMetadata
@@ -1662,6 +1688,12 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Allocate{ 2267983 };
 		inline constexpr REL::ID Deallocate{ 2267984 };
+	}
+
+	namespace ScreenSplatter
+	{
+		inline constexpr REL::ID Clear{ 2194783 };
+		inline constexpr REL::ID Update{ 2194781 };
 	}
 
 	namespace SCRIPT_FUNCTION
@@ -1968,6 +2000,17 @@ namespace RE::ID
 		inline constexpr REL::ID DefaultWater{ 4799138 };
 	}
 
+	namespace TESObjectCONT
+	{
+		inline constexpr REL::ID GetActivateText{ 2198653 };
+	}
+
+	namespace TESObjectDOOR
+	{
+		inline constexpr REL::ID GetActivateText{ 2198690 };
+		inline constexpr REL::ID CalculateDoFavor{ 2198692 };
+	}
+
 	namespace TESObjectLoadedEvent
 	{
 		inline constexpr REL::ID GetEventSource{ 2201853 };
@@ -2015,6 +2058,7 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateDynamicNavmesh{ 2201206 };
 		inline constexpr REL::ID GetMapMarkerData{ 2202644 };
 		inline constexpr REL::ID GetRelevantWaterHeight{ 2201189 };
+		inline constexpr REL::ID CanBeMoved{ 2200898 };
 	}
 
 	namespace TESObjectWEAP
