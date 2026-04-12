@@ -67,6 +67,7 @@ namespace RE::ID
 		inline constexpr REL::ID SPECIALModifiedCallback{ 2231020 };
 		inline constexpr REL::ID StopInteractingQuick{ 2231227 };
 		inline constexpr REL::ID CalculateDetectionFormula{ 2230213 };
+		inline constexpr REL::ID DoHitMe{ 2231148 };
 	}
 
 	namespace ActorEquipManager
@@ -853,6 +854,7 @@ namespace RE::ID
 		inline constexpr REL::ID CalcWeaponDamage{ 2209001 };
 		inline constexpr REL::ID GetNumCrippledAttackConditions{ 2209041 };
 		inline constexpr REL::ID CalcScopeSteadyActionPointDrain{ 2209045 };
+		inline constexpr REL::ID CalcResistedPercentage{ 2209007 };
 	}
 
 	namespace CombatUtilities
@@ -1793,6 +1795,7 @@ namespace RE::ID
 		inline constexpr REL::ID QueueShowPipboy{ 2229288 };
 		inline constexpr REL::ID QueueUpdate3D{ 2229234 };
 		inline constexpr REL::ID QueueWeaponFire{ 2229186 };
+		inline constexpr REL::ID TaskUnpackFunc{ 2229323 };
 	}
 
 	namespace TerminalHacked

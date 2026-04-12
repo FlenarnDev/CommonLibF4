@@ -49,6 +49,7 @@ namespace RE
 	class CombatController;
 	class CombatGroup;
 	class DetectionData;
+	class HitData;
 	class MovementControllerNPC;
 	class MovementMessageActorCollision;
 	class MovementMessageNewPath;
@@ -605,6 +606,13 @@ namespace RE
 			using func_t = decltype(&Actor::CalculateDetectionFormula);
 			static REL::Relocation<func_t> func{ ID::Actor::CalculateDetectionFormula };
 			return func(this, a_target, a_detectionData);
+		}
+
+		void DoHitMe(const HitData* a_data)
+		{
+			using func_t = decltype(&Actor::DoHitMe);
+			static REL::Relocation<func_t> func{ ID::Actor::DoHitMe };
+			return func(this, a_data);
 		}
 
 		// members
