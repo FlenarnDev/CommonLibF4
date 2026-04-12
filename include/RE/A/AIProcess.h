@@ -170,6 +170,13 @@ namespace RE
 			return func(this);
 		}
 
+		float GetActorLightLevel()
+		{
+			using func_t = decltype(&AIProcess::GetActorLightLevel);
+			static REL::Relocation<func_t> func{ ID::AIProcess::GetActorLightLevel };
+			return func(this);
+		}
+
 		// members
 		MiddleLowProcessData*           middleLow;                   // 00
 		MiddleHighProcessData*          middleHigh;                  // 08

@@ -66,6 +66,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetMobilityCrippled{ 2230996 };
 		inline constexpr REL::ID SPECIALModifiedCallback{ 2231020 };
 		inline constexpr REL::ID StopInteractingQuick{ 2231227 };
+		inline constexpr REL::ID CalculateDetectionFormula{ 2230213 };
 	}
 
 	namespace ActorEquipManager
@@ -116,6 +117,7 @@ namespace RE::ID
 		inline constexpr REL::ID SetRunOncePackage{ 2232344 };
 		inline constexpr REL::ID AddToProcedureIndexRunning{ 2718412 };
 		inline constexpr REL::ID ComputeLastTimeProcessed{ 2231541 };
+		inline constexpr REL::ID GetActorLightLevel{ 2231981 };
 	}
 
 	namespace AITimer
@@ -1613,6 +1615,7 @@ namespace RE::ID
 		inline constexpr REL::ID SetPerkCount{ 2233187 };
 		inline constexpr REL::ID HasLOSToTarget{ 2233004 };
 		inline constexpr REL::ID TryUnlockObject{ 2233040 };
+		inline constexpr REL::ID EnableRadio{ 2233211 };
 	}
 
 	namespace PlayerControls
@@ -1667,6 +1670,13 @@ namespace RE::ID
 		inline constexpr REL::ID AreHostileActorsNear{ 2234105 };
 		inline constexpr REL::ID IsActorTargetingREFinPackage{ 2234033 };
 		inline constexpr REL::ID RequestHighestDetectionLevelAgainstActor{ 2234111 };
+	}
+
+	namespace RadioManager
+	{
+		inline constexpr REL::ID QPlayerRadioEnabled{ 2227674 };
+		inline constexpr REL::ID QCurrentPlayerFreq{ 2227670 };
+		inline constexpr REL::ID EnablePlayerRadio{ 2227673 };
 	}
 
 	namespace REFR_LOCK
