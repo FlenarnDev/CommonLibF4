@@ -1,4 +1,4 @@
-#pragma one
+#pragma once
 
 #include "RE/D/DetectionFormulaData.h"
 #include "RE/D/DetectionLevels.h"
