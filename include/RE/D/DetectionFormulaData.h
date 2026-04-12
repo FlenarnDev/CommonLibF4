@@ -9,13 +9,13 @@ namespace RE
 	{
 	public:
 		// members
-		ACTOR_LOS_LOCATION losLocation;				 // 00
-		AITimeStamp        timeStamp;				 // 04
-		std::uint32_t      ambush;					 // 08
-		std::uint32_t      targetRaceSize;			 // 0C
-		std::uint32_t      targetActionSound;		 // 10
-		float              lightLevel;				 // 14
-		float              modifiedLightLevel;		 // 18
+		ACTOR_LOS_LOCATION losLocation;              // 00
+		AITimeStamp        timeStamp;                // 04
+		std::uint32_t      ambush;                   // 08
+		std::uint32_t      targetRaceSize;           // 0C
+		std::uint32_t      targetActionSound;        // 10
+		float              lightLevel;               // 14
+		float              modifiedLightLevel;       // 18
 		float              visualDetectionDistance;  // 1C
 		float              soundDetectionDistance;   // 20
 		float              perception;               // 24
