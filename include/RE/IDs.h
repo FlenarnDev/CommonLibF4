@@ -97,6 +97,7 @@ namespace RE::ID
 	namespace AIFormulas
 	{
 		inline constexpr REL::ID GetBarterValue{ 2208969 };
+		inline constexpr REL::ID ComputePickpocketSuccess{ 2208977 };
 	}
 
 	namespace AIProcess
