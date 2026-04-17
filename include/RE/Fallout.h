@@ -593,6 +593,7 @@
 #include "RE/D/DEFAULT_OBJECT.h"
 #include "RE/D/DEFAULT_OBJECT_DATA.h"
 #include "RE/D/DEFAULT_OBJECT_TYPE.h"
+#include "RE/D/DETECTION_FORMULA_TYPE.h"
 #include "RE/D/DETECTION_PRIORITY.h"
 #include "RE/D/DETECTION_TYPE.h"
 #include "RE/D/DIALOGUE_DATA.h"
