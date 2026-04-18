@@ -1988,6 +1988,7 @@ namespace RE::ID
 		inline constexpr REL::ID GetFacialBoneMorphIntensity{ 2207416 };
 		inline constexpr REL::ID SetHairColor{ 2207426 };
 		inline constexpr REL::ID GetShortName{ 2207405 };
+		inline constexpr REL::ID GetXPValue{ 2207384 };
 	}
 
 	namespace TESObjectARMO
