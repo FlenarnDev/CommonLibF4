@@ -40,7 +40,7 @@ namespace RE
 
 		ExtraDataList()
 		{
-			using func_t = void(*)(ExtraDataList*);
+			using func_t = void (*)(ExtraDataList*);
 			static REL::Relocation<func_t> func{ ID::ExtraDataList::Ctor };
 			func(this);
 		}

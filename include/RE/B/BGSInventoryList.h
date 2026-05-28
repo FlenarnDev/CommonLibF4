@@ -35,7 +35,7 @@ namespace RE
 
 		inline void AddItem2(TESBoundObject* a_object, std::uint32_t a_count, ExtraDataList* a_extra, std::uint16_t a_flags = 0) noexcept
 		{
-			using func_t = void(*)(BGSInventoryList*, TESBoundObject*, std::uint32_t, ExtraDataList*, std::uint16_t);
+			using func_t = void (*)(BGSInventoryList*, TESBoundObject*, std::uint32_t, ExtraDataList*, std::uint16_t);
 			static REL::Relocation<func_t> func{ ID::BGSInventoryList::AddItem2 };
 			func(this, a_object, a_count, a_extra, a_flags);
 		}
@@ -111,7 +111,7 @@ namespace RE
 
 		inline void RemoveItem1(TESBoundObject* a_object, std::uint32_t a_stackID, std::uint32_t a_count, bool a_manualMerge = false) noexcept
 		{
-			using func_t = void(*)(BGSInventoryList*, TESBoundObject*, std::uint32_t, std::uint32_t, bool);
+			using func_t = void (*)(BGSInventoryList*, TESBoundObject*, std::uint32_t, std::uint32_t, bool);
 			static REL::Relocation<func_t> func{ ID::BGSInventoryList::RemoveItem1 };
 			func(this, a_object, a_stackID, a_count, a_manualMerge);
 		}
