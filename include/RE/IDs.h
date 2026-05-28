@@ -235,10 +235,16 @@ namespace RE::ID
 
 	namespace BGSInventoryList
 	{
-		inline constexpr REL::ID FindAndWriteStackDataForItem{ 2194179 };
+		inline constexpr REL::ID AddItem1{ 2194159 };
+		inline constexpr REL::ID AddItem2{ 2194160 };
 		inline constexpr REL::ID BuildFromContainer{ 2194158 };
+		inline constexpr REL::ID Clear{ 2194162 };
 		inline constexpr REL::ID ctor{ 2194153 };
-		inline constexpr REL::ID AddItem{ 2194159 };
+		inline constexpr REL::ID FindAndWriteStackDataForItem{ 2194179 };
+		inline constexpr REL::ID FindItemIndex{ 2194165 };
+		inline constexpr REL::ID GetItemCount{ 2194163 };
+		inline constexpr REL::ID GetQuestItemCount{ 2194164 };
+		inline constexpr REL::ID RemoveItem1{ 2194169 };
 	}
 
 	namespace BGSKeyword
@@ -1002,9 +1008,12 @@ namespace RE::ID
 
 	namespace ExtraDataList
 	{
+		inline constexpr REL::ID CopyList{ 2190094 };
 		inline constexpr REL::ID CreateInstanceData{ 2190185 };
+		inline constexpr REL::ID Ctor{ 2190088 };
 		inline constexpr REL::ID GetLegendaryMod{ 2190180 };
 		inline constexpr REL::ID SetBendableSplineInfo{ 2190623 };
+		inline constexpr REL::ID SetCount{ 2190125 };
 		inline constexpr REL::ID SetDisplayNameFromInstanceData{ 2190179 };
 		inline constexpr REL::ID SetOverrideName{ 2190167 };
 		inline constexpr REL::ID SetStartingWorldOrCell{ 2190506 };
