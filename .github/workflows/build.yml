@@ -41,7 +41,7 @@ jobs:
           package-cache-key: ${{ matrix.mode }}-${{ matrix.toolchain }}
 
       - name: config
-        run: xmake config -y --mode=${{ matrix.mode }} --toolchain=${{ matrix.toolchain }}
+        run: xmake config -y --mode=${{ matrix.mode }} --policies=build.ccache:y --toolchain=${{ matrix.toolchain }}
 
       - name: build
         run: xmake build -y -vD
