@@ -8,10 +8,8 @@ on:
       - "include/**"
       - "src/**"
       - "xmake.lua"
-      - "xmake-rules.lua"
   pull_request:
     branches: [ main ]
-
 
 jobs:
   xmake:
@@ -35,14 +33,9 @@ jobs:
         uses: xmake-io/github-action-setup-xmake@v1
         with:
           xmake-version: "latest"
-          actions-cache-folder: ".xmake-cache"
-          build-cache: true
-          build-cache-key: ${{ matrix.mode }}-${{ matrix.toolchain }}
-          package-cache: true
-          package-cache-key: ${{ matrix.mode }}-${{ matrix.toolchain }}
 
       - name: config
-        run: xmake config -y --mode=${{ matrix.mode }} --policies=build.ccache:y --toolchain=${{ matrix.toolchain }}
+        run: xmake config -y --mode=${{ matrix.mode }} --toolchain=${{ matrix.toolchain }}
 
       - name: build
         run: xmake build -y -vD
