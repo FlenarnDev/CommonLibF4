@@ -21,7 +21,7 @@ jobs:
       matrix:
         mode:
           - debug
-          - release
+          - releasedbg
         toolchain:
           - msvc
           - clang-cl
@@ -35,6 +35,11 @@ jobs:
         uses: xmake-io/github-action-setup-xmake@v1
         with:
           xmake-version: "latest"
+          actions-cache-folder: ".xmake-cache"
+          build-cache: true
+          build-cache-key: ${{ matrix.toolchain }}
+          package-cache: true
+          package-cache-key: ${{ matrix.toolchain }}
 
       - name: config
         run: xmake config -y --mode=${{ matrix.mode }} --toolchain=${{ matrix.toolchain }}
