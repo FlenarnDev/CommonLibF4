@@ -42,6 +42,7 @@ namespace RE::ID
 		inline constexpr REL::ID IsSneaking{ 2207655 };
 		inline constexpr REL::ID Move{ 2229934 };
 		inline constexpr REL::ID PerformAction{ 2231177 };
+		inline constexpr REL::ID PlaySoundByEditorName{ 2230172 };
 		inline constexpr REL::ID RemovePerk{ 2230122 };
 		inline constexpr REL::ID Reset3D{ 2229913 };
 		inline constexpr REL::ID RewardExperience{ 2230428 };
@@ -159,6 +160,11 @@ namespace RE::ID
 	namespace BGSAttachParentArray
 	{
 		inline constexpr REL::ID SetParentGroupNumber{ 2189125 };
+	}
+
+	namespace BGSAudio
+	{
+		inline constexpr REL::ID GetSoundDescriptor{ 2214758 };
 	}
 
 	namespace BGSConstructibleObject
@@ -499,7 +505,8 @@ namespace RE::ID
 	namespace BSAudioManager
 	{
 		inline constexpr REL::ID Singleton{ 2703058 };
-		inline constexpr REL::ID GetSoundHandleByName{ 2267105 };
+		inline constexpr REL::ID GetSoundHandle{ 2267105 };
+		inline constexpr REL::ID GetSoundHandleByName{ 2267104 };
 		inline constexpr REL::ID GetSoundHandleByFile{ 2267103 };
 	}
 
