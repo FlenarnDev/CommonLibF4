@@ -1,6 +1,5 @@
 #pragma once
 
-#include "BSISoundDescriptor.h"
 #include "RE/B/BSAudioCallbacks.h"
 #include "RE/B/BSAudioInit.h"
 #include "RE/B/BSISoundDescriptor.h"
