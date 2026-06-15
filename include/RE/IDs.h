@@ -165,6 +165,7 @@ namespace RE::ID
 	namespace BGSAudio
 	{
 		inline constexpr REL::ID GetSoundDescriptor{ 2214758 };
+		inline constexpr REL::ID GetUIOutputModel{ 2214800 };
 	}
 
 	namespace BGSConstructibleObject
@@ -773,7 +774,7 @@ namespace RE::ID
 		inline constexpr REL::ID IsPlaying{ 2267046 };
 		inline constexpr REL::ID IsValid{ 2267048 };
 		inline constexpr REL::ID Pause{ 2267044 };
-		inline constexpr REL::ID Play{ 2276042 };
+		inline constexpr REL::ID Play{ 2267042 };
 		inline constexpr REL::ID PlayAfter{ 2267043 };
 		inline constexpr REL::ID SetFrequency{ 2267059 };
 		inline constexpr REL::ID SetFrequencyVariance{ 2267060 };
