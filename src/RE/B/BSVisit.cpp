@@ -5,7 +5,7 @@
 
 namespace RE::BSVisit
 {
-	BSVisitControl TraverseScenegraphGeometries(NiAVObject* a_object, std::function<BSVisitControl(BSGeometry*)> a_func)
+	BSVisitControl TraverseScenegraphGeometries(const NiAVObject* a_object, std::function<BSVisitControl(BSGeometry*)> a_func)
 	{
 		if (a_object) {
 			if (auto geom = a_object->IsGeometry())
@@ -23,7 +23,7 @@ namespace RE::BSVisit
 		return BSVisitControl::kContinue;
 	}
 
-	BSVisitControl TraverseScenegraphObjects(NiAVObject* a_object, std::function<BSVisitControl(NiAVObject*)> a_func)
+	BSVisitControl TraverseScenegraphObjects(const NiAVObject* a_object, std::function<BSVisitControl(NiAVObject*)> a_func)
 	{
 		if (a_object) {
 			if (a_func(a_object) == BSVisitControl::kStop)
