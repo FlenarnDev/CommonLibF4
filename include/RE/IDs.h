@@ -1142,7 +1142,7 @@ namespace RE::ID
 
 	namespace hkMemoryRouter
 	{
-		inline constexpr REL::ID tlsSlotID{ 878080 };
+		inline constexpr REL::ID tlsSlotID{ 2787927 };
 	}
 
 	namespace hkMonitorStream
