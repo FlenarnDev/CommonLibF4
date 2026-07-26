@@ -39,7 +39,7 @@ CommonLibF4 is intended to replace F4SE as a static dependency. However, the run
 
 ## License
 
-[GPL-3.0-or-later][LICENSE] WITH [Modding Exception AND GPL-3.0 Linking Exception (with Corresponding Source)](EXCEPTIONS).
+[GPL-3.0-or-later](LICENSE) WITH [Modding Exception AND GPL-3.0 Linking Exception (with Corresponding Source)](EXCEPTIONS).
 
 Specifically, the **Modded Code** is Fallout 4 (and its variants) and **Modding Libraries** include [F4SE](https://f4se.silverlock.org/) ([GitHub](https://github.com/ianpatt/f4se)).
 
