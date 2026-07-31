@@ -1683,6 +1683,11 @@ namespace RE::ID
 		inline constexpr REL::ID UpdateCursorConstraint{ 2225488 };
 	}
 
+	namespace PipboyMapData
+	{
+		inline constexpr REL::ID GetTravelLocationRefr{ 2225515 };
+	}
+
 	namespace PipboyMapMenu
 	{
 		inline constexpr REL::ID UpdateData{ 2224074 };
@@ -1807,6 +1812,7 @@ namespace RE::ID
 		inline constexpr REL::ID HasLOSToTarget{ 2233004 };
 		inline constexpr REL::ID TryUnlockObject{ 2233040 };
 		inline constexpr REL::ID EnableRadio{ 2233211 };
+		inline constexpr REL::ID UpdateAnimation{ 2233005 };
 	}
 
 	namespace PlayerControls
@@ -2332,6 +2338,7 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID DefaultWater{ 4799138 };
 		inline constexpr REL::ID GetSkyCell{ 2202924 };
+		inline constexpr REL::ID AdjustMapMarkerCoord{ 2202880 };
 	}
 
 	namespace UI
