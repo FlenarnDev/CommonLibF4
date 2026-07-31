@@ -96,7 +96,7 @@ namespace RE
 			using func_t = decltype(&TESWorldSpace::AdjustMapMarkerCoord);
 			static REL::Relocation<func_t> func{ ID::TESWorldSpace::AdjustMapMarkerCoord };
 			return func(this, a_mapCoord, a_inverse)
-		}
+		};
 
 		// members
 		BSTHashMap<std::int32_t, TESObjectCELL*>                       cellMap;                  // 0x040

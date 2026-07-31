@@ -84,7 +84,7 @@ namespace RE
 		kNoRumors,                      //
 		kSound,                         //
 		kTerminalState,                 //
-		kLinkedRef,                     //
+		kLinkedRef,                     // ExtraLinkedRef
 		kLinkedRefChildren,             //
 		kActivateRef,                   //
 		kActivateRefChildren,           //
