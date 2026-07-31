@@ -10,7 +10,7 @@ namespace RE
 	class TESObjectREFR;
 
 	class __declspec(novtable) ExtraLinkedRefChildren :
-		public BSExtraData	// 00
+		public BSExtraData  // 00
 	{
 	public:
 		static constexpr auto RTTI{ RTTI::ExtraLinkedRefChildren };
@@ -25,7 +25,7 @@ namespace RE
 		};
 
 		// members
-		BSTSmallArray<LinkedRefChild, 1> linkedChildren;	// 018 
+		BSTSmallArray<LinkedRefChild, 1> linkedChildren;  // 018
 	};
 	static_assert(sizeof(ExtraLinkedRefChildren) == 0x38);
 }
