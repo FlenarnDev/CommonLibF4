@@ -12,7 +12,7 @@ namespace RE
 		kSeenData,                      //
 		kEditorID,                      // ExtraEditorID
 		kCellMusicType,                 //
-		kSkyRegion,                     //
+		kSkyRegion,                     // ExtraCellSkyRegion
 		kCellMidLowProcess,             //
 		kCellDetachTime,                //
 		kPersistentCell,                //
@@ -48,7 +48,7 @@ namespace RE
 		kLight,                         // ExtraLight
 		kLock,                          // ExtraLock
 		kTeleport,                      // ExtraTeleport
-		kMapMarker,                     //
+		kMapMarker,                     // ExtraMapMarker
 		kLeveledCreature,               // ExtraLeveledCreature
 		kLevelItem,                     //
 		kScale,                         //
@@ -85,7 +85,7 @@ namespace RE
 		kSound,                         //
 		kTerminalState,                 //
 		kLinkedRef,                     // ExtraLinkedRef
-		kLinkedRefChildren,             //
+		kLinkedRefChildren,             // ExtraLinkedRefChildren
 		kActivateRef,                   //
 		kActivateRefChildren,           //
 		kTalkToPlayer,                  //

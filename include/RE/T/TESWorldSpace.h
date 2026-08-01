@@ -91,7 +91,7 @@ namespace RE
 			}
 		}
 
-		[[nodiscard]] void AdjustMapMarkerCoord(NiPoint3* a_mapCoord, bool a_inverse)
+		void AdjustMapMarkerCoord(NiPoint3* a_mapCoord, bool a_inverse)
 		{
 			using func_t = decltype(&TESWorldSpace::AdjustMapMarkerCoord);
 			static REL::Relocation<func_t> func{ ID::TESWorldSpace::AdjustMapMarkerCoord };
