@@ -1474,7 +1474,6 @@ namespace RE::ID
 		inline constexpr REL::ID SetCameraFOV{ 2228973 };
 		inline constexpr REL::ID LandLODRoot{ 2698035 };
 		inline constexpr REL::ID ObjectLODRoot{ 2698036 };
-		inline constexpr REL::ID WorldRootNode{ 2698065 };
 	}
 
 	namespace MapMarkerData
