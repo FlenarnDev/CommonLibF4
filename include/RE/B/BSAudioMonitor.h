@@ -2,7 +2,7 @@
 
 namespace RE::BSAudioMonitor
 {
-    class Request
+	class Request
 	{
 	public:
 		Request(std::uint16_t a_monitorID, float a_sendLevel) :
@@ -22,9 +22,9 @@ namespace RE::BSAudioMonitor
 	class Receiver
 	{
 	public:
-    	Receiver(const float* a_amplitude) :
-    		m_amplitude(a_amplitude)
-    	{}
+		Receiver(const float* a_amplitude) :
+			m_amplitude(a_amplitude)
+		{}
 
 		Receiver(const float& a_amplitude) :
 			m_amplitude(std::addressof(a_amplitude))

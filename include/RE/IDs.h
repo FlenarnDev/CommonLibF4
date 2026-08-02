@@ -876,7 +876,7 @@ namespace RE::ID
 	namespace BSXAudio2Graph
 	{
 		inline constexpr REL::ID Singleton{ 2703127 };
-	    inline constexpr REL::ID Ctor{ 2267547 };
+		inline constexpr REL::ID Ctor{ 2267547 };
 		inline constexpr REL::ID OnProcessingPassEnd{ 2267567 };
 	}
 

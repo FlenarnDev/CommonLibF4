@@ -6,7 +6,7 @@
 
 namespace RE
 {
-    class __declspec(novtable) BSXAudio2Audio :
+	class __declspec(novtable) BSXAudio2Audio :
 		public BSAudio
 	{
 	public:

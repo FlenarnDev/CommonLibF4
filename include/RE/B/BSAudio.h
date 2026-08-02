@@ -4,21 +4,21 @@
 
 namespace RE
 {
-    class BSAudioListener;
-    class BSGameSound;
-    class BSIReverbType;
+	class BSAudioListener;
+	class BSGameSound;
+	class BSIReverbType;
 
-    namespace BSAudioMonitor
-    {
-        class Receiver;
-    }
+	namespace BSAudioMonitor
+	{
+		class Receiver;
+	}
 
-    namespace BSResource
-    {
-        class ID;
-    }
+	namespace BSResource
+	{
+		class ID;
+	}
 
-    class __declspec(novtable) BSAudio
+	class __declspec(novtable) BSAudio
 	{
 	public:
 		inline static constexpr auto RTTI{ RTTI::BSAudio };
@@ -41,9 +41,9 @@ namespace RE
 		virtual void                                          GetDeviceInfo() = 0;
 
 		// members
-		BSAudioListener* m_listener;	    // 0x08
+		BSAudioListener* m_listener;        // 0x08
 		std::uint32_t    m_outputChannels;  // 0x10
-		bool             m_initialized;		// 0x14
+		bool             m_initialized;     // 0x14
 	};
 	static_assert(sizeof(BSAudio) == 0x18);
 }

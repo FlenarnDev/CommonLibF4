@@ -4,8 +4,8 @@
 
 namespace RE
 {
-    class __declspec(novtable) MonitorAPO :
-        public CXAPOBase
+	class __declspec(novtable) MonitorAPO :
+		public CXAPOBase
 	{
 	public:
 		inline static constexpr auto RTTI = RE::RTTI::__MonitorAPO;

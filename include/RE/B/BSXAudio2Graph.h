@@ -5,7 +5,7 @@
 
 namespace RE
 {
-    struct ReverbSendData
+	struct ReverbSendData
 	{
 		// members
 		REX::W32::XAUDIO2FX_REVERB_I3DL2_PARAMETERS m_currentParams{ REX::W32::XAUDIO2FX_I3DL2_PRESET_DEFAULT };  // 0x00
@@ -17,8 +17,8 @@ namespace RE
 	};
 	static_assert(sizeof(ReverbSendData) == 0x88);
 
-    class __declspec(novtable) BSXAudio2Graph :
-        public REX::W32::IXAudio2EngineCallback
+	class __declspec(novtable) BSXAudio2Graph :
+		public REX::W32::IXAudio2EngineCallback
 	{
 	public:
 		inline static constexpr auto RTTI = RE::RTTI::__BSXAudio2Graph;
@@ -50,14 +50,14 @@ namespace RE
 		virtual void OnCriticalError(REX::W32::HRESULT) noexcept override {}
 
 		// members
-		REX::W32::IXAudio27*               m_instance;			 // 0x008
-		REX::W32::IXAudio27MasteringVoice* m_masteringVoice;	 // 0x010
-		std::array<ReverbSendData, 2>      m_reverbSendArray;	 // 0x018
-		std::uint32_t                      m_masterChannelMask;	 // 0x128
-		std::uint32_t                      m_outputChannels;	 // 0x12C
-		bool                               m_reverbInitialized;	 // 0x130
-		bool                               m_valid;	             // 0x131
-		bool                               m_canMonitor;	     // 0x132
+		REX::W32::IXAudio27*               m_instance;           // 0x008
+		REX::W32::IXAudio27MasteringVoice* m_masteringVoice;     // 0x010
+		std::array<ReverbSendData, 2>      m_reverbSendArray;    // 0x018
+		std::uint32_t                      m_masterChannelMask;  // 0x128
+		std::uint32_t                      m_outputChannels;     // 0x12C
+		bool                               m_reverbInitialized;  // 0x130
+		bool                               m_valid;              // 0x131
+		bool                               m_canMonitor;         // 0x132
 	};
 	static_assert(sizeof(BSXAudio2Graph) == 0x138);
 }

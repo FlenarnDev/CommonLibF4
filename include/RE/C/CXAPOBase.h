@@ -6,11 +6,11 @@
 
 namespace RE
 {
-    class __declspec(novtable) CXAPOBase :
-        public REX::W32::IXAPO
+	class __declspec(novtable) CXAPOBase :
+		public REX::W32::IXAPO
 	{
 	public:
-	    // add
+		// add
 		virtual REX::W32::HRESULT ValidateFormatDefault(REX::W32::WAVEFORMATEX* a_format, REX::W32::BOOL a_overwrite) noexcept = 0;
 
 		virtual ~CXAPOBase() = default;

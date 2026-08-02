@@ -6,7 +6,7 @@
 
 namespace RE
 {
-    class __declspec(novtable) BSXAudio2AudioListener :
+	class __declspec(novtable) BSXAudio2AudioListener :
 		public BSAudioListener
 	{
 	public:

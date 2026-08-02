@@ -4,7 +4,7 @@
 
 namespace RE
 {
-    class __declspec(novtable) BSAudioListener
+	class __declspec(novtable) BSAudioListener
 	{
 	public:
 		inline static constexpr auto RTTI{ RTTI::BSAudioListener };
