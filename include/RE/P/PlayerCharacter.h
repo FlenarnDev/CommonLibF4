@@ -327,6 +327,13 @@ namespace RE
 			return func(this, a_delta);
 		}
 
+		char HandlePositionPlayerRequest()
+		{
+			using func_t = decltype(&PlayerCharacter::HandlePositionPlayerRequest);
+			static REL::Relocation<func_t> func{ ID::PlayerCharacter::HandlePositionPlayerRequest };
+			return func(this);
+		}
+
 		// members
 		BSSpinLock                                                     actorToDisplayOnHUDLock;              // 628
 		BSSpinLock                                                     questTargetLock;                      // 630

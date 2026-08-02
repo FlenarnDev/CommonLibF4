@@ -1813,6 +1813,7 @@ namespace RE::ID
 		inline constexpr REL::ID TryUnlockObject{ 2233040 };
 		inline constexpr REL::ID EnableRadio{ 2233211 };
 		inline constexpr REL::ID UpdateAnimation{ 2233005 };
+		inline constexpr REL::ID HandlePositionPlayerRequest{ 2232905 };
 	}
 
 	namespace PlayerControls
