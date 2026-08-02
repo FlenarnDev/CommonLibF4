@@ -490,6 +490,7 @@
 #include "RE/B/BSTempEffectUtil.h"
 #include "RE/B/BSTempEffectWeaponBlood.h"
 #include "RE/B/BSTerrainEffect.h"
+#include "RE/B/BGSTerrainManager.h"
 #include "RE/B/BSTextureDB.h"
 #include "RE/B/BSTextureSet.h"
 #include "RE/B/BSTextureStreamer.h"

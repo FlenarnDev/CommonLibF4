@@ -432,6 +432,11 @@ namespace RE::ID
 		inline constexpr REL::ID Activate{ 2197778 };
 	}
 
+	namespace BGSTerrainManager
+	{
+		inline constexpr REL::ID RecomputeQuickCullData{ 2213622 };
+	}
+
 	namespace bhkCharacterController
 	{
 		inline constexpr REL::ID Jump{ 2278191 };
@@ -516,6 +521,13 @@ namespace RE::ID
 	{
 		inline constexpr REL::ID Singleton{ 2255115 };
 	}
+
+	namespace BSCullingProcess
+	{
+		inline constexpr REL::ID Process1{ 2275931 };
+		inline constexpr REL::ID Process2{ 2275932 };
+	}
+
 
 	namespace BSGFxDisplayObject
 	{
@@ -1460,6 +1472,9 @@ namespace RE::ID
 		inline constexpr REL::ID QGameSystemsShouldUpdate{ 2698031 };
 		inline constexpr REL::ID QGameDataLoaded{ 2698032 };
 		inline constexpr REL::ID SetCameraFOV{ 2228973 };
+		inline constexpr REL::ID LandLODRoot{ 2698035 };
+		inline constexpr REL::ID ObjectLODRoot{ 2698036 };
+		inline constexpr REL::ID WorldRootNode{ 2698065 };
 	}
 
 	namespace MapMarkerData
@@ -1555,6 +1570,11 @@ namespace RE::ID
 	namespace NiControllerSequence
 	{
 		inline constexpr REL::ID Activate{ 2271861 };
+	}
+
+	namespace NiCullingProcess
+	{
+		inline constexpr REL::ID SetFrustum{ 2270782 };
 	}
 
 	namespace NiMatrix3
@@ -2015,6 +2035,7 @@ namespace RE::ID
 	namespace TES
 	{
 		inline constexpr REL::ID Singleton{ 2698044 };
+		inline constexpr REL::ID UpdateMultiBoundVisibility{ 2192134 };
 	}
 
 	namespace TESActivateEvent
