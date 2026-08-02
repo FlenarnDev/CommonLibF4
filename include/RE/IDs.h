@@ -528,7 +528,6 @@ namespace RE::ID
 		inline constexpr REL::ID Process2{ 2275932 };
 	}
 
-
 	namespace BSGFxDisplayObject
 	{
 		inline constexpr REL::ID RemoveChild{ 2287327 };

@@ -11,7 +11,7 @@ namespace RE
 		float fBottom;  // 0C
 		float fNear;    // 10
 		float fFar;     // 14
-		bool  ortho;   // 18
+		bool  ortho;    // 18
 	};
 	static_assert(sizeof(NiFrustum) == 0x1C);
 }
