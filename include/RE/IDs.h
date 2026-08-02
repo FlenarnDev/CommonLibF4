@@ -506,6 +506,7 @@ namespace RE::ID
 	namespace BSAudioManager
 	{
 		inline constexpr REL::ID Singleton{ 2703058 };
+		inline constexpr REL::ID PlatformSingleton{ 2267094 };
 		inline constexpr REL::ID GetSoundHandle{ 2267105 };
 		inline constexpr REL::ID GetSoundHandleByName{ 2267104 };
 		inline constexpr REL::ID GetSoundHandleByFile{ 2267103 };
@@ -865,6 +866,18 @@ namespace RE::ID
 		inline constexpr REL::ID ConvertHalfToFloat{ 2195843 };
 		inline constexpr REL::ID GetObjectByName{ 2274841 };
 		inline constexpr REL::ID GetFlattenedBoneTree{ 2274858 };
+	}
+
+	namespace BSXAudio2Audio
+	{
+		inline constexpr REL::ID Singleton{ 2703127 };
+	}
+
+	namespace BSXAudio2Graph
+	{
+		inline constexpr REL::ID Singleton{ 2703127 };
+	    inline constexpr REL::ID Ctor{ 2267547 };
+		inline constexpr REL::ID OnProcessingPassEnd{ 2267567 };
 	}
 
 	namespace Calendar
