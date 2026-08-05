@@ -327,7 +327,7 @@ namespace RE
 			return func(this, a_delta);
 		}
 
-		char HandlePositionPlayerRequest()
+		bool HandlePositionPlayerRequest()
 		{
 			using func_t = decltype(&PlayerCharacter::HandlePositionPlayerRequest);
 			static REL::Relocation<func_t> func{ ID::PlayerCharacter::HandlePositionPlayerRequest };
