@@ -1557,6 +1557,7 @@ namespace RE::ID
 		inline constexpr REL::ID BoundInFrustum{ 2194525 };
 		inline constexpr REL::ID WorldPtToScreenPt3{ 2270344 };
 		inline constexpr REL::ID ViewPointToRay{ 2270338 };
+		inline constexpr REL::ID ctor{ 2270332 };
 	}
 
 	namespace NiControllerManager
